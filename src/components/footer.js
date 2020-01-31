@@ -11,10 +11,18 @@ function Footer() {
       <div className={Styles.wrapper}>
         <span>FIND ME ON</span>
         <div className={Styles.icons}>
-          <Facebook className={Styles.icon} fill="#292d3e" />
-          <Reddit className={Styles.icon} fill="#292d3e" />
-          <Twitter className={Styles.icon} fill="#292d3e" />
-          <Github className={Styles.icon} fill="#292d3e" />
+          <a href="https://facebook.com/ho0m4n">
+            <Facebook className={Styles.icon} fill="#292d3e" />
+          </a>
+          <a href="https://www.reddit.com/user/irrellia">
+            <Reddit className={Styles.icon} fill="#292d3e" />
+          </a>
+          <a href="https://twitter.com/irrellia_">
+            <Twitter className={Styles.icon} fill="#292d3e" />
+          </a>
+          <a href="https://github.com/irrellia">
+            <Github className={Styles.icon} fill="#292d3e" />
+          </a>
         </div>
         <span className={Styles.desc}>
           This site is built using{" "}
