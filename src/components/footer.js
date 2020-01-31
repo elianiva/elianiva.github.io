@@ -11,16 +11,16 @@ function Footer() {
       <div className={Styles.wrapper}>
         <span>FIND ME ON</span>
         <div className={Styles.icons}>
-          <a href="https://facebook.com/ho0m4n">
+          <a href="https://facebook.com/ho0m4n" target="_blank">
             <Facebook className={Styles.icon} fill="#292d3e" />
           </a>
-          <a href="https://www.reddit.com/user/irrellia">
+          <a href="https://www.reddit.com/user/irrellia" target="_blank">
             <Reddit className={Styles.icon} fill="#292d3e" />
           </a>
-          <a href="https://twitter.com/irrellia_">
+          <a href="https://twitter.com/irrellia_" target="_blank">
             <Twitter className={Styles.icon} fill="#292d3e" />
           </a>
-          <a href="https://github.com/irrellia">
+          <a href="https://github.com/irrellia" target="_blank">
             <Github className={Styles.icon} fill="#292d3e" />
           </a>
         </div>
