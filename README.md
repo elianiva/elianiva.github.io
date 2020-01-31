@@ -1,6 +1,6 @@
-#irrellia.github.io
+# irrellia.github.io
 
-##Installation
+## Installation
 As per usual, just do:
 
 `npm install`
@@ -9,7 +9,7 @@ and don't forget to install gatsby-cli:
 
 `npm install gatsby-cli -g`
 
-##Usage
+## Usage
 ### Building the site
 
 `gatsby build`
