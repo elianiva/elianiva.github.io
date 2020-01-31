@@ -16,16 +16,19 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <div
-        style={{
-          margin: `4rem auto`,
-          maxWidth: 1000,
-          padding: `1rem`,
-        }}
-      >
-        <main style={{ flex: 1 }}>{children}</main>
+      <div className="main-container">
+        <div
+          style={{
+            margin: `4rem auto`,
+            maxWidth: 1000,
+            padding: `1rem`,
+            flex: 1,
+          }}
+        >
+          <main style={{ flex: 1 }}>{children}</main>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   )
 }
