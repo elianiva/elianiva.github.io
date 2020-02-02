@@ -24,16 +24,32 @@ function Footer() {
       <div className={Styles.wrapper}>
         <span>FIND ME ON</span>
         <div className={Styles.icons}>
-          <a href={data.site.siteMetadata.facebook} target="_blank">
+          <a
+            href={data.site.siteMetadata.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Facebook className={Styles.icon} fill="#292d3e" />
           </a>
-          <a href={data.site.siteMetadata.reddit} target="_blank">
+          <a
+            href={data.site.siteMetadata.reddit}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Reddit className={Styles.icon} fill="#292d3e" />
           </a>
-          <a href={data.site.siteMetadata.twitter} target="_blank">
+          <a
+            href={data.site.siteMetadata.twitter}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Twitter className={Styles.icon} fill="#292d3e" />
           </a>
-          <a href={data.site.siteMetadata.github} target="_blank">
+          <a
+            href={data.site.siteMetadata.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Github className={Styles.icon} fill="#292d3e" />
           </a>
         </div>
