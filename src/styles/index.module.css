@@ -1,26 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lato:200&display=swap");
 
-@keyframes moveUp {
-  from {
-    transform: translateY(10rem);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+:root {
+  --bezier: cubic-bezier(0.1, 0.11, 0.29, 1);
 }
 
-@keyframes floating {
+@keyframes moveUp {
   0% {
-    transform: translateY(-0.5rem);
-  }
-  50% {
-    transform: translateY(0);
+    transform: translateY(2rem);
+    opacity: 0;
   }
   100% {
-    transform: translateY(-0.5rem);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -30,6 +21,7 @@
   margin-top: -4rem;
   text-align: center;
 }
+
 .greet {
   display: flex;
   flex-direction: column;
@@ -38,7 +30,7 @@
   flex: 1;
   min-height: 100vh;
   background-color: #292d3e;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 .logo {
@@ -51,29 +43,40 @@
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.15);
   background-color: #181824;
   margin-bottom: 1rem;
+  opacity: 0;
+  animation: moveUp var(--bezier) 1200ms forwards;
 }
 
-.svg {
+.logo .svg {
   flex: 1;
 }
 
 .greet-text {
   display: block;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 400;
   font-family: "Lato", Arial, Helvetica, sans-serif;
+  opacity: 0;
+  animation: moveUp var(--bezier) 1200ms forwards;
+  animation-delay: 100ms;
 }
 
 .greet-desc {
   font-size: 1.125rem;
   font-weight: 200;
   font-family: "Lato", Arial, Helvetica, sans-serif;
+  opacity: 0;
+  animation: moveUp var(--bezier) 1200ms forwards;
+  animation-delay: 200ms;
 }
 
 .arrow {
   position: absolute;
   bottom: 2rem;
+  opacity: 0;
+  animation: moveUp var(--bezier) 1200ms forwards;
+  animation-delay: 200ms;
 }
 
 .posts {
