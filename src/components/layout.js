@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
             flex: 1,
           }}
         >
-          <main style={{ flex: 1 }}>{children}</main>
+          <main style={{ flex: 1, minHeight: `100vh` }}>{children}</main>
         </div>
         <Footer />
       </div>
