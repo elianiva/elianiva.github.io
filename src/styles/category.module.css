@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+
+.wrapper {
+  margin-top: 0.5rem;
+  display: flex;
+  font-size: 1.75rem;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.catBox {
+  flex: 1;
+  margin: 0;
+  border-left: 0.25rem solid #82aaff;
+  padding: 0.75rem;
+  background-color: #292d3e;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.number {
+  margin: 0;
+  color: #212333;
+  padding: 0.75rem;
+  min-width: 3.75rem;
+  background-color: #82aaff;
+}

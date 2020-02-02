@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+
+* {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+hr {
+  background-color: #929dcb;
+  width: 5rem;
+  height: 0.125rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+.subtitle::before {
+  content: "< ";
+  color: #82aaff;
+}
+
+.subtitle::after {
+  content: " />";
+  color: #82aaff;
+}
