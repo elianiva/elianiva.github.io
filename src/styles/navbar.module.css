@@ -21,7 +21,7 @@ a::-moz-inner-focus {
   top: 0;
   left: 0;
   right: 0;
-  padding: 1rem;
+  padding: 0.75rem;
   color: #ffffff;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
@@ -49,8 +49,6 @@ a::-moz-inner-focus {
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -7px;
-  left: -5px;
   cursor: pointer;
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
