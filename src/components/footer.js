@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Styles from "../components/footer.module.scss"
+import Styles from "../styles/footer.module.css"
 import Facebook from "../assets/facebook.svg"
 import Reddit from "../assets/reddit.svg"
 import Twitter from "../assets/twitter.svg"

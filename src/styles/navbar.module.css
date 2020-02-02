@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+
+a {
+  text-decoration: none !important;
+}
+
+a:active,
+a:hover,
+a:focus,
+a::-moz-inner-focus {
+  color: #82aaff;
+  border: 0;
+  text-decoration: line-through !important;
+}
+
+.container {
+  display: flex;
+  position: fixed;
+  z-index: 21;
+  background-color: #181824;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  color: #ffffff;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  transition: opacity ease-out 0.5s;
+  font-weight: 600;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  z-index: 22;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.hamburger > input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+.hamburger > span {
+  display: block;
+  width: 2.4rem;
+  height: 0.125rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  background: #ffffff;
+  z-index: 23;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.hamburger > span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.hamburger > span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+.hamburger > input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+
+.hamburger > input:checked ~ span:nth-last-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.hamburger > input:checked ~ span:nth-last-child(1) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #181824;
+  color: #ffffff;
+  z-index: 20;
+  transition: opacity ease-out 0.5s;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 8rem;
+  left: 2rem;
+  right: 2rem;
+  bottom: 8rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+}

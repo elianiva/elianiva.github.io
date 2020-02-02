@@ -22,21 +22,26 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Irrellia's Blog`,
+        short_name: `Irrellia`,
         start_url: `/`,
         background_color: `#212333`,
         theme_color: `#212333`,
         display: `minimal-ui`,
       },
     },
-    `gatsby-plugin-sass`,
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: `gatsby-plugin-react-svg`,
       options: {
         rule: {
           include: /assets/,
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require(`autoprefixer`)],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

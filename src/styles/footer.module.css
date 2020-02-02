@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400&display=swap");
+
+.container {
+  padding: 1rem;
+  text-align: center;
+  background-color: #181824;
+  color: #ffffff;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+span {
+  display: block;
+  margin: 0.5rem;
+}
+
+.desc {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.gatsby {
+  color: #c792ea;
+  font-weight: 500;
+}
+
+.github {
+  color: #82aaff;
+  font-weight: 500;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  stroke: transparent;
+  stroke-width: 1rem;
+  transition: fill ease-out 0.2s;
+}
+
+.icon:hover,
+path:hover {
+  fill: #ffffff !important;
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import Styles from "./navbar.module.scss"
+import Styles from "../styles/navbar.module.css"
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false)

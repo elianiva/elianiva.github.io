@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import Styles from "./about.module.scss"
+import Styles from "../styles/about.module.css"
 
 function AboutPage() {
   return (

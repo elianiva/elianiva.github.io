@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:200&display=swap");
+
+@keyframes moveUp {
+  from {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-0.5rem);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: -4rem;
+  text-align: center;
+}
+.greet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-height: 100vh;
+  background-color: #292d3e;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  border: 0.25rem solid #292d3e;
+  border-radius: 5rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.15);
+  background-color: #181824;
+  margin-bottom: 1rem;
+}
+
+.svg {
+  flex: 1;
+}
+
+.greet-text {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.greet-desc {
+  font-size: 1.125rem;
+  font-weight: 200;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 2rem;
+}
+
+.posts {
+  flex: 1;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.title {
+  line-height: 3rem;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+.underline {
+  width: 5rem;
+}
