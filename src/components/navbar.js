@@ -24,8 +24,8 @@ function Navbar() {
         className={Styles.overlay}
         style={
           isOpen
-            ? { display: "block", display: "block", opacity: 1 }
-            : { visibility: "none", display: "none", opacity: 0 }
+            ? { display: "block", opacity: 1 }
+            : { visibility: "none", pointerEvents: "none", opacity: 0 }
         }
       >
         <div className={Styles.items}>
