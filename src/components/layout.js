@@ -19,9 +19,7 @@ const Layout = ({ children }) => {
       <div className="main-container">
         <div
           style={{
-            margin: `4rem auto 2rem`,
-            maxWidth: 1000,
-            padding: `1rem`,
+            marginTop: `4rem`,
             flex: 1,
           }}
         >
