@@ -3,6 +3,10 @@ module.exports = {
     title: `Irrellia's Blog`,
     description: `This is a blog where I share random stuff that I found from the internet.`,
     author: `Irrellia`,
+    twitter: `https://twitter.com/irrellia_`,
+    facebook: `https://facebook.com/ho0m4n`,
+    reddit: `https://reddit.com/user/irrellia`,
+    github: `https://github.com/irrellia`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

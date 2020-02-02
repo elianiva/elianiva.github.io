@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import Styles from "../components/footer.module.scss"
 import Facebook from "../assets/facebook.svg"
 import Reddit from "../assets/reddit.svg"
@@ -6,21 +7,33 @@ import Twitter from "../assets/twitter.svg"
 import Github from "../assets/github.svg"
 
 function Footer() {
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          facebook
+          reddit
+          twitter
+          github
+        }
+      }
+    }
+  `)
   return (
     <div className={Styles.container}>
       <div className={Styles.wrapper}>
         <span>FIND ME ON</span>
         <div className={Styles.icons}>
-          <a href="https://facebook.com/ho0m4n" target="_blank">
+          <a href={data.site.siteMetadata.facebook} target="_blank">
             <Facebook className={Styles.icon} fill="#292d3e" />
           </a>
-          <a href="https://www.reddit.com/user/irrellia" target="_blank">
+          <a href={data.site.siteMetadata.reddit} target="_blank">
             <Reddit className={Styles.icon} fill="#292d3e" />
           </a>
-          <a href="https://twitter.com/irrellia_" target="_blank">
+          <a href={data.site.siteMetadata.twitter} target="_blank">
             <Twitter className={Styles.icon} fill="#292d3e" />
           </a>
-          <a href="https://github.com/irrellia" target="_blank">
+          <a href={data.site.siteMetadata.github} target="_blank">
             <Github className={Styles.icon} fill="#292d3e" />
           </a>
         </div>
