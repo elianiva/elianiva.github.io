@@ -28,54 +28,59 @@
   }
 }
 
-.question {
-  line-height: 2rem;
-  display: block;
-  padding: 0.5rem;
-  font-size: 1.75rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
-}
+.container {
+  max-width: 1000px;
+  margin: 1rem auto;
 
-.desc {
-  display: block;
-  font-weight: 300;
-  font-size: 1.125rem;
-  margin-bottom: 2rem;
-}
+  .question {
+    line-height: 2rem;
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
 
-.who {
-  border-left: 0.25rem solid #82aaff;
-}
+  .desc {
+    display: block;
+    font-weight: 300;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
 
-.what {
-  border-left: 0.25rem solid #c3e88d;
-}
+  .who {
+    border-left: 0.25rem solid #82aaff;
+  }
 
-.why {
-  border-left: 0.25rem solid #c792ea;
-}
+  .what {
+    border-left: 0.25rem solid #c3e88d;
+  }
 
-.how {
-  border-left: 0.25rem solid #f07178;
-}
+  .why {
+    border-left: 0.25rem solid #c792ea;
+  }
 
-.purple {
-  color: #c792ea;
-  font-weight: 500;
-}
+  .how {
+    border-left: 0.25rem solid #f07178;
+  }
 
-.blue {
-  color: #82aaff;
-  font-weight: 500;
-}
+  .purple {
+    color: #c792ea;
+    font-weight: 500;
+  }
 
-.green {
-  color: #c3e88d;
-  font-weight: 500;
-}
+  .blue {
+    color: #82aaff;
+    font-weight: 500;
+  }
 
-.red {
-  color: #f07178;
-  font-weight: 500;
+  .green {
+    color: #c3e88d;
+    font-weight: 500;
+  }
+
+  .red {
+    color: #f07178;
+    font-weight: 500;
+  }
 }
