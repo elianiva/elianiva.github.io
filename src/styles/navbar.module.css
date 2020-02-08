@@ -31,7 +31,7 @@ a::-moz-inner-focus {
   display: flex;
   align-items: center;
   font-size: 1.125rem;
-  transition: opacity ease-out 0.5s;
+  transition: opacity ease-out 0.2s;
   font-weight: 600;
 }
 
@@ -64,8 +64,8 @@ a::-moz-inner-focus {
   background: #ffffff;
   z-index: 23;
   transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.2s ease;
 }
 
 .hamburger > span:first-child {
@@ -100,7 +100,7 @@ a::-moz-inner-focus {
   background-color: #181824;
   color: #ffffff;
   z-index: 20;
-  transition: opacity ease-out 0.5s;
+  transition: opacity ease-out 0.2s;
 }
 
 .items {

@@ -68,12 +68,12 @@ function AboutPage() {
           </a>{" "}
           on Linux,{" "}
           <a
-            href="https://manjaro.org"
-            className={Styles.green}
+            href="https://archlinux.org"
+            className={Styles.blue}
             target="_blank"
             rel="noopener noreferrer"
           >
-            MANJARO
+            ARCHLINUX
           </a>{" "}
           to be more specific. I also using{" "}
           <a

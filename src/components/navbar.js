@@ -11,7 +11,7 @@ function Navbar() {
           className={Styles.logo}
           style={isOpen ? { opacity: 0 } : { opacity: 1 }}
         >
-          IRRELLIA
+          <Link to="/">IRRELLIA</Link>
         </div>
         <div className={Styles.hamburger}>
           <input type="checkbox" onClick={() => setOpen(!isOpen)} />
@@ -29,13 +29,13 @@ function Navbar() {
         }
       >
         <div className={Styles.items}>
-          <span className={Styles.item}>
+          <span className={Styles.item} tabIndex="-1">
             <Link to="/">HOME</Link>
           </span>
-          <span className={Styles.item}>
+          <span className={Styles.item} tabIndex="-1">
             <Link to="/archives">ARCHIVES</Link>
           </span>
-          <span className={Styles.item}>
+          <span className={Styles.item} tabIndex="-1">
             <Link to="/about">ABOUT</Link>
           </span>
         </div>
