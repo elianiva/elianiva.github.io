@@ -14,9 +14,8 @@ a::-moz-inner-focus {
 }
 
 .container {
-  display: flex;
   position: fixed;
-  z-index: 21;
+  z-index: 20;
   background-color: #181824;
   top: 0;
   left: 0;
@@ -24,6 +23,13 @@ a::-moz-inner-focus {
   padding: 0.75rem;
   color: #ffffff;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  z-index: 21;
 }
 
 .logo {
