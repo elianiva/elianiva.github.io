@@ -30,14 +30,20 @@ function Navbar() {
           }
         >
           <div className={Styles.items}>
-            <span className={Styles.item} tabIndex="-1">
-              <Link to="/">HOME</Link>
+            <span className={Styles.item}>
+              <Link to="/" tabIndex="-1">
+                HOME
+              </Link>
             </span>
-            <span className={Styles.item} tabIndex="-1">
-              <Link to="/archives">ARCHIVES</Link>
+            <span className={Styles.item}>
+              <Link to="/archives" tabIndex="-1">
+                ARCHIVES
+              </Link>
             </span>
-            <span className={Styles.item} tabIndex="-1">
-              <Link to="/about">ABOUT</Link>
+            <span className={Styles.item}>
+              <Link to="/about" tabIndex="-1">
+                ABOUT
+              </Link>
             </span>
           </div>
         </div>
