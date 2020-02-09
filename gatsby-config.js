@@ -13,8 +13,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `assets`,
-        path: `${__dirname}/src/assets`,
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-images`],
       },
     },
     `gatsby-transformer-sharp`,
@@ -25,9 +31,10 @@ module.exports = {
         name: `Irrellia's Blog`,
         short_name: `Irrellia`,
         start_url: `/`,
-        background_color: `#212333`,
-        theme_color: `#212333`,
+        background_color: `#181824`,
+        theme_color: `#181824`,
         display: `minimal-ui`,
+        icon: `src/assets/favicon.png`,
       },
     },
     {

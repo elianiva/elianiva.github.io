@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
+
+.container {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  padding: 0.2rem;
+  background-color: #292d3e;
+  border-top: solid 1px #181824;
+}
+
+.title {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  margin-bottom: -0.5rem;
+}
+
+.prefix {
+  max-width: 0.75rem;
+  max-height: 0.75rem;
+  display: inline-block;
+  margin: 0;
+  margin-right: 0.2rem;
+  fill: #929dcb;
+}
+
+.date {
+  display: block;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #929dcb;
+}
+
+.desc {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  font-weight: 300;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  color: #929dcb;
+}
