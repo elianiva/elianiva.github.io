@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Logo from "../assets/logo.svg"
@@ -17,9 +17,14 @@ const IndexPage = () => {
         edges {
           node {
             id
+            snippet
+            fields {
+              slug
+            }
             frontmatter {
               title
               date
+              tags
               cover {
                 childImageSharp {
                   fluid {
@@ -62,15 +67,19 @@ const IndexPage = () => {
           <span className={Styles.title}>LATEST POSTS</span>
           <hr className={Styles.underline} />
           {data.allMarkdownRemark.edges.map(post => {
-            const { cover, title, date } = post.node.frontmatter
+            const { cover, title, date, tags } = post.node.frontmatter
+            const { slug } = post.node.fields
             return (
-              <Card
-                key={post.node.id}
-                cover={cover.childImageSharp.fluid}
-                title={title}
-                date={date}
-                desc="Lorem ipsum something like that you know those bullcrap that people usually say that you never give a fuck about it. So you just say some stupid shit that makes no sense"
-              />
+              <Link to={slug}>
+                <Card
+                  key={post.node.id}
+                  cover={cover.childImageSharp.fluid}
+                  title={title}
+                  date={date}
+                  desc={post.node.snippet}
+                  tags={tags}
+                />
+              </Link>
             )
           })}
         </div>

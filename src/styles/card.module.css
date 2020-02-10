@@ -6,20 +6,21 @@
   width: 90%;
   margin: auto;
   margin-bottom: 1rem;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
-  padding: 0.2rem;
+  padding: 0.5rem;
   background-color: #292d3e;
   border-top: solid 1px #181824;
 }
 
 .title {
+  display: block;
   text-align: left;
   font-size: 1.5rem;
   font-weight: 500;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  margin-bottom: -0.5rem;
 }
 
 .prefix {
@@ -36,7 +37,6 @@
   text-align: left;
   font-size: 0.75rem;
   font-weight: 400;
-  font-family: "Lato", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   color: #929dcb;
 }
@@ -46,6 +46,25 @@
   font-size: 1rem;
   line-height: 1.1rem;
   font-weight: 300;
-  font-family: "Lato", Arial, Helvetica, sans-serif;
   color: #929dcb;
+  margin-bottom: -0.5rem;
+  display: block;
+}
+
+.tag {
+  display: inline-block;
+  margin: 0;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+  line-height: 0.5rem;
+  background-color: #181824;
+  color: #929dcb;
+  padding: 0.5rem;
+  text-transform: lowercase;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.tag::before {
+  content: "# ";
+  font-weight: 600;
 }

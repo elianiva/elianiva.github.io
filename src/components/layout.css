@@ -10,6 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
   width: 100%;
   scroll-behavior: smooth;
+  scroll-padding-top: 3.2rem;
 }
 body {
   margin: 0;
@@ -394,7 +395,6 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 figure {
   margin-left: 0;
@@ -602,8 +602,7 @@ tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
+  font-family: monospace;
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;

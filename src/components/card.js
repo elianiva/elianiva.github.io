@@ -30,7 +30,13 @@ function Card(props) {
         <span className={Styles.date}>
           <Date className={Styles.prefix} /> {props.date}
         </span>
-        <span className={Styles.desc}>{props.desc}</span>
+        <span
+          className={Styles.desc}
+          dangerouslySetInnerHTML={{ __html: props.desc }}
+        ></span>
+        {props.tags.map(tag => (
+          <span className={Styles.tag}>{tag}</span>
+        ))}
       </div>
     </div>
   )
