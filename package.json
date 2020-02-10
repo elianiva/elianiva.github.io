@@ -15,6 +15,7 @@
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.4.3",
+    "gatsby-remark-autolink-headers": "^2.1.24",
     "gatsby-remark-custom-blocks": "^2.1.25",
     "gatsby-remark-images": "^3.1.44",
     "gatsby-remark-relative-images": "^0.2.3",

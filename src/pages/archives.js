@@ -10,7 +10,7 @@ function ArchivesPage() {
       <SEO title="Archives" />
       <div className={Styles.container}>
         <h1 className={Styles.title}>ARCHIVES</h1>
-        <hr />
+        <hr className={Styles.divider} />
         <span className={Styles.subtitle}>CATEGORIES</span>
         <Category category="linux" number="2" />
         <Category category="neovim" number="12" />

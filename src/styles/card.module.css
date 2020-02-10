@@ -7,6 +7,13 @@
   margin: auto;
   margin-bottom: 1rem;
   font-family: "Lato", Arial, Helvetica, sans-serif;
+  transition: all 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.container:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1);
 }
 
 .wrapper {

@@ -10,7 +10,7 @@ function AboutPage() {
       <SEO title="About" />
       <div className={Styles.container}>
         <h1>ABOUT ME</h1>
-        <hr />
+        <hr className={Styles.divider} />
         <span className={`${Styles.question} ${Styles.section}`}>
           {" "}
           WHO AM I?

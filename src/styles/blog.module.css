@@ -9,14 +9,22 @@
   font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
+.divider {
+  background-color: #929dcb;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 30%;
+}
+
 .cover {
   margin-bottom: 1rem;
 }
 
 .title {
   font-family: "Lato", Arial, Helvetica, sans-serif;
-  text-align: left;
   line-height: 1rem;
+  font-size: 2.5rem;
+  text-align: left;
 }
 
 .date {
@@ -24,6 +32,7 @@
   color: #929dcb;
   font-size: 0.75rem;
   margin-bottom: 0;
+  text-align: left;
 }
 
 .time {
@@ -31,13 +40,52 @@
   color: #929dcb;
   font-size: 0.75rem;
   line-height: 0.8rem;
+  text-align: left;
 }
 
-.prefix {
-  display: inline-block;
-  margin: 0;
-  max-width: 0.75rem;
-  max-height: 0.75rem;
-  margin-right: 0.2rem;
-  fill: #929dcb;
+.toc {
+  background-color: #181824;
+  padding: 0.5rem;
+  margin: 2rem 0;
+}
+
+.tocTitle {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+  text-align: left;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.content h1 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  border-bottom: 0.1rem #929dcb solid;
+}
+
+.content h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.content h3,
+.content h4 {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.content p {
+  font-weight: 300;
+}
+
+.content li {
+  font-weight: 300;
 }
