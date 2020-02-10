@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato:400&display=swap");
 
-* {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
-  color: #ffffff;
-}
-
 h1 {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -34,9 +30,11 @@ b {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 1rem auto;
   padding: 0 1rem;
+  color: #ffffff;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 .question {
@@ -55,38 +53,15 @@ b {
   margin-bottom: 2rem;
 }
 
-.who {
+.section {
   border-left: 0.25rem solid #82aaff;
 }
 
-.what {
-  border-left: 0.25rem solid #c3e88d;
-}
-
-.why {
-  border-left: 0.25rem solid #c792ea;
-}
-
-.how {
-  border-left: 0.25rem solid #f07178;
-}
-
-.purple {
-  color: #c792ea;
+.hl {
   font-weight: 500;
+  border-bottom: solid #82aaff 0.1rem;
 }
 
-.blue {
+.hl:hover {
   color: #82aaff;
-  font-weight: 500;
-}
-
-.green {
-  color: #c3e88d;
-  font-weight: 500;
-}
-
-.red {
-  color: #f07178;
-  font-weight: 500;
 }

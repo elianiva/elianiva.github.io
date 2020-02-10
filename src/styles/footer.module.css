@@ -15,7 +15,7 @@
   margin: 0 auto;
 }
 
-span {
+.findme {
   display: block;
   margin: 0.5rem;
 }
@@ -25,12 +25,7 @@ span {
   font-weight: 400;
 }
 
-.gatsby {
-  color: #c792ea;
-  font-weight: 500;
-}
-
-.github {
+.hl {
   color: #82aaff;
   font-weight: 500;
 }
@@ -52,6 +47,6 @@ span {
 }
 
 .icon:hover,
-path:hover {
+.icon path:hover {
   fill: #ffffff !important;
 }

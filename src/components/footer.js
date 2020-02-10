@@ -22,7 +22,7 @@ function Footer() {
   return (
     <div className={Styles.container}>
       <div className={Styles.wrapper}>
-        <span>FIND ME ON</span>
+        <span className={Styles.findme}>FIND ME ON</span>
         <div className={Styles.icons}>
           <a
             href={data.site.siteMetadata.facebook}
@@ -55,11 +55,11 @@ function Footer() {
         </div>
         <span className={Styles.desc}>
           This site is built using{" "}
-          <a href="https://www.gatsbyjs.org/" className={Styles.gatsby}>
+          <a href="https://www.gatsbyjs.org/" className={Styles.hl}>
             GATSBY
           </a>{" "}
           and hosted on{" "}
-          <a href="https://github.com/" className={Styles.github}>
+          <a href="https://github.com/" className={Styles.hl}>
             GITHUB
           </a>
         </span>
