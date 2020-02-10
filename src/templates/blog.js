@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Styles from "../styles/blog.module.css"
+import "../styles/link.css"
 
 export const query = graphql`
   query($slug: String!) {
@@ -21,6 +22,7 @@ export const query = graphql`
       }
       html
       timeToRead
+      tableOfContents
     }
   }
 `
@@ -41,6 +43,15 @@ function BlogPage({ data }) {
         <p className={Styles.time}>
           {data.markdownRemark.timeToRead} minute to read
         </p>
+        <div className={Styles.toc}>
+          <span className={Styles.tocTitle}>Table Of Contents</span>
+          <hr className={Styles.divider} />
+          <p
+            dangerouslySetInnerHTML={{
+              __html: data.markdownRemark.tableOfContents,
+            }}
+          ></p>
+        </div>
         <div
           className={Styles.content}
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
