@@ -1,16 +1,20 @@
 ---
-title: "Introduction"
-date: "thursday, 23 february 2020"
+title: "Test Item"
+date: "sunday, 20 january 2020"
 cover: "./cover.png"
 category:
   - Others
 tags:
   - Personal
+  - Wololo
 ---
 
 # This is a section
 ## This is a subsection
 ## This is a subsubsection
+
+[[snippet]]
+| This is a paragraph which container Ipsum hic quidem obcaecati reprehenderit provident dolorem laborum. Vero nostrum.
 
 This is a paragraph which container Ipsum hic quidem obcaecati reprehenderit provident dolorem laborum. Vero nostrum.
 

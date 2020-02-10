@@ -20,7 +20,26 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-images`],
+        plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 900,
+              linkImagesToOriginal: false,
+            },
+          },
+          {
+            resolve: `gatsby-remark-custom-blocks`,
+            options: {
+              blocks: {
+                snippet: {
+                  classes: `snippet`,
+                },
+              },
+            },
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,
@@ -51,6 +70,95 @@ module.exports = {
         postCssPlugins: [require(`autoprefixer`)],
       },
     },
+    {
+      resolve: "gatsby-plugin-excerpts",
+      options: {
+        sources: {
+          snippetBlocks: {
+            type: "htmlQuery",
+            sourceField: "html",
+            excerptSelector: ".custom-block.snippet .custom-block-body",
+            stripSelector: "a",
+            elementReplacements: [
+              {
+                selector: "h6",
+                replaceWith: "p",
+              },
+              {
+                selector: "h5",
+                replaceWith: "p",
+              },
+              {
+                selector: "h4",
+                replaceWith: "p",
+              },
+              {
+                selector: "h3",
+                replaceWith: "p",
+              },
+              {
+                selector: "h2",
+                replaceWith: "p",
+              },
+              {
+                selector: "h1",
+                replaceWith: "p",
+              },
+            ],
+          },
+          default: {
+            type: "htmlQuery",
+            sourceField: "html",
+            excerptSelector: "html > *",
+            ignoreSelector: "img, .gatsby-highlight",
+            stripSelector: "a",
+            elementReplacements: [
+              {
+                selector: "h6",
+                replaceWith: "p",
+              },
+              {
+                selector: "h5",
+                replaceWith: "p",
+              },
+              {
+                selector: "h4",
+                replaceWith: "p",
+              },
+              {
+                selector: "h3",
+                replaceWith: "p",
+              },
+              {
+                selector: "h2",
+                replaceWith: "p",
+              },
+              {
+                selector: "h1",
+                replaceWith: "p",
+              },
+            ],
+            truncate: {
+              length: 30,
+              byWords: true,
+              ellipsis: "...",
+            },
+          },
+        },
+        sourceSets: {
+          markdownHtml: ["snippetBlocks", "default"],
+        },
+        excerpts: {
+          snippet: {
+            type: "html",
+            nodeTypeSourceSet: {
+              MarkdownRemark: "markdownHtml",
+            },
+          },
+        },
+      },
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
       <div className="main-container">
         <div
           style={{
-            marginTop: `4rem`,
+            marginTop: `3.5rem`,
             flex: 1,
           }}
         >

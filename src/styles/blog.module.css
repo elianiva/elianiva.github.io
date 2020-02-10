@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400&display=swap");
+
+.container {
+  max-width: 900px;
+  padding: 0.5rem;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: left;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.cover {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  text-align: left;
+  line-height: 1rem;
+}
+
+.date {
+  text-transform: uppercase;
+  color: #929dcb;
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+
+.time {
+  text-transform: uppercase;
+  color: #929dcb;
+  font-size: 0.75rem;
+  line-height: 0.8rem;
+}
+
+.prefix {
+  display: inline-block;
+  margin: 0;
+  max-width: 0.75rem;
+  max-height: 0.75rem;
+  margin-right: 0.2rem;
+  fill: #929dcb;
+}
