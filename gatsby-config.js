@@ -7,6 +7,7 @@ module.exports = {
     facebook: `https://facebook.com/ho0m4n`,
     reddit: `https://reddit.com/user/irrellia`,
     github: `https://github.com/irrellia`,
+    url: `https://irrellia.github.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,7 +23,12 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-relative-images`,
-          `gatsby-remark-autolink-headers`,
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              isIconAfterHeader: true,
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -106,6 +112,11 @@ module.exports = {
                 replaceWith: "p",
               },
             ],
+            truncate: {
+              length: 40,
+              byWords: true,
+              ellipsis: "...",
+            },
           },
           default: {
             type: "htmlQuery",
@@ -140,7 +151,7 @@ module.exports = {
               },
             ],
             truncate: {
-              length: 30,
+              length: 25,
               byWords: true,
               ellipsis: "...",
             },
