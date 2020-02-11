@@ -2,7 +2,7 @@
 
 .container {
   max-width: 900px;
-  padding: 0.5rem;
+  padding: 1rem;
   margin: 0 auto;
   color: #ffffff;
   text-align: left;
@@ -14,6 +14,12 @@
   margin: auto;
   margin-bottom: 1rem;
   width: 30%;
+}
+
+.tagDivider {
+  background-color: #929dcb;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 .cover {
@@ -46,7 +52,7 @@
 .toc {
   background-color: #181824;
   padding: 0.5rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .tocTitle {
@@ -74,13 +80,15 @@
 .content h2 {
   font-weight: 400;
   font-size: 1.75rem;
+  line-height: 2.25rem;
   margin-bottom: 0;
 }
 
 .content h3,
 .content h4 {
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   margin-bottom: 0;
 }
 
@@ -101,6 +109,7 @@
   border-bottom: 0.2rem #82aaff solid;
   transition: all ease-out 0.2s;
   font-weight: 400;
+  line-height: 1.25rem;
 }
 
 .content p a:hover,
@@ -108,4 +117,34 @@
   color: #82aaff;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.content code {
+  font-size: 1rem;
+  background-color: #181824;
+  padding: 0.2rem;
+  border-radius: 0.25rem;
+}
+
+.tagName {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.tag {
+  display: inline-block;
+  margin: 0;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  background-color: #181824;
+  color: #929dcb;
+  padding: 0.75rem;
+  text-transform: lowercase;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.tag::before {
+  content: "# ";
+  font-weight: 600;
 }
