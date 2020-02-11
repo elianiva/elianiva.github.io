@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 .container {
   padding: 1rem;
   text-align: center;
   background-color: #181824;
   color: #ffffff;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
 }
 
@@ -22,12 +21,12 @@
 
 .desc {
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .hl {
   color: #82aaff;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .icons {

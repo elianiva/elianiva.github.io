@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:600&display=swap");
 
 a {
   text-decoration: none !important;
@@ -22,7 +22,7 @@ a::-moz-inner-focus {
   right: 0;
   padding: 0.75rem;
   color: #ffffff;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
@@ -124,7 +124,7 @@ a::-moz-inner-focus {
   display: flex;
   align-items: center;
   flex: 1;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
 }

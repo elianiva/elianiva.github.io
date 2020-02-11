@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 .container {
   max-width: 900px;
@@ -6,7 +6,7 @@
   margin: 0 auto;
   color: #ffffff;
   text-align: left;
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .divider {
@@ -21,10 +21,10 @@
 }
 
 .title {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
-  line-height: 1rem;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  line-height: 2.75rem;
   font-size: 2.5rem;
-  text-align: left;
+  text-align: center;
 }
 
 .date {
@@ -32,7 +32,7 @@
   color: #929dcb;
   font-size: 0.75rem;
   margin-bottom: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .time {
@@ -40,7 +40,7 @@
   color: #929dcb;
   font-size: 0.75rem;
   line-height: 0.8rem;
-  text-align: left;
+  text-align: center;
 }
 
 .toc {
@@ -61,7 +61,7 @@
 .content h3,
 .content h4 {
   text-align: left;
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .content h1 {
@@ -73,19 +73,39 @@
 
 .content h2 {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  margin-bottom: 0;
 }
 
 .content h3,
 .content h4 {
   font-weight: 400;
   font-size: 1.25rem;
+  margin-bottom: 0;
 }
 
 .content p {
   font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 .content li {
   font-weight: 300;
+}
+
+.content img {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.content p a {
+  border-bottom: 0.2rem #82aaff solid;
+  transition: all ease-out 0.2s;
+  font-weight: 400;
+}
+
+.content p a:hover,
+.content p a:focus {
+  color: #82aaff;
+  text-decoration: underline;
+  cursor: pointer;
 }

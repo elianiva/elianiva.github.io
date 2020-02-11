@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:500&display=swap");
 
 .wrapper {
   margin-top: 0.5rem;
   display: flex;
   font-size: 1.75rem;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 
