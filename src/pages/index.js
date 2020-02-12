@@ -65,7 +65,6 @@ const IndexPage = () => {
         </div>
         <div className={Styles.posts} id="posts">
           <span className={Styles.title}>LATEST POSTS</span>
-          <hr className={Styles.underline} />
           {data.allMarkdownRemark.edges.map(post => {
             const { cover, title, date, tags } = post.node.frontmatter
             const { slug } = post.node.fields
