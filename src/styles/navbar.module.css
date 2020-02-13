@@ -1,27 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:600&display=swap");
+@import url("../styles/colors.css");
 
 a {
   text-decoration: none !important;
-  color: #ffffff;
+  color: var(--white);
 }
 
 a:active,
 a:hover,
 a:focus,
 a::-moz-inner-focus {
-  color: #82aaff;
+  color: var(--blue);
   border: 0;
 }
 
 .container {
   position: fixed;
   z-index: 20;
-  background-color: #181824;
+  background-color: var(--darkest);
   top: 0;
   left: 0;
   right: 0;
   padding: 0.75rem;
-  color: #ffffff;
+  color: var(--white);
   font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
 
@@ -73,7 +74,7 @@ a::-moz-inner-focus {
   height: 0.125rem;
   margin: 0.5rem 0;
   position: relative;
-  background: #ffffff;
+  background: var(--white);
   z-index: 23;
   transform-origin: 4px 0px;
   transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
@@ -91,7 +92,7 @@ a::-moz-inner-focus {
 .hamburger > input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #ffffff;
+  background: var(--white);
 }
 
 .hamburger > input:checked ~ span:nth-last-child(2) {
@@ -109,8 +110,8 @@ a::-moz-inner-focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #181824;
-  color: #ffffff;
+  background-color: var(--darkest);
+  color: var(--white);
   z-index: 20;
   transition: opacity ease-out 0.2s;
 }
@@ -155,8 +156,8 @@ a::-moz-inner-focus {
 
   .menu > a:hover,
   .menu > a:focus {
-    color: #82aaff;
+    color: var(--blue);
     outline: 0;
-    border-bottom: 0.1rem #82aaff solid;
+    border-bottom: 0.1rem var(--blue) solid;
   }
 }

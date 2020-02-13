@@ -1,24 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("../styles/colors.css");
 
 .container {
   max-width: 800px;
   padding: 1rem;
   margin: 0 auto;
-  color: #ffffff;
+  color: var(--white);
   text-align: left;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .divider {
-  background-color: #929dcb;
+  background-color: var(--lightBlue);
   margin: auto;
   margin-bottom: 1rem;
   width: 30%;
 }
 
 .tagDivider {
-  background-color: #929dcb;
+  background-color: var(--lightBlue);
   margin: auto;
   margin-bottom: 1rem;
 }
@@ -37,7 +38,7 @@
 
 .date {
   text-transform: uppercase;
-  color: #929dcb;
+  color: var(--lightBlue);
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
   line-height: 2rem;
@@ -47,7 +48,7 @@
 
 .time {
   text-transform: uppercase;
-  color: #929dcb;
+  color: var(--lightBlue);
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
   line-height: 2rem;
@@ -56,7 +57,7 @@
 }
 
 .toc {
-  background-color: #181824;
+  background-color: var(--darkest);
   padding: 0.5rem;
   margin: 1rem 0;
   border-radius: 0.25rem;
@@ -77,8 +78,6 @@
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   vertical-align: middle;
   font-weight: 600;
-  /* border-left: 0.2rem #82aaff solid; */
-  /* padding-left: 0.5rem; */
 }
 
 .content h1::before,
@@ -86,7 +85,7 @@
 .content h3::before,
 .content h4::before {
   content: "# ";
-  color: #82aaff;
+  color: var(--blue);
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
@@ -94,14 +93,14 @@
 .content h1 {
   font-size: 2rem;
   line-height: 2.5rem;
-  border-bottom: 0.1rem #929dcb solid;
+  border-bottom: 0.1rem var(--lightBlue) solid;
 }
 
 .content h2 {
   font-size: 1.75rem;
   line-height: 2.25rem;
   padding-bottom: 0.5rem;
-  border-bottom: 0.1rem #929dcb solid;
+  border-bottom: 0.1rem var(--lightBlue) solid;
 }
 
 .content h3,
@@ -121,7 +120,7 @@
 }
 
 .content p a {
-  border-bottom: 0.2rem #82aaff solid;
+  border-bottom: 0.2rem var(--blue) solid;
   transition: all ease-out 0.2s;
   font-weight: 400;
   line-height: 1.25rem;
@@ -129,14 +128,14 @@
 
 .content p a:hover,
 .content p a:focus {
-  color: #82aaff;
+  color: var(--blue);
   text-decoration: underline;
   cursor: pointer;
 }
 
 .content code {
   font-size: 1rem;
-  background-color: #181824;
+  background-color: var(--darkest);
   padding: 0.2rem;
   border-radius: 0.25rem;
 }
@@ -159,8 +158,8 @@
   margin-bottom: 0.5rem;
   font-size: 1rem;
   line-height: 1rem;
-  background-color: #181824;
-  color: #929dcb;
+  background-color: var(--darkest);
+  color: var(--lightBlue);
   padding: 0.75rem;
   border-radius: 0.25rem;
   text-transform: lowercase;

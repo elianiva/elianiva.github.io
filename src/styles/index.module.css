@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-
-:root {
-  --bezier: cubic-bezier(0.1, 0.11, 0.29, 1);
-}
+@import url("../styles/colors.css");
 
 @keyframes moveUp {
   0% {
@@ -20,7 +17,7 @@
   display: flex;
   flex-direction: column;
   margin-top: -3.2rem;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .greet {
@@ -30,7 +27,7 @@
   align-items: center;
   flex: 1;
   min-height: 100vh;
-  background-color: #292d3e;
+  background-color: var(--darkish);
   padding: 0.8rem;
   text-align: center;
 }
@@ -50,10 +47,10 @@
   align-items: center;
   width: 10rem;
   height: 10rem;
-  border: 0.25rem solid #292d3e;
+  border: 0.25rem solid var(--darkish);
   border-radius: 5rem;
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.15);
-  background-color: #181824;
+  background-color: var(--darkest);
   margin-bottom: 1rem;
   opacity: 0;
   animation: moveUp var(--bezier) 1200ms forwards;
@@ -123,13 +120,14 @@
   text-align: center;
   margin: 1rem auto;
   width: 8rem;
-  border: 0.1rem #ffffff solid;
+  border: 0.1rem var(--white) solid;
   padding: 0.5rem;
   font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
 
-.more-post:hover {
-  background-color: #82aaff;
-  color: #212333;
-  border: 0.1rem #212333 solid;
+.more-post:hover,
+.more-post:focus {
+  background-color: var(--blue);
+  color: var(--dark);
+  border: 0.1rem var(--dark) solid;
 }

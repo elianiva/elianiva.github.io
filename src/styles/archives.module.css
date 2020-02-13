@@ -8,7 +8,7 @@
 }
 
 .divider {
-  background-color: #929dcb;
+  background-color: var(--lightBlue);
   width: 5rem;
   height: 0.125rem;
   margin: 0 auto;
@@ -20,7 +20,7 @@
   margin: 1rem auto;
   padding: 0 1rem;
   text-align: center;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .subtitle {
@@ -31,10 +31,10 @@
 
 .subtitle::before {
   content: "< ";
-  color: #82aaff;
+  color: var(--blue);
 }
 
 .subtitle::after {
   content: " />";
-  color: #82aaff;
+  color: var(--blue);
 }

@@ -1,3 +1,5 @@
+@import url("../styles/colors.css");
+
 .container {
   margin: 2rem auto;
   max-width: 800px;
@@ -8,11 +10,11 @@
   text-align: center;
   margin-bottom: 1rem;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .divider {
-  background-color: #929dcb;
+  background-color: var(--lightBlue);
   width: 10rem;
   margin: 0 auto;
   margin-bottom: 3rem;

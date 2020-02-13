@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:500&display=swap");
+@import url("../styles/colors.css");
 
 .wrapper {
   margin-top: 0.5rem;
@@ -11,24 +12,23 @@
 
 .wrapper:hover,
 .wrapper:focus {
-  transform: translateY(-0.1rem);
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .catBox {
   flex: 1;
   margin: 0;
-  border-left: 0.25rem solid #82aaff;
+  border-left: 0.25rem solid var(--blue);
   padding: 0.75rem;
-  background-color: #292d3e;
+  background-color: var(--darkish);
   text-transform: uppercase;
   text-align: left;
 }
 
 .number {
   margin: 0;
-  color: #212333;
+  color: var(--dark);
   padding: 0.75rem;
   min-width: 3.75rem;
-  background-color: #82aaff;
+  background-color: var(--blue);
 }

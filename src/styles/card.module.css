@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("../styles/colors.css");
 
 .container {
   width: 90%;
@@ -10,16 +11,16 @@
   transition: all 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
+.container:focus,
 .container:hover {
-  transform: translateY(-0.2rem);
   box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
   filter: brightness(1.05);
 }
 
 .wrapper {
   padding: 0.5rem;
-  background-color: #292d3e;
-  border-top: solid #181824 1px;
+  background-color: var(--darkish);
+  border-top: solid var(--darkest) 1px;
 }
 
 .title {
@@ -37,7 +38,7 @@
   display: inline-block;
   margin: 0;
   margin-right: 0.2rem;
-  fill: #929dcb;
+  fill: var(--lightBlue);
 }
 
 .date {
@@ -47,7 +48,7 @@
   font-size: 0.75rem;
   font-weight: 400;
   text-transform: uppercase;
-  color: #929dcb;
+  color: var(--lightBlue);
 }
 
 .desc {
@@ -55,7 +56,7 @@
   font-size: 0.8rem;
   line-height: 1.1rem;
   font-weight: 400;
-  color: #929dcb;
+  color: var(--lightBlue);
   margin-bottom: -0.5rem;
   display: block;
 }
@@ -67,8 +68,8 @@
   margin-bottom: 0.5rem;
   font-size: 0.8rem;
   line-height: 0.5rem;
-  background-color: #181824;
-  color: #929dcb;
+  background-color: var(--darkest);
+  color: var(--lightBlue);
   padding: 0.5rem;
   text-transform: lowercase;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;

@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap");
+@import url("../styles/colors.css");
 
 .container h1 {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .divider {
-  background-color: #929dcb;
+  background-color: var(--lightBlue);
   width: 10rem;
   margin: 0 auto;
   margin-bottom: 3rem;
@@ -34,7 +35,7 @@ b {
   max-width: 800px;
   margin: 1rem auto;
   padding: 0 1rem;
-  color: #ffffff;
+  color: var(--white);
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
@@ -49,21 +50,21 @@ b {
 
 .desc {
   display: block;
-  font-weight: 300;
-  font-size: 1.125rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
   margin-bottom: 2rem;
-  line-height: 1.5rem;
 }
 
 .section {
-  border-left: 0.25rem solid #82aaff;
+  border-left: 0.25rem solid var(--blue);
 }
 
 .hl {
-  font-weight: 500;
-  border-bottom: solid #82aaff 0.1rem;
+  font-weight: 600;
+  border-bottom: solid var(--blue) 0.1rem;
 }
 
 .hl:hover {
-  color: #82aaff;
+  color: var(--blue);
 }

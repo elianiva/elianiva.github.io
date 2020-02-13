@@ -65,6 +65,13 @@ function Footer() {
             GITHUB
           </a>
         </span>
+        <br />
+        <span className={Styles.desc}>
+          &copy; 2020 - 2020{" "}
+          <a href="https://github.com/irrellia" className={Styles.hl}>
+            IRRELLIA
+          </a>
+        </span>
       </div>
     </div>
   )

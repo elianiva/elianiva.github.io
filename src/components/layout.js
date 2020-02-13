@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import "./layout.css"
+import "../styles/colors.css"
 
 import Navbar from "./navbar"
 import Footer from "./footer"
