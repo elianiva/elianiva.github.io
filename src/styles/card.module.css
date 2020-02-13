@@ -3,6 +3,7 @@
 
 .container {
   width: 90%;
+  max-width: 800px;
   margin: auto;
   margin-bottom: 1rem;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -24,6 +25,7 @@
 .title {
   display: block;
   text-align: left;
+  line-height: 2rem;
   font-size: 1.5rem;
   font-weight: 400;
   font-family: "Oswald", Arial, Helvetica, sans-serif;
@@ -41,6 +43,7 @@
 .date {
   display: block;
   text-align: left;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
   text-transform: uppercase;

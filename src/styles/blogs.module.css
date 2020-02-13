@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+.card-wrapper {
+  flex: 1;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.pagination {
+  display: flex;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  vertical-align: middle;
+}
+
+.prev {
+  background-color: #82aaff;
+  padding: 0.5rem;
+}
+
+.next {
+  background-color: #82aaff;
+  padding: 0.5rem;
+}
+
+.pages {
+  flex: 4;
+  background-color: #292d3e;
+  color: #ffffff;
+  padding: 0.5rem;
+}

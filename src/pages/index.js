@@ -39,8 +39,6 @@ const IndexPage = () => {
     }
   `)
 
-  console.log(data)
-
   return (
     <Layout>
       <SEO title="Home" />
@@ -81,6 +79,9 @@ const IndexPage = () => {
               </Link>
             )
           })}
+          <Link to="/blogs">
+            <div className={Styles.morePost}>MORE POSTS</div>
+          </Link>
         </div>
       </div>
     </Layout>
