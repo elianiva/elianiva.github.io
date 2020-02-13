@@ -33,12 +33,18 @@ a::-moz-inner-focus {
 }
 
 .logo {
-  flex: 4;
+  flex: 3;
   display: flex;
   align-items: center;
   font-size: 1.125rem;
   transition: opacity ease-out 0.2s;
   font-weight: 600;
+}
+
+.menu {
+  display: none;
+  visibility: none;
+  pointer-events: none;
 }
 
 .hamburger {
@@ -127,4 +133,30 @@ a::-moz-inner-focus {
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    pointer-events: all;
+  }
+
+  .menu > a {
+    flex: 1;
+    transition: all ease-out 0.2s;
+    border-bottom: 0.1rem rgba(0, 0, 0, 0) solid;
+  }
+
+  .menu > a:hover,
+  .menu > a:focus {
+    color: #82aaff;
+    outline: 0;
+    border-bottom: 0.1rem #82aaff solid;
+  }
 }

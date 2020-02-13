@@ -78,3 +78,17 @@
   content: "# ";
   font-weight: 600;
 }
+
+@media only screen and (min-width: 992px) {
+  .container {
+    display: flex;
+  }
+
+  .container > .image {
+    flex: 1;
+  }
+
+  .container > .wrapper {
+    flex: 1;
+  }
+}

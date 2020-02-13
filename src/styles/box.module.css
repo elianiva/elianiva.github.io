@@ -6,6 +6,13 @@
   font-size: 1.75rem;
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-weight: 500;
+  transition: all ease-out 0.2s;
+}
+
+.wrapper:hover,
+.wrapper:focus {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .catBox {
