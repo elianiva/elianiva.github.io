@@ -1,6 +1,6 @@
 import React, { useState, createContext, useLayoutEffect } from "react"
 
-const ThemeContext = React.createContext({
+const ThemeContext = createContext({
   dark: false,
   toggle: () => {},
 })
@@ -46,7 +46,6 @@ export function ThemeProvider(props) {
     "--purple: #7C4DFF;",
     "--white: #181824;",
     "--toggle: #ffcb6b;",
-    "--shadow: rgba(0, 0, 0, 0.1);",
     "--bezier: cubic-bezier(0.1, 0.11, 0.29, 1);",
   ]
 
@@ -70,7 +69,7 @@ export function ThemeProvider(props) {
       applyTheme(lightTheme)
     }
     // if state changes, repaints the app
-  }, [dark])
+  }, [dark, date])
 
   return (
     <ThemeContext.Provider
