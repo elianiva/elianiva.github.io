@@ -1,48 +1,32 @@
 import React from "react"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Styles from "../styles/blog.module.css"
 import "../styles/link.css"
 
-export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      frontmatter {
-        title
-        date
-        cover {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-      html
-      timeToRead
-      tableOfContents
-    }
-  }
-`
-
 function BlogPage({ data }) {
-  const { title, date, cover } = data.markdownRemark.frontmatter
+  const { title, date, cover, tags } = data.markdownRemark.frontmatter
   return (
     <Layout>
-      <SEO title={title} />
+      <SEO
+        title={title}
+        description={data.markdownRemark.snippet}
+        image={cover && cover.childImageSharp.fixed.src}
+      />
       <div className={Styles.container}>
-        <Img
-          className={Styles.cover}
-          fluid={cover.childImageSharp.fluid}
-          alt="Post Thumbnail"
-        />
         <h1 className={Styles.title}>{title}</h1>
         <p className={Styles.date}>Posted on {date}</p>
-        <p className={Styles.time}>
-          {data.markdownRemark.timeToRead} minute to read
-        </p>
+        {data.markdownRemark.timeToRead === 1 ? (
+          <p className={Styles.time}>
+            {data.markdownRemark.timeToRead} minute to read
+          </p>
+        ) : (
+          <p className={Styles.time}>
+            {data.markdownRemark.timeToRead} minutes to read
+          </p>
+        )}
+
         <div className={Styles.toc}>
           <span className={Styles.tocTitle}>Table Of Contents</span>
           <hr className={Styles.divider} />
@@ -56,9 +40,41 @@ function BlogPage({ data }) {
           className={Styles.content}
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
         ></div>
+        <hr className={Styles.tagDivider} />
+        {tags.map(tag => (
+          <Link to={`/tags/${tag}`}>
+            <span className={Styles.tag}>{tag}</span>
+          </Link>
+        ))}
       </div>
     </Layout>
   )
 }
 
 export default BlogPage
+
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      frontmatter {
+        title
+        date
+        tags
+        cover {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+            fixed {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+      html
+      timeToRead
+      tableOfContents
+      snippet
+    }
+  }
+`
