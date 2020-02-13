@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Styles from "../styles/navbar.module.css"
 import ThemeContext from "../context/ThemeContext"
+import Moon from "../assets/moon.svg"
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false)
@@ -25,10 +26,7 @@ function Navbar() {
           <Link to="/about">
             <span>ABOUT</span>
           </Link>
-          <button
-            className={Styles.themeToggle}
-            onClick={() => toggle()}
-          ></button>
+          <Moon className={Styles.themeToggle} onClick={() => toggle()} />
         </div>
         <div className={Styles.hamburger}>
           <input type="checkbox" onClick={() => setOpen(!isOpen)} />
@@ -61,10 +59,11 @@ function Navbar() {
               ABOUT
             </Link>
           </span>
-          <button
+          <Moon
             className={Styles.themeToggle}
             onClick={() => toggle()}
-          ></button>
+            tabIndex="-1"
+          />
         </div>
       </div>
     </div>

@@ -35,9 +35,9 @@ export function ThemeProvider(props) {
   ]
 
   const lightTheme = [
-    "--darkest: #e1e4f2;",
+    "--darkest: #ffffff;",
     "--dark: #f3f6fa;",
-    "--darkish: #ffffff;",
+    "--darkish: #fefefe;",
     "--grey: #676e95;",
     "--lightBlue: #292d3e;",
     "--blue: #39ADB5;",

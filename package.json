@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "irrellia-blog",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "My personal blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dicha Arkana <dicha.arkana03@gmail.com>",
   "dependencies": {
     "autoprefixer": "^9.7.4",
     "gatsby": "^2.19.7",
@@ -23,6 +23,7 @@
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-remark": "^2.6.50",
     "gatsby-transformer-sharp": "^2.3.13",
+    "gh-pages": "^2.2.0",
     "prismjs": "^1.19.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -40,6 +41,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "remote-dev": "gatsby develop -H 0.0.0.0 -p 8000",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

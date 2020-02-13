@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
-@import url("../styles/colors.css");
-
 .container {
   max-width: 800px;
   padding: 1rem;
