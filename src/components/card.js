@@ -1,7 +1,7 @@
 import React from "react"
 import Styles from "../styles/card.module.css"
 import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import Date from "../assets/date.svg"
 
 function Card(props) {
@@ -35,7 +35,9 @@ function Card(props) {
           dangerouslySetInnerHTML={{ __html: props.desc }}
         ></span>
         {props.tags.map(tag => (
-          <span className={Styles.tag}>{tag}</span>
+          <Link to={`/tags/${tag}`}>
+            <span className={Styles.tag}>{tag}</span>
+          </Link>
         ))}
       </div>
     </div>

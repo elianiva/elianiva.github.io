@@ -1,0 +1,19 @@
+.container {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.container h1 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.divider {
+  background-color: #929dcb;
+  width: 10rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
