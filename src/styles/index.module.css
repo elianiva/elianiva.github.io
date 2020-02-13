@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 :root {
   --bezier: cubic-bezier(0.1, 0.11, 0.29, 1);
@@ -41,7 +42,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 800px;
 }
 
 .logo {
@@ -65,17 +66,19 @@
 .greet-text {
   display: block;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
   opacity: 0;
   animation: moveUp var(--bezier) 1200ms forwards;
   animation-delay: 100ms;
 }
 
 .greet-desc {
-  font-size: 1.125rem;
-  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   opacity: 0;
   animation: moveUp var(--bezier) 1200ms forwards;
@@ -114,4 +117,19 @@
 
 .underline {
   width: 5rem;
+}
+
+.more-post {
+  text-align: center;
+  margin: 1rem auto;
+  width: 8rem;
+  border: 0.1rem #ffffff solid;
+  padding: 0.5rem;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+.more-post:hover {
+  background-color: #82aaff;
+  color: #212333;
+  border: 0.1rem #212333 solid;
 }

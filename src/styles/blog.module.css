@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 
 .container {
-  max-width: 900px;
+  max-width: 800px;
   padding: 1rem;
   margin: 0 auto;
   color: #ffffff;
@@ -30,6 +31,7 @@
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   line-height: 2.75rem;
   font-size: 2.5rem;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -53,6 +55,7 @@
   background-color: #181824;
   padding: 0.5rem;
   margin: 1rem 0;
+  border-radius: 0.25rem;
 }
 
 .tocTitle {
@@ -67,42 +70,50 @@
 .content h3,
 .content h4 {
   text-align: left;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+  font-weight: 600;
+  /* border-left: 0.2rem #82aaff solid; */
+  /* padding-left: 0.5rem; */
+}
+
+.content h1::before,
+.content h2::before,
+.content h3::before,
+.content h4::before {
+  content: "# ";
+  color: #82aaff;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 .content h1 {
-  font-weight: 400;
   font-size: 2rem;
   line-height: 2.5rem;
   border-bottom: 0.1rem #929dcb solid;
 }
 
 .content h2 {
-  font-weight: 400;
   font-size: 1.75rem;
   line-height: 2.25rem;
-  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem #929dcb solid;
 }
 
 .content h3,
 .content h4 {
-  font-weight: 400;
   font-size: 1.5rem;
   line-height: 2rem;
-  margin-bottom: 0;
 }
 
 .content p {
-  font-weight: 300;
-  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
 }
 
 .content li {
-  font-weight: 300;
-}
-
-.content img {
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  font-weight: 400;
 }
 
 .content p a {
@@ -126,6 +137,12 @@
   border-radius: 0.25rem;
 }
 
+.content pre {
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
 .tagName {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -135,11 +152,13 @@
   display: inline-block;
   margin: 0;
   margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
   line-height: 1rem;
   background-color: #181824;
   color: #929dcb;
   padding: 0.75rem;
+  border-radius: 0.25rem;
   text-transform: lowercase;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
