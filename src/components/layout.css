@@ -11,6 +11,7 @@ html {
   width: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: 3.2rem;
+  transition: background-color 0.5s ease-out, color 0.5s ease-out;
 }
 body {
   margin: 0;

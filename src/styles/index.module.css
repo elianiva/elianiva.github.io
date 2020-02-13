@@ -50,7 +50,7 @@
   border: 0.25rem solid var(--darkish);
   border-radius: 5rem;
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.15);
-  background-color: var(--darkest);
+  background-color: #181824;
   margin-bottom: 1rem;
   opacity: 0;
   animation: moveUp var(--bezier) 1200ms forwards;
@@ -88,6 +88,10 @@
   opacity: 0;
   animation: moveUp var(--bezier) 1200ms forwards;
   animation-delay: 200ms;
+}
+
+.arrow * {
+  fill: var(--white);
 }
 
 .posts {

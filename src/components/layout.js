@@ -7,15 +7,16 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import ThemeContext, { ThemeProvider } from "../context/ThemeContext"
 import "./layout.css"
-import "../styles/colors.css"
+import "../styles/colors.css" // fallback
 
 import Navbar from "./navbar"
 import Footer from "./footer"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <ThemeProvider>
       <Navbar />
       <div className="main-container">
         <div
@@ -28,7 +29,7 @@ const Layout = ({ children }) => {
         </div>
         <Footer />
       </div>
-    </>
+    </ThemeProvider>
   )
 }
 

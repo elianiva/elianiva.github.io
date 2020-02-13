@@ -1,9 +1,11 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import Styles from "../styles/navbar.module.css"
+import ThemeContext from "../context/ThemeContext"
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false)
+  const { toggle } = React.useContext(ThemeContext)
   return (
     <div className={Styles.container}>
       <div className={Styles.wrapper}>
@@ -23,6 +25,10 @@ function Navbar() {
           <Link to="/about">
             <span>ABOUT</span>
           </Link>
+          <button
+            className={Styles.themeToggle}
+            onClick={() => toggle()}
+          ></button>
         </div>
         <div className={Styles.hamburger}>
           <input type="checkbox" onClick={() => setOpen(!isOpen)} />
@@ -55,6 +61,10 @@ function Navbar() {
               ABOUT
             </Link>
           </span>
+          <button
+            className={Styles.themeToggle}
+            onClick={() => toggle()}
+          ></button>
         </div>
       </div>
     </div>

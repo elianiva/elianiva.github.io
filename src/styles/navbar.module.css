@@ -34,7 +34,7 @@ a::-moz-inner-focus {
 }
 
 .logo {
-  flex: 3;
+  flex: 2;
   display: flex;
   align-items: center;
   font-size: 1.125rem;
@@ -136,6 +136,15 @@ a::-moz-inner-focus {
   font-size: 2.4rem;
 }
 
+.themeToggle {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  background-color: var(--toggle);
+  border: 0.1rem var(--white) solid;
+}
+
 @media only screen and (min-width: 992px) {
   .hamburger {
     display: none;
@@ -150,6 +159,7 @@ a::-moz-inner-focus {
 
   .menu > a {
     flex: 1;
+    font-size: 1.25rem;
     transition: all ease-out 0.2s;
     border-bottom: 0.1rem rgba(0, 0, 0, 0) solid;
   }
