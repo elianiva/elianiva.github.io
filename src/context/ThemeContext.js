@@ -11,6 +11,7 @@ export function ThemeProvider(props) {
 
   const toggle = () => {
     setDark(!dark)
+    window.localStorage.setItem("darkTheme", !dark)
   }
 
   const applyTheme = theme => {
@@ -50,17 +51,17 @@ export function ThemeProvider(props) {
 
   //Apply theme
   useLayoutEffect(() => {
-    if (date.getHours() < 17 && date.getHours() > 6) {
-      setDark(false)
-      applyTheme(darkTheme)
-    } else {
+    const lastTheme = window.localStorage.getItem("darkTheme")
+
+    if (lastTheme === "true") {
       setDark(true)
+      applyTheme(darkTheme)
+    }
+
+    if (!lastTheme || lastTheme === "false") {
+      setDark(false)
       applyTheme(lightTheme)
     }
-  }, [])
-
-  useLayoutEffect(() => {
-    dark ? applyTheme(darkTheme) : applyTheme(lightTheme)
   }, [dark])
 
   return (
