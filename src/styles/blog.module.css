@@ -130,7 +130,7 @@
 }
 
 .content code {
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: var(--darkest);
   padding: 0.2rem;
   border-radius: 0.25rem;
@@ -138,7 +138,10 @@
 
 .content pre {
   border-radius: 0.25rem;
-  font-size: 0.75rem;
+}
+
+.content pre code {
+  font-size: 1rem;
   font-weight: 400;
 }
 
