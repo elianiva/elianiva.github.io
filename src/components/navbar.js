@@ -14,22 +14,28 @@ function Navbar() {
           className={Styles.logo}
           style={isOpen ? { opacity: 0 } : { opacity: 1 }}
         >
-          <Link to="/">IRRELLIA</Link>
+          <Link to="/" rel="Home">
+            IRRELLIA
+          </Link>
         </div>
         <div className={Styles.menu}>
-          <Link to="/">
+          <Link to="/" rel="Home">
             <span>HOME</span>
           </Link>
-          <Link to="/archives">
+          <Link to="/archives" rel="Archives">
             <span>ARCHIVES</span>
           </Link>
-          <Link to="/about">
+          <Link to="/about" rel="About">
             <span>ABOUT</span>
           </Link>
           <Moon className={Styles.themeToggle} onClick={() => toggle()} />
         </div>
         <div className={Styles.hamburger}>
-          <input type="checkbox" onClick={() => setOpen(!isOpen)} />
+          <input
+            type="checkbox"
+            onClick={() => setOpen(!isOpen)}
+            label="hamburger"
+          />
           <span></span>
           <span></span>
           <span></span>

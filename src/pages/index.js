@@ -67,7 +67,7 @@ const IndexPage = () => {
             const { cover, title, date, tags } = post.node.frontmatter
             const { slug } = post.node.fields
             return (
-              <Link to={slug}>
+              <Link to={slug} rel="Post">
                 <Card
                   key={post.node.id}
                   cover={cover.childImageSharp.fluid}
@@ -79,7 +79,7 @@ const IndexPage = () => {
               </Link>
             )
           })}
-          <Link to="/blogs">
+          <Link to="/blogs" rel="Post">
             <div className={Styles.morePost}>MORE POSTS</div>
           </Link>
         </div>

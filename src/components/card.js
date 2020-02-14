@@ -35,7 +35,7 @@ function Card(props) {
           dangerouslySetInnerHTML={{ __html: props.desc }}
         ></span>
         {props.tags.map(tag => (
-          <Link to={`/tags/${tag}`}>
+          <Link to={`/tags/${tag}`} rel="Tag">
             <span className={Styles.tag}>{tag}</span>
           </Link>
         ))}

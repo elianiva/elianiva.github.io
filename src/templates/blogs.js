@@ -20,7 +20,7 @@ function Blogs({ pageContext, data }) {
             const { cover, title, date, tags } = post.node.frontmatter
             const { slug } = post.node.fields
             return (
-              <Link to={slug}>
+              <Link to={slug} rel="post">
                 <Card
                   key={post.node.id}
                   cover={cover.childImageSharp.fluid}

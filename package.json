@@ -41,7 +41,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "remote-dev": "gatsby develop -H 0.0.0.0 -p 8000",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -50,7 +50,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/irrellia/irrellia.github.io"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

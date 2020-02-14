@@ -18,7 +18,7 @@ function Category({ pageContext, data }) {
           const { cover, title, date, tags } = edge.node.frontmatter
           const { slug } = edge.node.fields
           return (
-            <Link to={slug}>
+            <Link to={slug} rel="Post">
               <Card
                 key={edge.node.id}
                 cover={cover.childImageSharp.fluid}
