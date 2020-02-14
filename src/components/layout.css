@@ -8,6 +8,12 @@
   flex-direction: column;
 }
 
+* {
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -15,8 +21,8 @@ html {
   width: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: 3.2rem;
-  transition: background-color 0.5s ease-out, color 0.5s ease-out;
 }
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -24,6 +30,7 @@ body {
   background-color: var(--dark);
   width: 100%;
 }
+
 article,
 aside,
 details,

@@ -48,14 +48,20 @@ export function ThemeProvider(props) {
     "--bezier: cubic-bezier(0.1, 0.11, 0.29, 1);",
   ]
 
-  //Aplly theme
+  //Apply theme
   useLayoutEffect(() => {
     if (date.getHours() < 17 && date.getHours() > 6) {
       setDark(false)
+      applyTheme(darkTheme)
     } else {
       setDark(true)
+      applyTheme(lightTheme)
     }
-  }, [dark, date])
+  }, [])
+
+  useLayoutEffect(() => {
+    dark ? applyTheme(darkTheme) : applyTheme(lightTheme)
+  }, [dark])
 
   return (
     <ThemeContext.Provider
