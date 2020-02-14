@@ -11,7 +11,6 @@ export function ThemeProvider(props) {
 
   const toggle = () => {
     setDark(!dark)
-    window.localStorage.setItem("darkTheme", !dark)
   }
 
   const applyTheme = theme => {
@@ -56,19 +55,6 @@ export function ThemeProvider(props) {
     } else {
       setDark(true)
     }
-
-    const lastTheme = window.localStorage.getItem("darkTheme")
-
-    if (lastTheme === "true") {
-      setDark(true)
-      applyTheme(darkTheme)
-    }
-
-    if (!lastTheme || lastTheme === "false") {
-      setDark(false)
-      applyTheme(lightTheme)
-    }
-    // if state changes, repaints the app
   }, [dark, date])
 
   return (
