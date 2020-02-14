@@ -80,7 +80,7 @@
 
 .arrow {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
   opacity: 0;
   animation: moveUp var(--bezier) 1200ms forwards;
   animation-delay: 200ms;
@@ -130,4 +130,18 @@
   background-color: var(--blue);
   color: var(--dark);
   border: 0.1rem var(--dark) solid;
+}
+
+@media only screen and (max-width: 424px) {
+  .logo {
+    height: 9rem;
+    width: 9rem;
+  }
+  .logo > * {
+    height: 6rem;
+    width: 6rem;
+  }
+  .greet-text {
+    font-size: 1.8rem;
+  }
 }
