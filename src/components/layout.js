@@ -9,7 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import ThemeContext, { ThemeProvider } from "../context/ThemeContext"
 import "./layout.css"
-import "../styles/colors.css" // fallback
 
 import Navbar from "./navbar"
 import Footer from "./footer"
