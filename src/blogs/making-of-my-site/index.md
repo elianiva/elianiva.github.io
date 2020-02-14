@@ -14,9 +14,9 @@ tags:
 ## Introduction
 
 [[snippet]]
-| Hi everyone, welcome to my first post. So for the last few weeks I've been interested on this new stack called JAMstack. Many people use it to make their own personal blog by utilizing Static Site Generator (SSG) such as Hugo, Hexo, Eleventy, Gatsby, Jekyll, you name it. They usually hosted it on github pages, netlify, or other headless CMS. As a curious person that likes to tinker around with new stuff, I decided to make my own personal blog.
+| Hi everyone, welcome to my first post. So for the last few weeks I've been interested on this new stack called JAMstack. Many people use it to make their own personal blog by utilizing Static Site Generator (SSG) such as Hugo, Hexo, Eleventy, Gatsby, Jekyll, you name it. They usually hosted it on github pages, netlify, or other headless CMS. As a curious person that likes to tinker around with new stuff (also because I have no life), I decided to make my own personal blog.
 
-I choose Gatsby as my SSG of choice because it is based on React JS, a framework that I'm already familiar with. I will divide this post into several part, starting from designing the frontend on Figma, coding the actual website using React, deploying it to github pages.
+I choose Gatsby as my SSG of choice because it is based on React JS, a framework that I'm already familiar with. I will divide this post into several part, starting from designing the frontend on Figma, coding the actual website using React, deploying it to Github Pages with the help of Travis.
 
 ## Design process
 
@@ -26,7 +26,7 @@ I want to make my website looks minimalist and clean, so I approach it by using 
 
 ### Mobile design
 
-First, I make the design for mobile. Because I'm using Figma, I can use Figma Mirror app from Google Play Store to do a live preview on my phone. It is very helpful because I have a budget monitor which isn't quite accurate in terms of colours and my phone have a quite decent colour accuration. I started to make the Home then the About page, the Archives page, the actual Post page that you're currently in, the Posts page that contains all of my posts.
+First, I make the design for mobile. Because I'm using Figma, I can use Figma Mirror app from Google Play Store to do a live preview on my phone. It is very helpful because I have a budget monitor which isn't quite accurate in terms of colours and my phone have a quite decent colour accuration. I started to make the Home then the About page, the Archives page, the actual Post page that you're currently in, the Posts List page that contains all of my posts.
 
 ### Colour choice
 
