@@ -8,9 +8,11 @@ module.exports = {
     reddit: `https://reddit.com/user/irrellia`,
     github: `https://github.com/irrellia`,
     url: `https://irrellia.github.io/`,
+    siteUrl: `https://irrellia.github.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

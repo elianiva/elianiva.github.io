@@ -63,6 +63,10 @@ function Footer() {
           and hosted on{" "}
           <a href="https://github.com/" className={Styles.hl}>
             GITHUB
+          </a>{" "}
+          | Also subsribe to my{" "}
+          <a href="https://irrellia.github.io/rss.xml" className={Styles.hl}>
+            RSS Feed
           </a>
         </span>
         <br />
