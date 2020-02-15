@@ -16,7 +16,6 @@
 .wrapper {
   padding: 0.5rem;
   background-color: var(--darkish);
-  border-top: solid var(--darkest) 1px;
 }
 
 .title {
