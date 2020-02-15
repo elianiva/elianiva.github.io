@@ -29,7 +29,7 @@ All is set, let's actually make the statusline!
 
 ## Creating the statusline
 ### Deprecating the old one
-First thing first, I removed my old statusline. You don't need to do it if you don't it already. If you curious how my statusline looks like, let me show you.
+First thing first, I removed my old statusline. You don't need to do it if you don't have it already. If you are curious how my statusline looks, let me show you.
 
 ![Statusline](https://res.cloudinary.com/irrellia/image/upload/v1581729583/vim%20statusline/2020-02-15_08-19_xqa7uk.png)
 
@@ -53,7 +53,7 @@ endfunction
 ```
 
 ### Base colour
-Next, we'll the base colour for the background. I choose lighter colour for the background so it looks stand out. To add a base colour, you need to add `%#Base#` where `Base` is the name of the color highlight. To set a colour highlight, you'd do:
+Next, we'll define the base colour for the background. I chose a lighter colour for the background so it stands out. To add a base colour, you need to add `%#Base#` where `Base` is the name of the color highlight. To set a colour highlight, you'd do:
 
 ``` vim
   hi Base guibg=#212333 guifg=#212333
