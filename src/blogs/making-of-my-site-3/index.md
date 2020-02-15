@@ -1,6 +1,6 @@
 ---
 title: "Making Of My Website (Part 3)"
-date: "friday, 14 february 2020"
+date: "2020-02-14"
 cover: "./cover.png"
 category:
   - programming
