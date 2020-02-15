@@ -12,7 +12,7 @@ function BlogPage({ data }) {
     <Layout>
       <SEO
         title={title}
-        description={strip(data.markdownRemark.snippet)}
+        description={data.markdownRemark.snippet.replace(/(<([^>]+)>)/gi, "")}
         image={cover && cover.childImageSharp.fixed.src}
       />
       <div className={Styles.container}>
