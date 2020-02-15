@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Styles from "../styles/blog.module.css"
+import moment from "moment"
 import "../styles/link.css"
 
 function BlogPage({ data }) {
@@ -16,7 +17,9 @@ function BlogPage({ data }) {
       />
       <div className={Styles.container}>
         <h1 className={Styles.title}>{title}</h1>
-        <p className={Styles.date}>Posted on {date}</p>
+        <p className={Styles.date}>
+          Posted on {moment(date).format("dddd, DD MMMM YYYY")}
+        </p>
         {data.markdownRemark.timeToRead === 1 ? (
           <p className={Styles.time}>
             {data.markdownRemark.timeToRead} minute to read
