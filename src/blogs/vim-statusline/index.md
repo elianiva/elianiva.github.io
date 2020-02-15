@@ -426,4 +426,4 @@ It doesn't look like an eye candy, but it doesn't take a whole lotta space.
 If you want the old one, [Here it is](https://github.com/irrellia/dotfiles/blob/0c1ca17af07d7fdf72577a44d2a1e8bbab855d93/.config/nvim/modules/statusline.vim). Just take what you need from that file, it's not that hard to understand ;)
 
 ## Conclusion
-Making a custom statusline of your own is quite a lengthy process. But, I think it's a fun process nonetheless. If you want to tinker with it even more, just do it! It's a repetitive process once you know the basic. Alright then, I'm gonna end this post right here. If you have any question regarding to this post, feel free to hit me up! See ya!
+Making a custom statusline of your own is quite a lengthy process. But, I think it's a fun process nonetheless. If you want to tinker with it even more, just do it! It's a repetitive process once you know the basic. I'm not a vim expert myself, so sorry if I've missed something in this post. Alright then, I'm gonna end this post right here. If you have any question regarding to this post, feel free to hit me up! See ya!
