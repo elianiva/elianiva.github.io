@@ -27,6 +27,22 @@ const Layout = ({ children }) => {
           <main style={{ flex: 1, minHeight: `100vh` }}>{children}</main>
         </div>
         <Footer />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(
+        const lastTheme = window.localStorage.getItem("darkTheme")
+
+        if (lastTheme === "true") {
+          setDark(true)
+          applyTheme(darkTheme)
+        }
+
+        if (!lastTheme || lastTheme === "false") {
+          setDark(false)
+          applyTheme(lightTheme)
+        })`,
+          }}
+        />
       </div>
     </ThemeProvider>
   )
