@@ -1,6 +1,6 @@
 .wrapper {
-  margin-top: 0.5rem;
-  display: flex;
+  display: inline-flex;
+  margin: 0.5rem;
   font-size: 1.75rem;
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -13,20 +13,20 @@
   filter: brightness(1.2);
 }
 
-.catBox {
+.tagBox {
   flex: 1;
-  margin: 0;
-  border-left: 0.25rem solid var(--blue);
-  padding: 0.75rem;
+  padding: 0.5rem;
   background-color: var(--darkish);
   text-transform: uppercase;
   text-align: left;
+  font-size: 1.25rem;
 }
 
 .number {
   margin: 0;
+  padding: 0.5rem;
+  min-width: 2.5rem;
+  font-size: 1.25rem;
   color: var(--dark);
-  padding: 0.75rem;
-  min-width: 3.75rem;
   background-color: var(--blue);
 }

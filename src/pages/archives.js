@@ -3,6 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Box from "../components/box"
+import Tag from "../components/tag"
 import Styles from "../styles/archives.module.css"
 
 function ArchivesPage() {
@@ -44,10 +45,11 @@ function ArchivesPage() {
         })}
         <br />
         <span className={Styles.subtitle}>TAGS</span>
+        <br />
         {data.tagsGroup.group.map(tag => {
           return (
             <Link to={`/tags/${tag.fieldValue}`}>
-              <Box
+              <Tag
                 name={tag.fieldValue}
                 number={tag.totalCount}
                 key={tag.fieldValue}
