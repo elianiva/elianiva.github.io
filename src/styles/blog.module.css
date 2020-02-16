@@ -134,6 +134,7 @@
   background-color: var(--darkest);
   padding: 0.2rem;
   border-radius: 0.25rem;
+  white-space: wrap;
 }
 
 .content pre {

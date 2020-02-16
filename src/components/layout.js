@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import ThemeContext, { ThemeProvider } from "../context/ThemeContext"
+import { ThemeProvider } from "../context/ThemeContext"
 import "./layout.css"
 
 import Navbar from "./navbar"
