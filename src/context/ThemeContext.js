@@ -6,7 +6,6 @@ const ThemeContext = createContext({
 })
 
 export function ThemeProvider(props) {
-  const date = new Date()
   const [dark, setDark] = useState(false)
 
   const toggle = () => {
@@ -62,7 +61,7 @@ export function ThemeProvider(props) {
       setDark(false)
       applyTheme(lightTheme)
     }
-  }, [dark])
+  }, [dark, darkTheme, lightTheme])
 
   return (
     <ThemeContext.Provider
