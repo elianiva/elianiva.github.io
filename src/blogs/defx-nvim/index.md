@@ -12,7 +12,7 @@ tags:
 
 ## Introduction
 [[snippet]]
-| Hi everyone! This time I will talk about a (Neo)vim plugin called [Defx](https://githuh.com/airblade/defx.nvim). I've been looking for an alternative to [NERDTree](https://github.com/preservim/nerdtree) for quite a while now. I came across this plugin from a telegram channel called "Vim Indonesia". Since I have no project that I'm currently working on, why don't I give it a shot?
+| Hi everyone! This time I will talk about a (Neo)vim plugin called [Defx](https://github.com/airblade/defx.nvim). I've been looking for an alternative to [NERDTree](https://github.com/preservim/nerdtree) for quite a while now. I came across this plugin from a telegram channel called "Vim Indonesia". Since I have no project that I'm currently working on, why don't I give it a shot?
 
 ## Installation
 The installation is pretty simple. You can add this plugin just like any other plugin from your plugin manager. I'm using [vim-plug](https://github.com/junegunn/vim-plug) as my plugin manager. To add a plugin, I would simply add this into my plugin list.
