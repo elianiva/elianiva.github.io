@@ -66,6 +66,7 @@ export const blogsQuery = graphql`
     ) {
       edges {
         node {
+          id
           snippet
           fields {
             slug
