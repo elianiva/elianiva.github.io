@@ -33,11 +33,11 @@ function BlogPage({ data }) {
         <div className={Styles.toc}>
           <span className={Styles.tocTitle}>Table Of Contents</span>
           <hr className={Styles.divider} />
-          <p
+          <div
             dangerouslySetInnerHTML={{
               __html: data.markdownRemark.tableOfContents,
             }}
-          ></p>
+          ></div>
         </div>
         <div
           className={Styles.content}
@@ -46,7 +46,9 @@ function BlogPage({ data }) {
         <hr className={Styles.tagDivider} />
         {tags.map(tag => (
           <Link to={`/tags/${tag}`}>
-            <span className={Styles.tag}>{tag}</span>
+            <span key={tag} className={Styles.tag}>
+              {tag}
+            </span>
           </Link>
         ))}
       </div>
