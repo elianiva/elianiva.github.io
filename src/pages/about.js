@@ -80,7 +80,7 @@ function AboutPage() {
           >
             ARCHLINUX
           </a>{" "}
-          to be more specific. I also using{" "}
+          to be more specific. I'm also using{" "}
           <a
             href="https://figma.com"
             className={Styles.hl}
