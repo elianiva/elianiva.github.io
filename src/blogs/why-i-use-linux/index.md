@@ -1,6 +1,6 @@
 ---
 title: "Why I Use Linux"
-date: "2020-02-24"
+date: "2020-02-27"
 cover: "./cover.png"
 category:
   - linux
@@ -55,6 +55,28 @@ My first window manager is [i3wm](https://i3wm.org). I installed it and using a 
 A week has passed, I want to try i3-gaps again. But this time, I'm gonna start from scratch. After tinkering around for about 3 days, I finally reach my peak comfort. Keybinds are set, the colour scheme is also set, the status bar is set. You know what will happen next right? Yep, time to post to r/unixporn.
 
 Alright, I gotta stop here about Window Manager because that in itself could be another blog post.
+
+## Why Linux?
+So, why do I use Linux then? Well, let me give you a quick list of why Linux is better than the other OS
+  - **It's free**
+
+      Linux is free both in price and free as in freedom. You don't have to pay for license and you can do anyting you want with it. You can customize your Desktop Environment (look and feel) or even build your very own kernel!
+
+  - **It's lightweight**
+
+      Linux is so lightweight. It can bring your old hardware to life. There's this joke that says "Linux can run on everything". From business card (yes, there's someone out there who built their business card with Linux inside it) until your high end beast $1000 PC.
+
+  - **It's secure**
+
+      Linux is very secure. That's why most of servers around the world is using Linux for it. You don't have to worry to install antivirus to prevent ransomware getting into your system. No need to worry on that stuff.
+
+  - **There's always something to learn**
+
+      Like, seriously. You can always learn something new everyday. There are so much good stuff that you can learn from Linux. If you like something challenging, go ahead and try Linux.
+
+  - **Package Manager**
+
+      Now this is the stuff that makes me really love Linux. Linux has a centralized place to download any app that you want. You don't need to go to some kind of obnoxious website and find the correct download link. You just need to `apt install` or `pacman -S` any package that you want and it's totally secure.
 
 ## Conclusion
 I became somewhat 'masochist' Linux user this past 8 months. No DE, it's bloat. Use VIM, any other Text Editor is bloat (Might make this as a post too). Use TUI based app if I can. I never thought that I would love Linux as I currently am.
