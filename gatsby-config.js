@@ -13,7 +13,6 @@ module.exports = {
     siteUrl: `https://irrellia.github.io/`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -207,6 +206,7 @@ module.exports = {
         apiSecret: process.env.CLOUDINARY_API_SECRET,
       },
     },
+    `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
