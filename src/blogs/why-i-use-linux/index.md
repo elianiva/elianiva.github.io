@@ -11,7 +11,7 @@ tags:
 
 ## Introduction
 [[snippet]]
-| G'day everyone! In this post, I will tell you guys the reason why I use Linux and how I know Linux. Well, the correct term here should be GNU/Linux but it's _way_ too long let's be honest. So, whenever I say Linux, what I mean is GNU/Linux. Let's start with how I know Linux.
+| Gday everyone! In this post, I will tell you guys the reason why I use Linux and how I know Linux. Well, the correct term here should be GNU/Linux but it's _way_ too long let's be honest. So, whenever I say Linux, what I mean is GNU/Linux. Let's start with how I know Linux.
 
 ## Origin
 ### My first laptop
