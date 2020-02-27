@@ -7,8 +7,8 @@ module.exports = {
     facebook: `https://facebook.com/ho0m4n`,
     reddit: `https://reddit.com/user/irrellia`,
     github: `https://github.com/irrellia`,
-    url: `https://irrellia.github.io/`,
-    siteUrl: `https://irrellia.github.io/`,
+    url: `https://irrellia.github.io`,
+    siteUrl: `https://irrellia.github.io`,
   },
   plugins: [
     `gatsby-plugin-feed`,
