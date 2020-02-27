@@ -1,5 +1,3 @@
-require("dotenv").config()
-
 module.exports = {
   siteMetadata: {
     title: `Irrellia's Blog`,
@@ -39,6 +37,7 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          `gatsby-remark-lazy-load`,
           {
             resolve: `gatsby-remark-custom-blocks`,
             options: {
@@ -196,14 +195,6 @@ module.exports = {
             },
           },
         },
-      },
-    },
-    {
-      resolve: "@dylanvann/gatsby-remark-cloudinary",
-      options: {
-        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-        apiKey: process.env.CLOUDINARY_API_KEY,
-        apiSecret: process.env.CLOUDINARY_API_SECRET,
       },
     },
     `gatsby-plugin-react-helmet`,
