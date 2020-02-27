@@ -1,5 +1,7 @@
 # irrellia.github.io
 
+[![Build Status](https://travis-ci.org/irrellia/irrellia.github.io.svg?branch=source)](https://travis-ci.org/irrellia/irrellia.github.io)
+
 ## Installation
 
 As per usual, just do:
