@@ -1,5 +1,5 @@
 ---
-title: "Modularize Your Vim/Neovim Configuration"
+title: "Modularize Your Vim/Neovim Configuration (Update)"
 date: "2020-02-28"
 cover: "./cover.png"
 category:
@@ -50,113 +50,51 @@ Those are the pros, now how about the cons?
 
 ## Modularize our config
 ### Making module files
-Now, let's separate our config into smaller files. For example, let's take the indent line configuration into its own file.
+Now, let's separate our config into smaller files. For example, let's take the NERDtree configuration into its own file.
 
 ```vim
-if exists('g:plugs["indentline"]')
+" Toggle nerdtree
+noremap <C-n> :NERDTreeToggle<CR>
 
-  " Set indentline character
-  let g:indentLine_first_char = '¦'
-  let g:indentLine_char = '¦'
+" Ignore some stuff
+let NERDTreeIgnore = ['.git$', '^node_modules', 'undodir']
 
-  " Set indentline ignored list
-  let g:indentLine_bufTypeExclude = ['help']
-  let g:indentLine_bufNameExclude = ['startify']
+" Enable minimal ui
+let g:NERDTreeMinimalUI = 1
 
-  " Enable indentation at first level
-  let g:indentLine_showFirstIndentLevel = 1
+" Enable cursorline highlighting
+let g:NERDTreeHighlightCursorline = 1
 
-endif
+" Enable folder highlighting
+let g:NERDTreeHighlightFolders = 1
+
+" Set NERDTree size
+let g:NERDTreeWinSize = 30
+
+" Set NERDTree statusline
+let g:NERDTreeStatusline = -1
+
+" Automatically close nerdtree when opening a file
+let NERDTreeQuitOnOpen = 1
+
+" Automatically delete buffer if files deleted in nerdtree
+let NERDTreeAutoDeleteBuffer = 1
+
+" Change nerdtree mouse behaviour to double click
+let NERDTreeMouseMode = 2
 ```
 
-Notice that I use an if statement. We use an if statement to check whether that plugin exists or not. If it doesn't exist, then it won't load it. Otherwise, it will.
+### Using vim runtime
+Previously, I was using the `source` command but that's not very effective according to [this article](https://vimways.org/2018/from-vimrc-to-vim/). This method uses what's called a `$VIMRUNTIME` path. To check your path, just run `:set runtime?` on Normal mode.
 
-### Using the source command
-If you don't know already, vimscript has this command called source. It basically sources the other vim files from a given path. For example, we'll store our plugin-specific file inside `modules/` directory and other configuration inside `configs/` directory.
-
-Let's look at how mine looks like.
-```
-~/.config/nvim/
-    + configs/
-      - settings.vim
-      - mappings.vim
-      - plugins.vim
-      - colors.vim
-      - statusline.vim
-      - functionality.vim
-    + modules/
-      - statusline.vim
-      - coc.vim
-      - fzf.vim
-      - prettier.vim
-      - emmet.vim
-      - nerdtree.vim
-      - indentline.vi
-      - devicons.vim
-      - startify.vim
-    - init.vim
-```
-
-It looks neat right? Now, let's source it to our `init.vim`
+Let's make use of `after/plugin/` directory inside of our `$VIMRUNTIME` which in my case is `~/.config/nvim/`. This directory is automatically loaded by Vim so you'll only need to load your plugins list if you're using package manager like I do.
 
 ```vim
-" Add some plugins from this file.
-source $HOME/.config/nvim/configs/settings.vim
-source $HOME/.config/nvim/configs/mappings.vim
-source $HOME/.config/nvim/configs/plugins.vim
-source $HOME/.config/nvim/configs/colors.vim
-source $HOME/.config/nvim/configs/statusline.vim
-source $HOME/.config/nvim/configs/functionality.vim
-
-" Load plugin configurations
-source $HOME/.config/nvim/modules/colors.vim
-source $HOME/.config/nvim/modules/coc.vim
-source $HOME/.config/nvim/modules/fzf.vim
-source $HOME/.config/nvim/modules/prettier.vim
-source $HOME/.config/nvim/modules/emmet.vim
-source $HOME/.config/nvim/modules/nerdtree.vim
-source $HOME/.config/nvim/modules/indentline.vim
-source $HOME/.config/nvim/modules/devicons.vim
-source $HOME/.config/nvim/modules/startify.vim
+runtime plugins.vim
 ```
 
-### Using vim autoload feature
-Using source command is pretty good, but let's make it better. Let's make Vim autoload those files. If you don't know already, Vim/Neovim has an autoload order which you can see from `:h initialization` and `:h runtimepath`. Another resource is [this website](https://learnvimscriptthehardway.stevelosh.com/chapters/42.html#vimafter). It explains each directory in your vim runtime path very clearly. It's also useful if you planning on making a plugin.
+Make sure you load your plugins list, otherwise some crazy errors will happen. For more detail on this topic, you can always rely on Vim's help `:h runtime`.
 
-Let's apply this method to our config. First of all, make an `after/` and `plugin/` directory inside your runtimepath. Here's how it looks.
-
-```
-~/.config/nvim/
-  + after/
-    + plugin/
-  ...
-```
-
-After doing that, let's move our modules to that new folder. To make it clear, here's how it looks.
-
-```
-~/.config/nvim/
-  + after/
-    + plugin/
-      - coc-nvim.vim
-      - emmet-vim.vim
-      - fzf.vim
-      - indentline.vim
-      - nerdtree.vim
-      - startify.vim
-      - vim-devicons.vim
-      - vim-prettier.vim
-  + configs/
-      - colors.vim
-      - functionality.vim
-      - mappings.vim
-      - plugins.vim
-      - settings.vim
-      - statusline.vim
-  - init.vim
-```
-
-Make sure the name of the file on the `plugin/` directory is the same as the extension name. After doing so, you can remove the `source` command in your `init.vim` or `.vimrc`. But wait, don't remove the `source` command for `configs/` directory. It still needs that. I'm currently working on how to make it loads automatically as well. If you have any advice or solution, feel free to tell me.
 
 ## Conclusion
 Making your vim config modular makes it easier to manage and looks cleaner. At first, it might look like much but once you got the hang of it, it's so simple.
