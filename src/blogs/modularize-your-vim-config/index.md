@@ -1,5 +1,5 @@
 ---
-title: "Modularize Your Vim/Neovim Configuration (Update)"
+title: "Modularize Your Vim/Neovim Configuration (Updated)"
 date: "2020-02-28"
 cover: "./cover.png"
 category:
@@ -85,7 +85,7 @@ let NERDTreeMouseMode = 2
 ```
 
 ### Using vim runtime
-Previously, I was using the `source` command but that's not very effective according to [this article](https://vimways.org/2018/from-vimrc-to-vim/). This method uses what's called a `$VIMRUNTIME` path. To check your path, just run `:set runtime?` on Normal mode.
+Previously, I was using the `source` command but that's not very effective according to [this article](https://vimways.org/2018/from-vimrc-to-vim/) and [this comment](https://www.reddit.com/r/vim/comments/faq97u/modularize_your_vim_config/fizrh23?utm_source=share&utm_medium=web2x). This method uses what's called a `$VIMRUNTIME` path. To check your path, just run `:set runtime?` on Normal mode.
 
 Let's make use of `after/plugin/` directory inside of our `$VIMRUNTIME` which in my case is `~/.config/nvim/`. This directory is automatically loaded by Vim so you'll only need to load your plugins list if you're using package manager like I do.
 
