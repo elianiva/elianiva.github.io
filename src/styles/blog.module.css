@@ -115,6 +115,10 @@
   font-weight: 400;
 }
 
+.content li li {
+  list-style: circle;
+}
+
 .content p a {
   border-bottom: 0.2rem var(--blue) solid;
   transition: all ease-out 0.2s;
@@ -130,6 +134,7 @@
 }
 
 .content code {
+  font-family: "Fira Code", monospace;
   font-size: 1rem;
   background-color: var(--darkest);
   padding: 0.2rem;
@@ -139,11 +144,13 @@
 
 .content pre {
   border-radius: 0.25rem;
+  font-family: "Fira Code", monospace;
 }
 
 .content pre code {
   font-size: 1rem;
   font-weight: 400;
+  font-family: "Fira Code", monospace;
 }
 
 .tagName {

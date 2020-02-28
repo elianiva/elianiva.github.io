@@ -1,6 +1,7 @@
 /* Import Font */
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
 
 /* Custom CSS */
 .main-container {
@@ -116,7 +117,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: "Fira Code", monospace, monospace;
   font-size: 1em;
 }
 figure {
@@ -612,7 +613,7 @@ td:last-child {
 tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
-  font-family: monospace;
+  font-family: "Fira Code", monospace, monospace;
   padding: 0;
 }
 pre code {
