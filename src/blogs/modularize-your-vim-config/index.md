@@ -85,15 +85,16 @@ let NERDTreeMouseMode = 2
 ```
 
 ### Using vim runtime
-Previously, I was using the `source` command but that's not very effective according to [this article](https://vimways.org/2018/from-vimrc-to-vim/) and [this comment](https://www.reddit.com/r/vim/comments/faq97u/modularize_your_vim_config/fizrh23?utm_source=share&utm_medium=web2x). This method uses what's called a `$VIMRUNTIME` path. To check your path, just run `:set runtime?` on Normal mode.
+Previously, I was using the `source` command but that's not very effective according to [this article](https://vimways.org/2018/from-vimrc-to-vim/) and [this comment](https://www.reddit.com/r/vim/comments/faq97u/modularize_your_vim_config/fizrh23?utm_source=share&utm_medium=web2x). This method uses what's called a `$VIMRUNTIME` path. To check your path, just run `:set runtimepath?` on Normal mode.
 
-Let's make use of `after/plugin/` directory inside of our `$VIMRUNTIME` which in my case is `~/.config/nvim/`. This directory is automatically loaded by Vim so you'll only need to load your plugins list if you're using package manager like I do.
+Let's make use of `modules/` directory inside of our `runtimepath` which in my case is `~/.config/nvim/`. To load this directory, what you need to do is add this to your `init.vim` or `.vimrc`.
 
 ```vim
-runtime plugins.vim
+runtime modules/plugins.vim
+runtime! modules/**/*.vim
 ```
 
-Make sure you load your plugins list, otherwise some crazy errors will happen. For more detail on this topic, you can always rely on Vim's help `:h runtime`.
+Make sure you load your plugins list, otherwise some crazy errors will happen. For more detail on this topic, you can always rely on Vim's help `:h runtimepath` and `:h :runtime`. If you want to see how mine looks like, [go here](https://github.com/irrellia/dotfiles/).
 
 
 ## Conclusion
