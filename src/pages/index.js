@@ -41,7 +41,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO url="https://irrellia.github.io" title="Home" />
       <div className={Styles.container}>
         <div className={Styles.greet}>
           <div className={Styles.wrapper}>

@@ -11,6 +11,7 @@ function BlogPage({ data }) {
   return (
     <Layout>
       <SEO
+        url={`https://irrellia.github.io/${data.markdownRemark.fields.slug}`}
         title={title}
         description={data.markdownRemark.snippet.replace(/(<([^>]+)>)/gi, "")}
         image={cover && cover.childImageSharp.fixed.src}
@@ -61,6 +62,9 @@ export default BlogPage
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      fields {
+        slug
+      }
       frontmatter {
         title
         date
