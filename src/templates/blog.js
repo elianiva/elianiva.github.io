@@ -14,7 +14,7 @@ function BlogPage({ data }) {
         url={`https://irrellia.github.io/${data.markdownRemark.fields.slug}`}
         title={title}
         description={data.markdownRemark.snippet.replace(/(<([^>]+)>)/gi, "")}
-        image={cover && cover.childImageSharp.fixed.src}
+        image={cover.childImageSharp.fixed.src}
       />
       <div className={Styles.container}>
         <h1 className={Styles.title}>{title}</h1>
@@ -71,9 +71,6 @@ export const query = graphql`
         tags
         cover {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
             fixed {
               ...GatsbyImageSharpFixed
             }
