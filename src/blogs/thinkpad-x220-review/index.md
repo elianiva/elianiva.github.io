@@ -1,14 +1,12 @@
 ---
-title: "Making Of My Website (Part 3)"
-date: "2020-02-14"
+title: "Thinkpad X220 Review"
+date: "2020-02-19"
 cover: "./cover.png"
 category:
-  - programming
+  - review
 tags:
-  - figma
-  - gatsby
-  - react
-  - website
+  - thinkpad
+  - laptop
 ---
 
 # Introduction
