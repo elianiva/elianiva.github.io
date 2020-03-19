@@ -1,18 +1,20 @@
 ---
-title: "Thinkpad X220 Review"
-date: "2020-03-18"
+title: "Making Of My Website (Part 3)"
+date: "2020-02-14"
 cover: "./cover.png"
 category:
-  - review
+  - programming
 tags:
-  - laptop
-  - thinkpad
+  - figma
+  - gatsby
+  - react
+  - website
 ---
 
-## Introduction
+# Introduction
 
 [[snippet]]
-|Hello internet people! As you might have known, I have a pretty bad laptop with Intel Celeron N4000 processor which runs _very_ slow. So I decided to change my laptop. And that laptop of course, is a Thinkpad.
+| Hello internet people! As you might have known, I have a pretty bad laptop with Intel Celeron N4000 processor which runs very slow. So I decided to change my laptop. And that laptop of course, is a Thinkpad.
 
 ## Why did I choose Thinkpad?
 
@@ -46,7 +48,7 @@ I also like the touch of lights that indicates your battery and sleep outside of
 
 ### Performance
 
-This bad boy has an Intel Core i5 2520M processors. It's not the best but it runs pretty well. Previously, I have a laptop that runs Intel Celeron N4000. It was _so_ sluggish. Now that I have an i5 processor, it runs _way_ better.
+This bad boy has an Intel Core i5 2520M processors. It's not the best but it runs pretty well. Previously, I have a laptop that runs Intel Celeron N4000. It was so sluggish. Now that I have an i5 processor, it runs way better.
 
 About the battery. Since it still has 86% health, it can hold up around 4-5 hours in my experience. It runs perfectly without any issue.
 
