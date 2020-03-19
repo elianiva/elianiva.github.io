@@ -1,6 +1,6 @@
 ---
 title: "Thinkpad X220 Review"
-date: "2020-02-19"
+date: "2020-03-19"
 cover: "./cover.png"
 category:
   - review
