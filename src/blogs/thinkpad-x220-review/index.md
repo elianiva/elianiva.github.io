@@ -9,7 +9,7 @@ tags:
   - laptop
 ---
 
-# Introduction
+## Introduction
 
 [[snippet]]
 | Hello internet people! As you might have known, I have a pretty bad laptop with Intel Celeron N4000 processor which runs very slow. So I decided to change my laptop. And that laptop of course, is a Thinkpad.
