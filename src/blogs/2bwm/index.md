@@ -28,7 +28,7 @@ At first, I couldn't make anything works. Can't open anything using the keybind.
 After about 3 days, I tried it one more time. This time, I decided to use other people config first which was really helpful. Then work my way up from there, changing some configuration and adding several keybinds.
 
 ### Usage
-So far, it is a _great_ experience. I come to a point where it feels like it's a peek comfy workflow. I never thought floating WM with keyboard control is my thing. I tried Openbox and the only thing I don't like about it, you have to use the mouse. I hate using the mouse, it's way too far. Even though I have a TrackPoint in my Thinkpad, I still don't quite like it.
+So far, it is a _great_ experience. I come to a point where it feels like it's a peak comfy workflow. I never thought floating WM with keyboard control is my thing. I tried Openbox and the only thing I don't like about it, you have to use the mouse. I hate using the mouse, it's way too far. Even though I have a TrackPoint in my Thinkpad, I still don't quite like it.
 
 You can move a window by using `mod+<vim keys>` and resize it using `mod+shift+<vim keys>`. You can also use the mouse if you want. The teleport feature is what I like the most. You can snap windows to left or right, and 4 corners of your screen.
 
