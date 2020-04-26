@@ -1,30 +1,25 @@
 .container {
   width: 90%;
   max-width: 800px;
-  margin: auto;
-  margin-bottom: 1rem;
+  margin: 0.75rem auto;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  transition: all 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
   box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
-}
-
-.container:focus,
-.container:hover {
-  filter: brightness(1.05);
+  border-radius: 0.25rem;
+  background-color: #ffffff;
 }
 
 .wrapper {
   padding: 0.5rem;
-  background-color: var(--darkish);
+  display: grid;
 }
 
 .title {
   display: block;
   text-align: left;
   line-height: 2rem;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
 }
 
 .prefix {
@@ -33,17 +28,17 @@
   display: inline-block;
   margin: 0;
   margin-right: 0.2rem;
-  fill: var(--lightBlue);
+  fill: #121212;
 }
 
 .date {
   display: block;
   text-align: left;
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
   text-transform: uppercase;
-  color: var(--lightBlue);
+  color: #555555;
 }
 
 .desc {
@@ -51,22 +46,20 @@
   font-size: 0.8rem;
   line-height: 1.1rem;
   font-weight: 400;
-  color: var(--lightBlue);
+  color: #555555;
   margin-bottom: -0.5rem;
   display: block;
 }
 
 .tag {
   display: inline-block;
-  margin: 0;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0 0.5rem 0.5rem 0;
   font-size: 0.8rem;
-  line-height: 0.5rem;
-  background-color: var(--darkest);
-  color: var(--lightBlue);
-  padding: 0.5rem;
-  text-transform: lowercase;
+  background-color: #5c90ff;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  text-transform: uppercase;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1);
 }
@@ -82,10 +75,11 @@
   }
 
   .container > .image {
+    border-radius: 0.25rem 0 0 0.25rem;
     flex: 1;
   }
 
   .container > .wrapper {
-    flex: 1;
+    flex: 2;
   }
 }

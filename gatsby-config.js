@@ -140,7 +140,7 @@ module.exports = {
               },
             ],
             truncate: {
-              length: 40,
+              length: 20,
               byWords: true,
               ellipsis: "...",
             },
@@ -178,7 +178,7 @@ module.exports = {
               },
             ],
             truncate: {
-              length: 25,
+              length: 20,
               byWords: true,
               ellipsis: "...",
             },

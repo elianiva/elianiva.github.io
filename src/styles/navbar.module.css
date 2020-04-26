@@ -1,32 +1,24 @@
 a {
   text-decoration: none !important;
-  color: var(--white);
-}
-
-a:active,
-a:hover,
-a:focus,
-a::-moz-inner-focus {
-  color: var(--blue);
-  border: 0;
+  color: #121212;
 }
 
 .container {
   position: fixed;
   z-index: 20;
-  background-color: var(--darkest);
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(0.5rem);
   top: 0;
   left: 0;
   right: 0;
   padding: 0.75rem;
-  color: var(--white);
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  color: #121212;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.05);
 }
 
 .wrapper {
   display: flex;
-  max-width: 1200px;
+  max-width: 1080px;
   margin: auto;
   z-index: 21;
 }
@@ -35,15 +27,18 @@ a::-moz-inner-focus {
   flex: 2;
   display: flex;
   align-items: center;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   transition: opacity ease-out 0.2s;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
 }
 
 .menu {
+  font-family: Arial, Helvetica, sans-serif;
   display: none;
   visibility: none;
   pointer-events: none;
+  font-size: 0.75rem;
 }
 
 .hamburger {
@@ -72,7 +67,7 @@ a::-moz-inner-focus {
   height: 0.125rem;
   margin: 0.5rem 0;
   position: relative;
-  background: var(--white);
+  background: #121212;
   z-index: 23;
   transform-origin: 4px 0px;
   transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
@@ -90,7 +85,7 @@ a::-moz-inner-focus {
 .hamburger > input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: var(--white);
+  background: #121212;
 }
 
 .hamburger > input:checked ~ span:nth-last-child(2) {
@@ -108,8 +103,9 @@ a::-moz-inner-focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--darkest);
-  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(0.5rem);
+  color: #121212;
   z-index: 20;
   transition: opacity ease-out 0.2s;
 }
@@ -129,19 +125,9 @@ a::-moz-inner-focus {
   display: flex;
   align-items: center;
   flex: 1;
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
-}
-
-.themeToggle {
-  width: 1.25rem;
-  height: 1.25rem;
-  margin: 0 1rem;
-}
-
-.themeToggle * {
-  fill: var(--white);
 }
 
 @media only screen and (min-width: 992px) {
@@ -150,25 +136,27 @@ a::-moz-inner-focus {
   }
 
   .menu {
-    display: flex;
-    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: flex-end;
+    justify-items: center;
     align-items: center;
-    text-align: center;
     pointer-events: all;
   }
 
   .menu > a {
-    flex: 2;
-    font-size: 1.25rem;
+    flex: 1;
+    font-size: 1rem;
     transition: all ease-out 0.2s;
-    border-bottom: 0.1rem rgba(0, 0, 0, 0) solid;
+    border-bottom: 0.125rem rgba(0, 0, 0, 0) solid;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   }
 
   .menu > a:hover,
   .menu > a:focus {
-    color: var(--blue);
+    color: #5C90FF;
     outline: 0;
-    border-bottom: 0.1rem var(--blue) solid;
+    border-bottom: 0.125rem #5C90FF solid;
   }
 
   .themeToggle {

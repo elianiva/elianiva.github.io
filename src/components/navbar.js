@@ -1,12 +1,9 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import Styles from "../styles/navbar.module.css"
-import ThemeContext from "../context/ThemeContext"
-import Moon from "../assets/moon.svg"
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false)
-  const { toggle } = React.useContext(ThemeContext)
   return (
     <div className={Styles.container}>
       <div className={Styles.wrapper}>
@@ -22,13 +19,18 @@ function Navbar() {
           <Link to="/" rel="Home">
             <span>HOME</span>
           </Link>
+          <Link to="/blogs" rel="Blogs">
+            <span>BLOGS</span>
+          </Link>
           <Link to="/archives" rel="Archives">
             <span>ARCHIVES</span>
+          </Link>
+          <Link to="/books" rel="Archives">
+            <span>BOOKS</span>
           </Link>
           <Link to="/about" rel="About">
             <span>ABOUT</span>
           </Link>
-          <Moon className={Styles.themeToggle} onClick={() => toggle()} />
         </div>
         <div className={Styles.hamburger}>
           <input
@@ -65,11 +67,6 @@ function Navbar() {
               ABOUT
             </Link>
           </span>
-          <Moon
-            className={Styles.themeToggle}
-            onClick={() => toggle()}
-            tabIndex="-1"
-          />
         </div>
       </div>
     </div>

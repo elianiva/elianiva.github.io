@@ -59,8 +59,14 @@ export const pageQuery = graphql`
             tags
             cover {
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
+                fluid(
+                  traceSVG: {
+                    color: "#5C90FF"
+                    turnPolicy: TURNPOLICY_MINORITY
+                    blackOnWhite: false
+                  }
+                ) {
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }

@@ -71,11 +71,25 @@ export const query = graphql`
         tags
         cover {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+            fluid(
+              traceSVG: {
+                color: "#5C90FF"
+                turnPolicy: TURNPOLICY_MINORITY
+                blackOnWhite: false
+              }
+            ) {
+              ...GatsbyImageSharpFluid_tracedSVG
             }
-            fixed(width: 800, height: 450) {
-              ...GatsbyImageSharpFixed
+            fixed(
+              width: 800
+              height: 450
+              traceSVG: {
+                color: "#5C90FF"
+                turnPolicy: TURNPOLICY_MINORITY
+                blackOnWhite: false
+              }
+            ) {
+              ...GatsbyImageSharpFixed_tracedSVG
             }
           }
         }

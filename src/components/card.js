@@ -11,8 +11,14 @@ function Card(props) {
       file(relativePath: { eq: "assets/placeholder.png" }) {
         childImageSharp {
           id
-          fluid {
-            ...GatsbyImageSharpFluid
+          fluid(
+            traceSVG: {
+              color: "#5C90FF"
+              turnPolicy: TURNPOLICY_MINORITY
+              blackOnWhite: false
+            }
+          ) {
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
@@ -36,11 +42,13 @@ function Card(props) {
           className={Styles.desc}
           dangerouslySetInnerHTML={{ __html: props.desc }}
         ></span>
-        {props.tags.map(tag => (
-          <Link to={`/tags/${tag}`} rel="Tag">
-            <span className={Styles.tag}>{tag}</span>
-          </Link>
-        ))}
+        <div className={Styles.tags}>
+          {props.tags.map(tag => (
+            <Link to={`/tags/${tag}`} rel="Tag">
+              <span className={Styles.tag}>{tag}</span>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   )
