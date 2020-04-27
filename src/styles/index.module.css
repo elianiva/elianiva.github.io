@@ -77,21 +77,23 @@ body {
 
 .logo-title {
   grid-column: 1 / -1;
-  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-.logos > svg {
+.logos svg {
   max-width: 3rem;
   max-height: 3rem;
 }
 
 .posts {
-  padding-top: 3rem;
   background-color: #f4f4f4;
   min-height: 100vh;
 }
 
 .cards {
+  padding-top: 3rem;
   height: 100%;
   width: 100%;
   overflow-y: scroll;
@@ -127,15 +129,28 @@ body {
   filter: brightness(1.1);
 }
 
-@media only screen and (max-width: 424px) {
+@media screen and (max-width: 960px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr;
+  }
+
+  .cards {
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 424px) {
   .logo {
     height: 9rem;
     width: 9rem;
   }
+
   .logo > * {
     height: 6rem;
     width: 6rem;
   }
+
   .greet-text {
     font-size: 1.8rem;
   }

@@ -17,9 +17,10 @@
   display: block;
   text-align: left;
   line-height: 2rem;
-  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-weight: 600;
   font-size: 1.25rem;
-  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .prefix {
@@ -69,7 +70,7 @@
   font-weight: 600;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 960px) {
   .container {
     display: flex;
   }

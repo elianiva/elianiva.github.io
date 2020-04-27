@@ -66,10 +66,18 @@ const IndexPage = () => {
           </div>
           <div className={Styles.logos}>
             <div className={Styles.logoTitle}>Powered by</div>
-            <Github />
-            <Gatsby />
-            <Graphql />
-            <Travis />
+            <a href="https://github.com">
+              <Github />
+            </a>
+            <a href="https://github.com">
+              <Gatsby />
+            </a>
+            <a href="https://github.com">
+              <Graphql />
+            </a>
+            <a href="https://github.com">
+              <Travis />
+            </a>
           </div>
         </div>
         <div className={Styles.posts} id="posts">
