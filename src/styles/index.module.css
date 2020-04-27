@@ -23,7 +23,7 @@ body {
   align-items: center;
   flex: 1;
   background-color: #ffffff;
-  padding: 2rem;
+  padding: 4rem 2rem 1rem;
   text-align: center;
 }
 
@@ -57,7 +57,6 @@ body {
   line-height: 2.5rem;
   font-weight: 600;
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
-  animation-delay: 100ms;
 }
 
 .greet-desc {
@@ -65,13 +64,31 @@ body {
   line-height: 1.5rem;
   font-weight: 400;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  animation-delay: 200ms;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(4, 4rem);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.logo-title {
+  grid-column: 1 / -1;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+}
+
+.logos > svg {
+  max-width: 3rem;
+  max-height: 3rem;
 }
 
 .posts {
   padding-top: 3rem;
   background-color: #f4f4f4;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .cards {

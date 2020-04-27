@@ -6,6 +6,12 @@ import Styles from "../styles/index.module.css"
 import Card from "../components/card"
 import Navbar from "../components/navbar"
 
+// logos
+import Gatsby from "../assets/gatsby.svg"
+import Github from "../assets/github-octocat.svg"
+import Graphql from "../assets/graphql.svg"
+import Travis from "../assets/travis-ci.svg"
+
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
@@ -57,6 +63,13 @@ const IndexPage = () => {
               to share my experience to other people and hopefully they find it
               useful.
             </span>
+          </div>
+          <div className={Styles.logos}>
+            <div className={Styles.logoTitle}>Powered by</div>
+            <Github />
+            <Gatsby />
+            <Graphql />
+            <Travis />
           </div>
         </div>
         <div className={Styles.posts} id="posts">
