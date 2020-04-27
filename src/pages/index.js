@@ -5,17 +5,15 @@ import Logo from "../assets/logo.svg"
 import Styles from "../styles/index.module.css"
 import Card from "../components/card"
 import Navbar from "../components/navbar"
-
-// logos
-import Gatsby from "../assets/gatsby.svg"
-import Github from "../assets/github-octocat.svg"
-import Graphql from "../assets/graphql.svg"
-import Travis from "../assets/travis-ci.svg"
+import Footer from "../components/footer"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: frontmatter___date }
+        limit: 3
+      ) {
         edges {
           node {
             id
@@ -60,24 +58,9 @@ const IndexPage = () => {
             <span className={Styles.greetText}>Hi there! I’m Irrellia.</span>
             <span className={Styles.greetDesc}>
               I'm a self taught web developer and a Linux enthusiast who likes
-              to share my experience to other people and hopefully they find it
-              useful.
+              to write whatever I've learned. Hopefully you'll find something
+              useful from my blog.
             </span>
-          </div>
-          <div className={Styles.logos}>
-            <div className={Styles.logoTitle}>Powered by</div>
-            <a href="https://github.com">
-              <Github />
-            </a>
-            <a href="https://github.com">
-              <Gatsby />
-            </a>
-            <a href="https://github.com">
-              <Graphql />
-            </a>
-            <a href="https://github.com">
-              <Travis />
-            </a>
           </div>
         </div>
         <div className={Styles.posts} id="posts">
@@ -98,6 +81,7 @@ const IndexPage = () => {
                 </Link>
               )
             })}
+            <Footer />
           </div>
         </div>
       </div>

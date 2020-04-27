@@ -66,27 +66,6 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-.logos {
-  display: grid;
-  grid-template-columns: repeat(4, 4rem);
-  grid-template-rows: repeat(2, 1fr);
-  align-items: center;
-  justify-items: center;
-  margin: 0 auto;
-}
-
-.logo-title {
-  grid-column: 1 / -1;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.logos svg {
-  max-width: 3rem;
-  max-height: 3rem;
-}
-
 .posts {
   background-color: #f4f4f4;
   min-height: 100vh;
@@ -133,6 +112,10 @@ body {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1.5fr;
+  }
+
+  .greet {
+    min-height: 85vh;
   }
 
   .cards {

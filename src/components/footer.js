@@ -5,27 +5,54 @@ function Footer() {
   return (
     <div className={Styles.container}>
       <div className={Styles.wrapper}>
-        <div className={Styles.sideWrap}>
-          <span className={Styles.findme}>FIND ME ON</span>
-        </div>
         <span className={Styles.desc}>
-          This site is built using{" "}
-          <a href="https://www.gatsbyjs.org/" className={Styles.hl}>
-            GATSBY
-          </a>{" "}
-          and hosted on{" "}
-          <a href="https://github.com/" className={Styles.hl}>
-            GITHUB
-          </a>{" "}
-          | Also subsribe to my{" "}
-          <a href="https://irrellia.github.io/rss.xml" className={Styles.hl}>
-            RSS Feed
-          </a>
-        </span>
-        <br />
-        <span className={Styles.desc}>
-          &copy; 2020 - 2020{" "}
-          <a href="https://github.com/irrellia" className={Styles.hl}>
+          <span>
+            Powered by{" "}
+            <a
+              href="https://gatsbyjs.org"
+              style={{ color: "#8a4baf", fontWeight: 600 }}
+            >
+              Gatsby JS{" "}
+            </a>
+            and{" "}
+            <a
+              href="https://graphql.org"
+              style={{ color: "#8a4baf", fontWeight: 600 }}
+            >
+              GraphQL
+            </a>
+          </span>
+          <span>
+            This website is hosted on{" "}
+            <a
+              href="https://pages.github.com/"
+              style={{ color: "#5c90ff", fontWeight: 600 }}
+            >
+              Github Pages
+            </a>{" "}
+            with help of{" "}
+            <a
+              href="https://travis-ci.org/"
+              style={{ color: "#CD324A", fontWeight: 600 }}
+            >
+              Travis-CI.
+            </a>
+          </span>
+          <span>
+            Source code is available on{" "}
+            <a
+              href="https://github.com/irrellia/irrellia.github.io"
+              style={{ color: "#5c90ff", fontWeight: 600 }}
+            >
+              Github
+            </a>
+          </span>
+          &copy; 2020
+          <a
+            href="https://github.com/irrellia/"
+            style={{ color: "#5c90ff", fontWeight: 600 }}
+          >
+            {" "}
             IRRELLIA
           </a>
         </span>
