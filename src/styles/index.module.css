@@ -1,3 +1,13 @@
+html {
+  scrollbar-color: #5c90ff #efefef;
+  scrollbar-width: thin;
+}
+
+body {
+  scrollbar-color: #5c90ff #efefef;
+  scrollbar-width: thin;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -59,12 +69,16 @@
 }
 
 .posts {
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  flex: 1;
   padding-top: 3rem;
   background-color: #f4f4f4;
+  height: 100vh;
+}
+
+.cards {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
 }
 
 .title {

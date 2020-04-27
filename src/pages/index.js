@@ -9,10 +9,7 @@ import Navbar from "../components/navbar"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: frontmatter___date }
-        limit: 3
-      ) {
+      allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
         edges {
           node {
             id
@@ -63,22 +60,24 @@ const IndexPage = () => {
           </div>
         </div>
         <div className={Styles.posts} id="posts">
-          {data.allMarkdownRemark.edges.map(post => {
-            const { cover, title, date, tags } = post.node.frontmatter
-            const { slug } = post.node.fields
-            return (
-              <Link to={slug} rel="Post">
-                <Card
-                  key={post.node.id}
-                  cover={cover.childImageSharp.fluid}
-                  title={title}
-                  date={date}
-                  desc={post.node.snippet}
-                  tags={tags}
-                />
-              </Link>
-            )
-          })}
+          <div className={Styles.cards}>
+            {data.allMarkdownRemark.edges.map(post => {
+              const { cover, title, date, tags } = post.node.frontmatter
+              const { slug } = post.node.fields
+              return (
+                <Link to={slug} rel="Post">
+                  <Card
+                    key={post.node.id}
+                    cover={cover.childImageSharp.fluid}
+                    title={title}
+                    date={date}
+                    desc={post.node.snippet}
+                    tags={tags}
+                  />
+                </Link>
+              )
+            })}
+          </div>
         </div>
       </div>
     </>
