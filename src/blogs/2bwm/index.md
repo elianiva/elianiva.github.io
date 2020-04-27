@@ -1,9 +1,7 @@
 ---
-title: "WM That I've Been Looking For"
+title: "two borders window manager"
 date: "2020-04-01"
 cover: "./cover.png"
-category:
-  - linux
 tags:
   - window manager
 ---

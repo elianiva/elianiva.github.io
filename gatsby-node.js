@@ -24,7 +24,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogTemplate = path.resolve("./src/templates/blog.js")
   const tagTemplate = path.resolve("./src/templates/tags.js")
-  const categoryTemplate = path.resolve("./src/templates/category.js")
   const res = await graphql(`
     {
       blogsRemark: allMarkdownRemark(
@@ -51,15 +50,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
           fieldValue
         }
       }
-
-      categoriesGroup: allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
-        group(field: frontmatter___category) {
-          fieldValue
-        }
-      }
     }
   `)
 
@@ -83,18 +73,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
-      },
-    })
-  })
-
-  // Make category pages
-  const categories = res.data.categoriesGroup.group
-  categories.forEach(category => {
-    createPage({
-      path: `/category/${category.fieldValue}/`,
-      component: categoryTemplate,
-      context: {
-        category: category.fieldValue,
       },
     })
   })

@@ -2,8 +2,6 @@
 title: "Why I Use Linux"
 date: "2020-02-27"
 cover: "./cover.png"
-category:
-  - linux
 tags:
   - os
   - talk

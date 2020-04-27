@@ -2,8 +2,6 @@
 title: "Defx, a dark powered file explorer"
 date: "2020-02-22"
 cover: "./cover.png"
-category:
-  - programming
 tags:
   - vim
   - neovim

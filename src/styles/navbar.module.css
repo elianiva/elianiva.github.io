@@ -137,9 +137,10 @@ a {
 
   .menu {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: flex-end;
     justify-items: center;
+    grid-gap: 1rem;
     align-items: center;
     pointer-events: all;
   }
@@ -154,9 +155,9 @@ a {
 
   .menu > a:hover,
   .menu > a:focus {
-    color: #5C90FF;
+    color: #5c90ff;
     outline: 0;
-    border-bottom: 0.125rem #5C90FF solid;
+    border-bottom: 0.125rem #5c90ff solid;
   }
 
   .themeToggle {

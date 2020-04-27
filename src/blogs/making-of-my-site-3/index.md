@@ -2,8 +2,6 @@
 title: "Making Of My Website (Part 3)"
 date: "2020-02-14"
 cover: "./cover.png"
-category:
-  - programming
 tags:
   - figma
   - gatsby

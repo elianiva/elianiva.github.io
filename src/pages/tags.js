@@ -6,16 +6,9 @@ import Box from "../components/box"
 import Tag from "../components/tag"
 import Styles from "../styles/archives.module.css"
 
-function ArchivesPage() {
+function TagsPage() {
   const data = useStaticQuery(graphql`
     {
-      categoriesGroup: allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___category) {
-          fieldValue
-          totalCount
-        }
-      }
-
       tagsGroup: allMarkdownRemark(limit: 2000) {
         group(field: frontmatter___tags) {
           fieldValue
@@ -27,24 +20,10 @@ function ArchivesPage() {
 
   return (
     <Layout>
-      <SEO title="Archives" />
+      <SEO title="Tags" />
       <div className={Styles.container}>
-        <h1 className={Styles.title}>ARCHIVES</h1>
+        <h1 className={Styles.title}>TAGS</h1>
         <hr className={Styles.divider} />
-        <span className={Styles.subtitle}>CATEGORY</span>
-        {data.categoriesGroup.group.map(category => {
-          return (
-            <Link to={`/category/${category.fieldValue}`}>
-              <Box
-                name={category.fieldValue}
-                number={category.totalCount}
-                key={category.fieldValue}
-              />
-            </Link>
-          )
-        })}
-        <br />
-        <span className={Styles.subtitle}>TAGS</span>
         <br />
         {data.tagsGroup.group.map(tag => {
           return (
@@ -62,4 +41,4 @@ function ArchivesPage() {
   )
 }
 
-export default ArchivesPage
+export default TagsPage

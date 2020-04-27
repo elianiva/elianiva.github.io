@@ -1,18 +1,17 @@
 ---
-title: "Thinkpad X220 Review"
+title: "Thinkpad X220"
 date: "2020-03-19"
 cover: "./cover.png"
-category:
-  - review
 tags:
   - thinkpad
   - laptop
+  - hardware
 ---
 
 ## Introduction
 
 [[snippet]]
-| Hello internet people! As you might have known, I have a pretty bad laptop with Intel Celeron N4000 processor which runs very slow. So I decided to change my laptop. And that laptop of course, is a Thinkpad.
+| So, I have a pretty bad laptop with Intel Celeron N4000 processor which runs super slow. Of course I can't stand that, so I decided to change my laptop to a something better and that is none other than Thinkpad.
 
 ## Why did I choose Thinkpad?
 

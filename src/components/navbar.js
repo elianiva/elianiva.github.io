@@ -19,11 +19,8 @@ function Navbar() {
           <Link to="/" rel="Home">
             <span>HOME</span>
           </Link>
-          <Link to="/blogs" rel="Blogs">
-            <span>BLOGS</span>
-          </Link>
-          <Link to="/archives" rel="Archives">
-            <span>ARCHIVES</span>
+          <Link to="/tags" rel="Tags">
+            <span>TAGS</span>
           </Link>
           <Link to="/books" rel="Archives">
             <span>BOOKS</span>

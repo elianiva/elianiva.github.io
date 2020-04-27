@@ -2,8 +2,6 @@
 title: "Making Your Own VIM Statusline"
 date: "2020-02-15"
 cover: "./cover.png"
-category:
-  - programming
 tags:
   - vim
   - neovim
