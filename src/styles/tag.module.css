@@ -1,23 +1,22 @@
 .wrapper {
-  display: inline-flex;
-  margin: 0.25rem;
-  font-size: 1.75rem;
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  display: grid;
+  font-size: 1rem;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  grid-template-columns: 3fr 1fr;
   transition: all ease-out 0.2s;
 }
 
 .wrapper:hover,
 .wrapper:focus {
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-  filter: brightness(1.2);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1);
+  filter: brightness(1.1);
 }
 
 .tagBox {
   flex: 1;
   padding: 0.5rem;
-  background-color: var(--darkish);
-  border-left: 0.15rem solid var(--blue);
+  background-color: #efefef;
+  border-left: 0.25rem solid #5c90ff;
   text-transform: uppercase;
   text-align: left;
   font-size: 1.25rem;
@@ -28,6 +27,6 @@
   padding: 0.5rem;
   min-width: 2.5rem;
   font-size: 1.25rem;
-  color: var(--dark);
-  background-color: var(--blue);
+  color: #ffffff;
+  background-color: #5c90ff;
 }
