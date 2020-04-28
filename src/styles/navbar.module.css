@@ -18,6 +18,7 @@ a {
 
 .wrapper {
   display: flex;
+  grid-template-columns: repeat(3, 1fr);
   max-width: 1080px;
   margin: auto;
   z-index: 21;
@@ -28,9 +29,9 @@ a {
   display: flex;
   align-items: center;
   font-size: 1.25rem;
-  transition: opacity ease-out 0.2s;
   font-weight: 700;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  transition: opacity ease-out 0.2s;
 }
 
 .menu {
@@ -39,6 +40,12 @@ a {
   visibility: none;
   pointer-events: none;
   font-size: 0.75rem;
+}
+
+.icons {
+  display: none;
+  visibility: none;
+  pointer-events: none;
 }
 
 .hamburger {
@@ -103,22 +110,22 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(0.5rem);
+  height: 100vh;
+  background-color: #ffffff;
   color: #121212;
   z-index: 20;
   transition: opacity ease-out 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .items {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(4, 2rem);
+  justify-items: center;
   align-items: center;
-  position: fixed;
-  top: 8rem;
-  left: 2rem;
-  right: 2rem;
-  bottom: 8rem;
+  grid-gap: 1rem;
 }
 
 .item {
@@ -127,10 +134,15 @@ a {
   flex: 1;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 @media only screen and (min-width: 992px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .hamburger {
     display: none;
   }
@@ -138,19 +150,17 @@ a {
   .menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: flex-end;
     justify-items: center;
     grid-gap: 1rem;
-    align-items: center;
     pointer-events: all;
   }
 
   .menu > a {
-    flex: 1;
     font-size: 1rem;
     transition: all ease-out 0.2s;
     border-bottom: 0.125rem rgba(0, 0, 0, 0) solid;
     font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    transform: translateY(0.125rem);
   }
 
   .menu > a:hover,
@@ -160,9 +170,27 @@ a {
     border-bottom: 0.125rem #5c90ff solid;
   }
 
-  .themeToggle {
-    flex: 1;
-    margin: 0 1rem;
-    cursor: pointer;
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1rem);
+    justify-content: flex-end;
+    grid-gap: 1rem;
+    margin-left: 1rem;
+  }
+
+  .icons a {
+    display: flex;
+    align-items: center;
+  }
+
+  .icons svg {
+    max-width: 1rem;
+    max-height: 1rem;
+    transition: all ease-out 0.2s;
+  }
+
+  .icons svg:hover,
+  .icons svg:focus {
+    fill: #5c90ff;
   }
 }

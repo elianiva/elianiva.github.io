@@ -2,6 +2,11 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Styles from "../styles/navbar.module.css"
 
+// icons
+import Facebook from "../assets/facebook-logo.svg"
+import Twitter from "../assets/twitter.svg"
+import Reddit from "../assets/reddit.svg"
+
 function Navbar() {
   const [isOpen, setOpen] = useState(false)
   return (
@@ -29,6 +34,17 @@ function Navbar() {
             <span>ABOUT</span>
           </Link>
         </div>
+        <div className={Styles.icons}>
+          <a href="https://facebook.com/ho0m4n">
+            <Facebook />
+          </a>
+          <a href="https://twitter.com/irrellia_">
+            <Twitter />
+          </a>
+          <a href="https://reddit.com/irrellia">
+            <Reddit />
+          </a>
+        </div>
         <div className={Styles.hamburger}>
           <input
             type="checkbox"
@@ -44,7 +60,7 @@ function Navbar() {
         className={Styles.overlay}
         style={
           isOpen
-            ? { display: "block", opacity: 1 }
+            ? { display: "flex", opacity: 1, visibility: "visible" }
             : { visibility: "none", pointerEvents: "none", opacity: 0 }
         }
       >
@@ -55,8 +71,13 @@ function Navbar() {
             </Link>
           </span>
           <span className={Styles.item}>
-            <Link to="/archives" tabIndex="-1">
-              ARCHIVES
+            <Link to="/tags" tabIndex="-1">
+              TAGS
+            </Link>
+          </span>
+          <span className={Styles.item}>
+            <Link to="/books" tabIndex="-1">
+              BOOKS
             </Link>
           </span>
           <span className={Styles.item}>
