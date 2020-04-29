@@ -41,7 +41,7 @@ function Footer() {
           <span>
             Source code is available on{" "}
             <a
-              href="https://github.com/irrellia/irrellia.github.io"
+              href="https://github.com/elianiva/elianiva.github.io"
               style={{ color: "#5c90ff", fontWeight: 600 }}
             >
               Github
@@ -49,11 +49,11 @@ function Footer() {
           </span>
           &copy; 2020
           <a
-            href="https://github.com/irrellia/"
+            href="https://github.com/elianiva/"
             style={{ color: "#5c90ff", fontWeight: 600 }}
           >
             {" "}
-            IRRELLIA
+            ELIANIVA
           </a>
         </span>
       </div>

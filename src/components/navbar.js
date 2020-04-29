@@ -17,7 +17,7 @@ function Navbar() {
           style={isOpen ? { opacity: 0 } : { opacity: 1 }}
         >
           <Link to="/" rel="Home">
-            IRRELLIA
+            Elianiva
           </Link>
         </div>
         <div className={Styles.menu}>

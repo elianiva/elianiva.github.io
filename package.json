@@ -1,5 +1,5 @@
 {
-  "name": "irrellia-blog",
+  "name": "elianiva-blog",
   "private": true,
   "description": "My personal blog",
   "version": "0.1.0",
@@ -54,7 +54,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/irrellia/irrellia.github.io"
+    "url": "https://github.com/elianiva/elianiva.github.io"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

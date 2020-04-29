@@ -1,14 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Irrellia's Blog`,
+    title: `Elianiva's Blog`,
     description: `This is a blog where I share random stuff that I found from the internet.`,
-    author: `Irrellia`,
+    author: `@dicha`,
     twitter: `https://twitter.com/irrellia_`,
     facebook: `https://facebook.com/ho0m4n`,
     reddit: `https://reddit.com/user/irrellia`,
-    github: `https://github.com/irrellia`,
-    url: `https://irrellia.github.io`,
-    siteUrl: `https://irrellia.github.io`,
+    github: `https://github.com/elianiva`,
+    url: `https://elianiva.github.io`,
   },
   plugins: [
     `gatsby-plugin-feed`,
@@ -81,8 +80,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Irrellia's Blog`,
-        short_name: `Irrellia`,
+        name: `Elianiva's Blog`,
+        short_name: `Elianiva`,
         start_url: `/`,
         background_color: `#181824`,
         theme_color: `#181824`,
