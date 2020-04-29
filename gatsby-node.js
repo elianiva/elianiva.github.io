@@ -22,7 +22,7 @@ module.exports.onCreateNode = ({ node, actions, getNode }) => {
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const blogTemplate = path.resolve("./src/templates/blog.js")
+  const postTemplate = path.resolve("./src/templates/post.js")
   const tagTemplate = path.resolve("./src/templates/tags.js")
   const res = await graphql(`
     {
@@ -58,7 +58,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   blogs.forEach(({ node }) => {
     createPage({
       path: `${node.fields.slug}`,
-      component: blogTemplate,
+      component: postTemplate,
       context: {
         slug: node.fields.slug,
       },
@@ -73,23 +73,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
-      },
-    })
-  })
-
-  // Create blog-list pages
-  const posts = res.data.blogsRemark.edges
-  const postsPerPage = 5
-  const numPages = Math.ceil(posts.length / postsPerPage)
-  Array.from({ length: numPages }).forEach((_, i) => {
-    createPage({
-      path: i === 0 ? `/blogs` : `/blogs/${i + 1}`,
-      component: path.resolve("./src/templates/blogs.js"),
-      context: {
-        limit: postsPerPage,
-        skip: i * postsPerPage,
-        numPages,
-        currentPage: i + 1,
       },
     })
   })
