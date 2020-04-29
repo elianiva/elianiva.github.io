@@ -3,17 +3,27 @@
   max-width: 800px;
 }
 
-.container h1 {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+.title {
+  display: block;
+  text-align: center;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 1rem;
   font-weight: 500;
-  color: var(--white);
+  color: #121212;
+  font-size: 1.5rem;
 }
 
 .divider {
-  background-color: var(--lightBlue);
-  width: 10rem;
-  margin: 0 auto;
-  margin-bottom: 3rem;
+  background-color: #5c90ff;
+  width: 5rem;
+  height: 0.125rem;
+  margin: 0 auto 1rem;
+}
+
+.tag {
+  background-color: #5c90ff;
+  color: #ffffff;
+  padding: 0 0.5rem;
+  border-radius: 0.25rem;
 }

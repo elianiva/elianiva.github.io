@@ -1,7 +1,7 @@
 .wrapper {
   display: grid;
   font-size: 1rem;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   grid-template-columns: 3fr 1fr;
   transition: all ease-out 0.2s;
 }
@@ -19,13 +19,14 @@
   border-left: 0.25rem solid #5c90ff;
   text-transform: uppercase;
   text-align: left;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .number {
-  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.5rem;
-  min-width: 2.5rem;
   font-size: 1.25rem;
   color: #ffffff;
   background-color: #5c90ff;

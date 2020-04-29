@@ -13,7 +13,10 @@ function Tags({ pageContext, data }) {
     <Layout>
       <SEO title="Tags" />
       <div className={Styles.container}>
-        <h1>Tagged by {tag}</h1>
+        <span className={Styles.title}>
+          Tagged by <span className={Styles.tag}>{tag}</span>
+        </span>
+        <hr className={Styles.divider} />
         {edges.map(edge => {
           const { cover, title, date, tags } = edge.node.frontmatter
           const { slug } = edge.node.fields
