@@ -92,19 +92,21 @@ body {
   width: 5rem;
 }
 
-.more-post {
+.more {
+  display: block;
+  max-width: 8rem;
   text-align: center;
-  margin: 1rem auto;
-  width: 8rem;
-  padding: 0.5rem;
+  margin: 1rem auto 0;
+  padding: 0.5rem 1rem;
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   background-color: #5c90ff;
   color: #ffffff;
   border-radius: 0.25rem;
+  border: none;
 }
 
-.more-post:hover,
-.more-post:focus {
+.more:hover,
+.more:focus {
   filter: brightness(1.1);
 }
 
