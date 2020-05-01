@@ -11,14 +11,8 @@ function Card(props) {
       file(relativePath: { eq: "assets/placeholder.png" }) {
         childImageSharp {
           id
-          fluid(
-            traceSVG: {
-              color: "#5C90FF"
-              turnPolicy: TURNPOLICY_MINORITY
-              blackOnWhite: false
-            }
-          ) {
-            ...GatsbyImageSharpFluid_tracedSVG
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
