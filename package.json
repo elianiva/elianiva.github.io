@@ -27,7 +27,7 @@
     "gatsby-transformer-sharp": "^2.3.13",
     "gh-pages": "^2.2.0",
     "lazysizes": "^5.2.0",
-    "moment": "^2.24.0",
+    "moment": "2.24.0",
     "prismjs": "^1.19.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
