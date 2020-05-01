@@ -24,6 +24,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const postTemplate = path.resolve("./src/templates/post.js")
   const tagTemplate = path.resolve("./src/templates/tags.js")
+  const postsListTemplate = path.resolve("./src/templates/posts.js")
   const res = await graphql(`
     {
       blogsRemark: allMarkdownRemark(
@@ -73,6 +74,23 @@ module.exports.createPages = async ({ graphql, actions }) => {
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
+      },
+    })
+  })
+
+  // Create blog post list pages
+  const postsPerPage = 5
+  const posts = res.data.blogsRemark.edges
+  const numPages = Math.ceil(posts.length / postsPerPage)
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/posts/` : `/posts/${i + 1}`,
+      component: postsListTemplate,
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
       },
     })
   })

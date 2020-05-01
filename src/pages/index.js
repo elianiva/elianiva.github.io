@@ -1,5 +1,5 @@
+import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import React, { useState } from "react"
 import Logo from "../assets/logo.svg"
 import Card from "../components/card"
 import Footer from "../components/footer"
@@ -8,11 +8,12 @@ import SEO from "../components/seo"
 import Styles from "../styles/index.module.css"
 
 function IndexPage() {
-  const [limit, setLimit] = useState(3)
-
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: frontmatter___date }
+        limit: 5
+      ) {
         edges {
           node {
             id
@@ -58,7 +59,7 @@ function IndexPage() {
         </div>
         <div className={Styles.posts} id="posts">
           <div className={Styles.cards}>
-            {data.allMarkdownRemark.edges.slice(0, limit).map(post => {
+            {data.allMarkdownRemark.edges.map(post => {
               const { cover, title, date, tags } = post.node.frontmatter
               const { slug } = post.node.fields
               return (
@@ -74,16 +75,11 @@ function IndexPage() {
                 </Link>
               )
             })}
-            {limit < data.allMarkdownRemark.edges.length && (
-              <button
-                className={Styles.more}
-                onClick={() => setLimit(limit + 3)}
-              >
-                View More
-              </button>
-            )}
-            <Footer />
+            <Link to="/posts" className={Styles.more}>
+              View More
+            </Link>
           </div>
+          <Footer />
         </div>
       </div>
     </>

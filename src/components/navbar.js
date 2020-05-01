@@ -24,6 +24,9 @@ function Navbar() {
           <Link to="/" rel="Home">
             <span>HOME</span>
           </Link>
+          <Link to="/posts" rel="Tags">
+            <span>POSTS</span>
+          </Link>
           <Link to="/tags" rel="Tags">
             <span>TAGS</span>
           </Link>
@@ -68,6 +71,11 @@ function Navbar() {
           <span className={Styles.item}>
             <Link to="/" tabIndex="-1">
               HOME
+            </Link>
+          </span>
+          <span className={Styles.item}>
+            <Link to="/posts" tabIndex="-1">
+              POSTS
             </Link>
           </span>
           <span className={Styles.item}>

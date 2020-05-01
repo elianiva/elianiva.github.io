@@ -122,7 +122,7 @@ a {
 
 .items {
   display: grid;
-  grid-template-rows: repeat(4, 2rem);
+  grid-template-rows: repeat(5, 2rem);
   justify-items: center;
   align-items: center;
   grid-gap: 1rem;
@@ -149,7 +149,7 @@ a {
 
   .menu {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-items: center;
     grid-gap: 1rem;
     pointer-events: all;

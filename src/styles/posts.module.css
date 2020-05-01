@@ -1,0 +1,35 @@
+.container {
+  background-color: #efefef;
+  margin-top: -3rem;
+  padding: 4rem 0 1rem;
+}
+
+.navigation {
+  display: block;
+  margin: auto;
+  background-color: #ffffff;
+  max-width: 16rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  justify-items: center;
+  align-items: center;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+
+.active,
+.inactive {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.active {
+  color: #ffffff;
+  background-color: #5c90ff;
+  cursor: pointer;
+}
+
+.inactive {
+  background-color: #dbdbdb;
+  color: #ababab;
+  pointer-events: none;
+}
