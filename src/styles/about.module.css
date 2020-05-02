@@ -1,66 +1,46 @@
-.container h1 {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  color: var(--white);
-}
-
-.divider {
-  background-color: var(--lightBlue);
-  width: 10rem;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-}
-
-a {
-  transition: all ease-out 0.2s;
-}
-
-a:hover,
-a:focus {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-b {
-  font-weight: 500;
-}
-
 .container {
   max-width: 800px;
   margin: 1rem auto;
   padding: 0 1rem;
-  color: var(--white);
+  color: #121212;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-.question {
-  line-height: 2rem;
-  display: block;
-  padding: 0.5rem;
-  font-size: 1.75rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
-}
-
-.desc {
-  display: block;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 2rem;
-  margin-bottom: 2rem;
-}
-
-.section {
-  border-left: 0.25rem solid var(--blue);
-}
-
-.hl {
+.container h1 {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
   font-weight: 600;
-  border-bottom: solid var(--blue) 0.1rem;
+  color: #121212;
 }
 
-.hl:hover {
-  color: var(--blue);
+.container h3 {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+.container h3::before {
+  content: "# ";
+  font-weight: 600;
+  color: #5c90ff;
+}
+
+.container a {
+  font-weight: 600;
+  color: #5c90ff;
+}
+
+.container a:hover,
+.container a:focus {
+  border-bottom: 0.125rem #5c90ff solid;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.divider {
+  background-color: #5c90ff;
+  width: 10rem;
+  height: 0.125rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
