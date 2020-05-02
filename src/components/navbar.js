@@ -68,31 +68,32 @@ function Navbar() {
         }
       >
         <div className={Styles.items}>
-          <span className={Styles.item}>
-            <Link to="/" tabIndex="-1">
-              HOME
-            </Link>
-          </span>
-          <span className={Styles.item}>
-            <Link to="/posts" tabIndex="-1">
-              POSTS
-            </Link>
-          </span>
-          <span className={Styles.item}>
-            <Link to="/tags" tabIndex="-1">
-              TAGS
-            </Link>
-          </span>
-          <span className={Styles.item}>
-            <Link to="/books" tabIndex="-1">
-              BOOKS
-            </Link>
-          </span>
-          <span className={Styles.item}>
-            <Link to="/about" tabIndex="-1">
-              ABOUT
-            </Link>
-          </span>
+          <Link to="/" tabIndex="-1">
+            HOME
+          </Link>
+          <Link to="/posts" tabIndex="-1">
+            POSTS
+          </Link>
+          <Link to="/tags" tabIndex="-1">
+            TAGS
+          </Link>
+          <Link to="/books" tabIndex="-1">
+            BOOKS
+          </Link>
+          <Link to="/about" tabIndex="-1">
+            ABOUT
+          </Link>
+          <div className={Styles.mobileIcons}>
+            <a href="https://facebook.com/ho0m4n">
+              <Facebook />
+            </a>
+            <a href="https://twitter.com/irrellia_">
+              <Twitter />
+            </a>
+            <a href="https://reddit.com/irrellia">
+              <Reddit />
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -30,12 +30,12 @@ a {
   align-items: center;
   font-size: 1.25rem;
   font-weight: 700;
-  font-family: "Satisfy", Arial, Helvetica, sans-serif;
+  font-family: "Satisfy", cursive;
   transition: opacity ease-out 0.2s;
 }
 
 .menu {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   display: none;
   visibility: none;
   pointer-events: none;
@@ -45,13 +45,31 @@ a {
 .icons {
   display: none;
   visibility: none;
-  pointer-events: none;
+}
+
+.mobile-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1rem);
+  justify-content: flex-end;
+  grid-gap: 1rem;
+}
+
+.mobile-icons a {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-icons svg {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  transition: all ease-out 0.2s;
 }
 
 .hamburger {
   display: block;
   position: relative;
   z-index: 22;
+  cursor: pointer;
 
   -webkit-user-select: none;
   user-select: none;
@@ -62,10 +80,10 @@ a {
   width: 2.5rem;
   height: 2rem;
   position: absolute;
-  cursor: pointer;
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
   -webkit-touch-callout: none;
+  cursor: pointer;
 }
 
 .hamburger > span {
@@ -79,6 +97,7 @@ a {
   transform-origin: 4px 0px;
   transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.2s ease;
+  cursor: pointer;
 }
 
 .hamburger > span:first-child {
@@ -128,13 +147,13 @@ a {
   grid-gap: 1rem;
 }
 
-.item {
+.items a {
   display: flex;
   align-items: center;
   flex: 1;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 992px) {
