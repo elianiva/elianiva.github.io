@@ -7,7 +7,6 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { ThemeProvider } from "../context/ThemeContext"
 import "./layout.css"
 
 import Navbar from "./navbar"
@@ -15,7 +14,7 @@ import Footer from "./footer"
 
 const Layout = ({ children }) => {
   return (
-    <ThemeProvider>
+    <>
       <Navbar />
       <div className="main-container">
         <div
@@ -44,7 +43,7 @@ const Layout = ({ children }) => {
           }}
         />
       </div>
-    </ThemeProvider>
+    </>
   )
 }
 
