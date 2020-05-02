@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/@typopro/web-iosevka@3.7.5/TypoPRO-Iosevka.min.css");
 
 /* Custom CSS */
 .main-container {
@@ -118,7 +119,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "Fira Code", monospace, monospace;
+  font-family: "Iosevka", monospace, monospace;
   font-size: 1em;
 }
 figure {
@@ -614,7 +615,7 @@ td:last-child {
 tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
-  font-family: "Fira Code", monospace, monospace;
+  font-family: "Iosevka", monospace, monospace;
   padding: 0;
 }
 pre code {

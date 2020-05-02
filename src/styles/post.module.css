@@ -143,7 +143,7 @@
 }
 
 .content code {
-  font-family: "Fira Code", monospace;
+  font-family: "Iosevka", monospace;
   font-size: 0.8rem;
   color: #b2b8dc;
   background-color: #292d3e;
@@ -154,14 +154,14 @@
 
 .content pre {
   border-radius: 0.25rem;
-  font-family: "Fira Code", monospace;
+  font-family: "Iosevka", monospace;
 }
 
 .content pre code {
   color: #b2b8dc;
   font-size: 0.8rem;
   font-weight: 400;
-  font-family: "Fira Code", monospace;
+  font-family: "Iosevka", monospace;
 }
 
 .tagName {
