@@ -25,7 +25,7 @@ Despite being an old laptop (it was released on 2011), it is however a very dura
 
 ### Where and how much
 
-I buy this bad boy on a local online store for like \$124 (Rp1.950.000,00). It has a perfect condition. I can't believe how good it is when it arrived. I tought there will be some scratches and what not, but it turns out to be in a perfect condition.
+I buy this bad boy on a local online store for like Rp1.950.000,00 (\$ 124). It has a perfect condition. I can't believe how good it is when it arrived. I tought there will be some scratches and what not, but it turns out to be in a perfect condition.
 
 At first, I want to buy a Thinkpad T420. But I decided to pick X220 because I think it's more portable because of its smaller size.
 

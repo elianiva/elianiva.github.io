@@ -36,24 +36,6 @@ Finally, I installed it. I took a quick screenshot after installing it because I
 
 Manjaro is based on Arch. Some people say that it's Arch without all of its fuss. I mean, it's true. At the time I'm writing this, I use Arch. For beginners that want to try Archlinux, it's a good starting point. I ended up using it for nearly 8 months. It was a great experience. That came from the same person that also makes fun of its name. I know, I'm such a hypocrite lmao.
 
-## Rabbit hole
-### How do I know Window Manager
-Well, I've been using XFCE for about 4 months maybe. I started to feel it's a bit sluggish. I know that Linux is so modular. You can change anything, literally _anything_. So surely, I can change my current Desktop Environment. There I am, searching for a Desktop Environment that is lighter than XFCE. Then I came across what's called Window Manager on Youtube.
-
-I was like, "Window Manager? What's that? Well, whatever that is I should try it." There are 2 kinds of Window Manager; tiling and stacking. Windows and MacOS use the stacking system where each window can overlap each other. Unlike stacking, Tiling Window Manager automatically spawns window so it doesn't stack. Like its name, tiling. It automatically resizes your window depending on how many windows are currently open. Let me give you a quick comparison.
-
-![Tiling](https://res.cloudinary.com/irrellia/image/upload/v1582769300/why-i-use-linux/Shot_2020-02-27_08-28_uwijpc.png)
-![Stacking](https://res.cloudinary.com/irrellia/image/upload/v1582769302/why-i-use-linux/Shot_2020-02-27_08-29_wgsb9f.png)
-
-The first one is tiling, the second one is stacking. Window Manager that I use to take that screenshot is i3-Gaps. It's a tiling Window Manager, but it also has floating mode (basically the same as stacking). As you can see, Tiling Window Manager doesn't have the classic 3 buttons that you usually see on Windows, MacOS, or Linux with Desktop Environment. Everything is controlled through keybinds.
-
-### My first Window Manager
-My first window manager is [i3wm](https://i3wm.org). I installed it and using a config from a video on youtube. [Here](https://www.youtube.com/watch?v=wQQXN-DWueA) is the video, and [here](https://github.com/addy-dclxvi/i3-starterpack) is the config. I was so happy because it looks so slick. I looked at other people screenshot using i3, then I notice something's missing. Dem gaps. It felt so claustrophobic without any gaps. I didn't know that there was i3 with gaps called i3-gaps. I installed it, I forgot what's the detail but everything was messed up. I gave up. I went back to XFCE.
-
-A week has passed, I want to try i3-gaps again. But this time, I'm gonna start from scratch. After tinkering around for about 3 days, I finally reach my peak comfort. Keybinds are set, the colour scheme is also set, the status bar is set. You know what will happen next right? Yep, time to post to r/unixporn.
-
-Alright, I gotta stop here about Window Manager because that in itself could be another blog post.
-
 ## Why Linux?
 So, why do I use Linux then? Well, let me give you a quick list of why Linux is better than the other OS
   - **It's free**
@@ -74,7 +56,7 @@ So, why do I use Linux then? Well, let me give you a quick list of why Linux is 
 
   - **Package Manager**
 
-      Now this is the stuff that makes me really love Linux. Linux has a centralized place to download any app that you want. You don't need to go to some kind of obnoxious website and find the correct download link. You just need to `apt install` or `pacman -S` any package that you want and it's totally secure.
+      Now this is the stuff that makes me really love Linux. Linux has a centralized place to download any app that you want. You don't need to go to some kind of obscure website and find the correct download link. You just need to `apt install` or `pacman -S` any package that you want and it's totally secure.
 
 ## Conclusion
 I became somewhat 'masochist' Linux user this past 8 months. No DE, it's bloat. Use VIM, any other Text Editor is bloat (Might make this as a post too). Use TUI based app if I can. I never thought that I would love Linux as I currently am.

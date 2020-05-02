@@ -21,6 +21,8 @@ What makes me more interested in this WM is, even though it's a floating WM, but
 ### Installation
 2BWM is sort of stacking version of DWM (no offense, if some of you DWM fans or 2BWM fans out there gets offended by this). Just like DWM, it's really minimal, there's no configuration file. You have to edit the `config.h` file in the source code and recompile it to apply the change.
 
+So, to install 2bwm is you clone the repo which is over [here](https://github.com/venam/2bwm) and follow the instruction to build it.
+
 At first, I couldn't make anything works. Can't open anything using the keybind. I probably messed up the config or something. There's only a black screen with nothingness. Then I went straight back to BSPWM, saying to myself that I'm not ready for this minimalistic WM.
 
 After about 3 days, I tried it one more time. This time, I decided to use other people config first which was really helpful. Then work my way up from there, changing some configuration and adding several keybinds.
