@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { Disqus } from "gatsby-plugin-disqus"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Styles from "../styles/post.module.css"
@@ -45,6 +46,7 @@ function BlogPage({ data }) {
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
         ></div>
         <hr className={Styles.tagDivider} />
+        <Disqus />
         {tags.map(tag => (
           <Link to={`/tags/${tag}`}>
             <span key={tag} className={Styles.tag}>
