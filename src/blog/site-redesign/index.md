@@ -1,6 +1,6 @@
 ---
 title: "Site Redesign"
-date: "2020-05-10"
+date: "2020-05-2"
 cover: "./cover.png"
 tags:
   - gatsby
