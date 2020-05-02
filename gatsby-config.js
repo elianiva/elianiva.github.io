@@ -8,6 +8,7 @@ module.exports = {
     reddit: `https://reddit.com/user/irrellia`,
     github: `https://github.com/elianiva`,
     url: `https://elianiva.github.io`,
+    siteUrl: `https://elianiva.github.io`,
   },
   plugins: [
     `gatsby-plugin-feed`,
