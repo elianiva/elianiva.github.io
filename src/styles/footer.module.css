@@ -5,6 +5,7 @@
   color: #121212;
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
+  border-top: 0.125rem #f4f4f4 solid;
 }
 
 .wrapper {

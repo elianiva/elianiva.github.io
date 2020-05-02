@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import Logo from "../assets/logo.svg"
 import Card from "../components/card"
 import Footer from "../components/footer"
 import Navbar from "../components/navbar"
@@ -47,7 +46,7 @@ function IndexPage() {
         <div className={Styles.greet}>
           <div className={Styles.wrapper}>
             <div className={Styles.logo}>
-              <Logo className={Styles.svg} />
+              <h1>Elianiva</h1>
             </div>
             <span className={Styles.greetText}>Hi there! I’m Elianiva.</span>
             <span className={Styles.greetDesc}>
@@ -78,8 +77,8 @@ function IndexPage() {
             <Link to="/posts" className={Styles.more}>
               View More
             </Link>
+            <Footer />
           </div>
-          <Footer />
         </div>
       </div>
     </>

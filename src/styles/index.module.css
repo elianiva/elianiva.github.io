@@ -37,6 +37,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 10rem;
   height: 10rem;
   border: 0.25rem solid #ffffff;
@@ -46,8 +47,11 @@ body {
   margin-bottom: 1rem;
 }
 
-.logo .svg {
-  flex: 1;
+.logo h1 {
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  color: #ffffff;
+  font-family: "Satisfy", cursive;
 }
 
 .greet-text {
@@ -129,11 +133,6 @@ body {
   .logo {
     height: 9rem;
     width: 9rem;
-  }
-
-  .logo > * {
-    height: 6rem;
-    width: 6rem;
   }
 
   .greet-text {
