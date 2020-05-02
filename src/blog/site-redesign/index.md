@@ -25,18 +25,22 @@ Nothing much changed here except I made it to be more 'informative' I guess. I a
 ## Pages Redesign
 ### Home page
 Previously, I have this one big section that fills the entire screen with a logo and a quick description about me. That's not very good in terms of the UX. I decided to make it look more compact by dividing it into 2 sides. Here's the comparison.
-[IMAGE]
-[IMAGE]
+
+![Old](https://res.cloudinary.com/irrellia/image/upload/v1588407518/site-redesign/Shot-2020-05-02_15-13_2_zgbgy4.png)
+
+![New](https://res.cloudinary.com/irrellia/image/upload/v1588407526/site-redesign/Shot-2020-05-02_14-39_quswht.png)
 
 I also don't have a new logo for my username yet. So it is what it is. I'll make that in the future.
 
 
 ### Tags page
 I decided to remove the category. I think tags will be enough because I have another plan for the "category" thingy. I'll talk about that later on. If you've seen my archives page before, it kinda look like a mess, like seriously. I mean just look at this.
-[IMAGE]
+
+![Old](https://res.cloudinary.com/irrellia/image/upload/v1588407521/site-redesign/Shot-2020-05-02_15-13_1_ujxkpf.png)
 
 and compare that to this.
-[IMAGE]
+
+![New](https://res.cloudinary.com/irrellia/image/upload/v1588407524/site-redesign/Shot-2020-05-02_15-13_gk8orx.png)
 
 The new page looks _way_ better than the old one. At least in my opinion.
 
