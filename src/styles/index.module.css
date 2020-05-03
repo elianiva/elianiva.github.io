@@ -60,14 +60,14 @@ body {
   font-size: 2rem;
   line-height: 2.5rem;
   font-weight: 600;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
 }
 
 .greet-desc {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
 }
 
 .posts {

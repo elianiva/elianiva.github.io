@@ -2,7 +2,7 @@
   width: 90%;
   max-width: 800px;
   margin: 0.75rem auto;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
   background-color: #ffffff;
@@ -61,7 +61,7 @@
   border-radius: 0.25rem;
   padding: 0 0.5rem;
   text-transform: uppercase;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1);
 }
 
