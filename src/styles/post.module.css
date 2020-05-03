@@ -4,7 +4,7 @@
   margin: 0 auto;
   color: #121212;
   text-align: left;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
 }
 
 .divider {
@@ -117,7 +117,7 @@
 .content p {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
 }
 
 .content li {
@@ -165,7 +165,7 @@
 }
 
 .tagName {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -179,7 +179,7 @@
   padding: 0.5rem;
   border-radius: 0.25rem;
   text-transform: lowercase;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
 }
 
 .tag::before {
