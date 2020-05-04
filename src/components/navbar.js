@@ -6,6 +6,7 @@ import Styles from "../styles/navbar.module.css"
 import Facebook from "../assets/facebook-logo.svg"
 import Twitter from "../assets/twitter.svg"
 import Reddit from "../assets/reddit.svg"
+import Rss from "../assets/rss.svg"
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false)
@@ -46,6 +47,9 @@ function Navbar() {
           </a>
           <a href="https://reddit.com/irrellia">
             <Reddit />
+          </a>
+          <a href="https://elianiva.github.io/rss.xml">
+            <Rss />
           </a>
         </div>
         <div className={Styles.hamburger}>
@@ -92,6 +96,9 @@ function Navbar() {
             </a>
             <a href="https://reddit.com/irrellia">
               <Reddit />
+            </a>
+            <a href="https://elianiva.github.io/rss.xml">
+              <Rss />
             </a>
           </div>
         </div>
