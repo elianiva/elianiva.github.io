@@ -62,9 +62,8 @@ function IndexPage() {
               const { cover, title, date, tags } = post.node.frontmatter
               const { slug } = post.node.fields
               return (
-                <Link to={slug} rel="Post">
+                <Link key={post.node.id} to={`/${slug}`} rel="Post">
                   <Card
-                    key={post.node.id}
                     cover={cover.childImageSharp.fluid}
                     title={title}
                     date={date}
@@ -84,4 +83,5 @@ function IndexPage() {
     </>
   )
 }
+
 export default IndexPage

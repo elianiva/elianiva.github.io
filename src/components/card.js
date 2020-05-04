@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Styles from "../styles/card.module.css"
 import Img from "gatsby-image"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Date from "../assets/date.svg"
 import moment from "moment"
 
@@ -39,9 +39,7 @@ function Card(props) {
         ></span>
         <div className={Styles.tags}>
           {props.tags.map(tag => (
-            <Link to={`/tags/${tag}`} rel="Tag">
-              <span className={Styles.tag}>{tag}</span>
-            </Link>
+            <span className={Styles.tag}>{tag}</span>
           ))}
         </div>
       </div>
@@ -50,7 +48,6 @@ function Card(props) {
 }
 
 Card.propTypes = {
-  key: PropTypes.number.isRequired,
   cover: PropTypes.any.isRequired,
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,

@@ -21,9 +21,8 @@ function Posts({ pageContext, data }) {
           const { cover, title, date, tags } = post.node.frontmatter
           const { slug } = post.node.fields
           return (
-            <Link to={slug} rel="Post">
+            <Link to={slug} rel="Post" key={post.node.id}>
               <Card
-                key={post.node.id}
                 cover={cover.childImageSharp.fluid}
                 title={title}
                 date={date}
