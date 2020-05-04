@@ -149,12 +149,18 @@
   background-color: #292d3e;
   padding: 0.2rem;
   border-radius: 0.25rem;
-  white-space: wrap;
+  white-space: nowrap;
+}
+
+.content code::before {
+  display: none;
 }
 
 .content pre {
   border-radius: 0.25rem;
   font-family: "Iosevka", monospace;
+  scrollbar-width: thin;
+  scrollbar-color: #dbdbdb #ffffff;
 }
 
 .content pre code {
