@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Styles from "../styles/card.module.css"
 import Img from "gatsby-image"
 import { Link, useStaticQuery, graphql } from "gatsby"
@@ -46,6 +47,15 @@ function Card(props) {
       </div>
     </div>
   )
+}
+
+Card.propTypes = {
+  key: PropTypes.number.isRequired,
+  cover: PropTypes.any.isRequired,
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  tags: PropTypes.array.isRequired,
 }
 
 export default Card
