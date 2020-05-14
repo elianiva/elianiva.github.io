@@ -78,10 +78,10 @@ a {
 .hamburger > input {
   display: block;
   width: 2.5rem;
-  height: 2rem;
+  height: 2.5rem;
   position: absolute;
   opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  z-index: 23; /* and place it over the hamburger */
   -webkit-touch-callout: none;
   cursor: pointer;
 }
