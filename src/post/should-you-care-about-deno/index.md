@@ -41,7 +41,7 @@ Here's a table to better visualize differences between them.
 | Written in C++ (and some other)    | Written in Rust (and some other)|
 | Uses node_modules for each project | Using URL to get modules from   |
 | Not secure by default              | Secure by default               |
-| Doesn't support TS out of the box | Supports TS out of the box      |
+| Doesn't support TS out of the box  | Supports TS out of the box      |
 
 Those are some differences between them. Now let's talk about some of them.
 
@@ -64,7 +64,7 @@ Those problems are taken care of by Deno's caching system. You'll only need to d
 
 So no need to worry about that. But another question appears. Being decentralized for its source of packages, what if one of the servers that serve the package went down? No need to worry about that either because of Deno's caching system, it will use the downloaded package.
 
-We can import packages for Deno using some CDN like [pika.dev](https://www.pika.dev) and [jspm.io](https://jspm.io). Though, it won't be as much as the original NPM packages because Deno isn't compatible with Node. As long as the package doesn't use Node specific API, it should be fine.
+We can import packages for Deno from [deno.land](https://deno.land/x/) or some CDN like [pika.dev](https://www.pika.dev) and [jspm.io](https://jspm.io).
 
 ### Security
 Unlike Node, Deno embraces security by default by not allowing access to the filesystem, network, execution of other scripts, and the environment variable. We have to explicitly tell Deno that we trust the script that we are running.
@@ -72,4 +72,4 @@ Unlike Node, Deno embraces security by default by not allowing access to the fil
 Some of Deno flags that we can use are `--allow-write`, `--allow-read`, `--allow-net`, and some other. Just refer to Deno's manual, it explains really well!
 
 ## Conclusion
-Now, back to our original question. Should you care about Deno? My answer is yes. Deno is an awesome project that we should care about even if we don't use it for production. Knowing Deno early will benefit you in the future in my opinion. It's still in a very early phase though. You can either try to play with it or even better, contribute to the project. I don't think it's production-ready yet. Maybe in a few years, it will blow up just like Node JS does.
+Now, back to our original question. Should you care about Deno? My answer is yes. Considering what Deno offers, it's an awesome project that we should care about even if we don't use it for production yet. Knowing Deno early will benefit you in the future in my opinion. It's still in a very early phase though. You can either try to play with it or even better, contribute to the project. I don't think it's production-ready yet. Maybe in a few years, it will blow up just like Node JS does.

@@ -174,6 +174,13 @@
   overflow: hidden;
 }
 
+.content table a {
+  transition: all ease-out 0.2s;
+  font-weight: 600;
+  line-height: 1.25rem;
+  font-style: italic;
+}
+
 .content table tr:nth-child(odd) {
   background-color: #f4f4f4;
 }
