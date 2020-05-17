@@ -169,6 +169,26 @@
   font-family: "Iosevka", monospace;
 }
 
+.content table {
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.content table tr:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+.content table th {
+  background-color: #5c90ff;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.content table th,
+.content table td {
+  padding: 0.75rem 1rem;
+}
+
 .tagName {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
