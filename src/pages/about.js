@@ -47,7 +47,7 @@ function AboutPage() {
           2520M, 320GB HDD and 4GB of RAMs. I'm planning on upgrading it in the
           future, but for now it's enough. I also don't use those fancy
           mechanical keyboard, at least not yet. I'm not really sure whether to
-          buy it or not becuase my Thinkpad keyboard is just awesome!
+          buy it or not because my Thinkpad keyboard is just awesome!
         </p>
         <p>
           Those are the hardware side of thing, now let's talk about the

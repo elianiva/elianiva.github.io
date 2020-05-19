@@ -16,7 +16,7 @@ tags:
 ### Navigation Bar
 I changed the background to be a little bit transparent so that I can use a `backdrop-filter` that I recently discovered. It looks really cool, like looking through a white glass.
 
-I added the social media icon to the navbar unlike previously where I put it on the footer so people can could easily see them. The icons are also changed, they have their original shape instead of having a circular background. Here's a comparison between them.
+I added the social media icon to the navbar unlike previously where I put it on the footer so people can could easily see them. The icons are also changed, they have their original shape instead of having a circular background.
 
 ### Footer
 Nothing much changed here except I made it to be more 'informative' I guess. I also removed the previous social media icon which I've already mentioned.
