@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "node"
 install:
-  # install eleventy and any dependencies inside ./package.json
+  # install gatsby and any dependencies inside ./package.json
   - npm install
 script:
   # run generator
