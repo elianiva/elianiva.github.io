@@ -93,7 +93,7 @@ a {
   margin: 0.5rem 0;
   position: relative;
   background: #121212;
-  z-index: 23;
+  z-index: 22;
   transform-origin: 4px 0px;
   transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.2s ease;
@@ -124,6 +124,7 @@ a {
 }
 
 .overlay {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;

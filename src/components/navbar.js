@@ -67,7 +67,11 @@ function Navbar() {
         className={Styles.overlay}
         style={
           isOpen
-            ? { display: "flex", opacity: 1, visibility: "visible" }
+            ? {
+                visibility: "visible",
+                pointerEvents: "all",
+                opacity: 1,
+              }
             : { visibility: "none", pointerEvents: "none", opacity: 0 }
         }
       >
