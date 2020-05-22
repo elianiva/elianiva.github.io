@@ -8,6 +8,10 @@
   background-color: #ffffff;
 }
 
+.container > .image {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
 .wrapper {
   padding: 0.5rem;
   display: grid;
