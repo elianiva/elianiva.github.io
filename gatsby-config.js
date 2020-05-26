@@ -3,7 +3,6 @@ module.exports = {
     title: `Elianiva's Blog`,
     description: `This is a blog where I share random stuff that I found from the internet.`,
     author: `@dicha`,
-    twitter: `https://twitter.com/irrellia_`,
     facebook: `https://facebook.com/ho0m4n`,
     reddit: `https://reddit.com/user/irrellia`,
     github: `https://github.com/elianiva`,
