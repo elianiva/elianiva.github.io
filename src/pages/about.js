@@ -43,27 +43,49 @@ function AboutPage() {
         </p>
         <h3>My setup</h3>
         <p>
-          I made my website using my lovely Thinkpad X220. It has an Intel i5
-          2520M, 320GB HDD and 4GB of RAMs. I'm planning on upgrading it in the
-          future, but for now it's enough. I also don't use those fancy
-          mechanical keyboard, at least not yet. I'm not really sure whether to
-          buy it or not because my Thinkpad keyboard is just awesome!
+          I made my website using my laptop which is Thinkpad X220. Here's a
+          table about my current specs if you want to know.
         </p>
+        <table>
+          <tr>
+            <th>My X220 specs</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>CPU</td>
+            <td>i5 2520M (3M cache, up to 3.2 GHz)</td>
+          </tr>
+          <tr>
+            <td>GPU</td>
+            <td>Intel HD Graphics 3000</td>
+          </tr>
+          <tr>
+            <td>HDD</td>
+            <td>WD Blue 2.5 inch with 320GB and 7200RPM</td>
+          </tr>
+          <tr>
+            <td>RAM</td>
+            <td>4GB DDR3 1333MHz</td>
+          </tr>
+          <tr>
+            <td>Monitor</td>
+            <td>12.5-inch TN panel with 1366x768 screen resolution</td>
+          </tr>
+          <tr>
+            <td>OS</td>
+            <td>Linux (Archlinux)</td>
+          </tr>
+        </table>
         <p>
           Those are the hardware side of thing, now let's talk about the
           software side of thing. I use{" "}
           <a href="https://archlinux.org/">Archlinux</a> as my operating system,
           I don't use Windows because I don't like it. Linux is way better for
-          my needs, who cares about game support anyway, I don't play any game
-          (well I do play some game, but only when I got super bored or other
-          special occasion)
-        </p>
-        <p>
-          I use a window manager called{" "}
-          <a href="https://github.com/baskerville/bspwm">BSPWM</a>. My text
-          editor is <a href="https://neovim.io">Neovim</a> which is basically
-          Vim with steroid. I am planning on making some sort of series on my
-          website regarding these things, so keep an eye out ;)
+          my needs. Yes, I'm aware that Windows is better for gaming, but I
+          don't really care that much. I use a window manager called{" "}
+          <a href="https://dwm.suckless.org/">DWM</a>. My text editor is{" "}
+          <a href="https://neovim.io">Neovim</a> which is basically Vim with
+          steroid.
         </p>
       </div>
     </Layout>

@@ -30,6 +30,30 @@
   color: #5c90ff;
 }
 
+.container table {
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.container table td:nth-child(1) {
+  font-weight: 600;
+}
+
+.container table tr:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+.container table th {
+  background-color: #5c90ff;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.container table th,
+.container table td {
+  padding: 0.5rem 1rem;
+}
+
 .container a:hover,
 .container a:focus {
   border-bottom: 0.125rem #5c90ff solid;
