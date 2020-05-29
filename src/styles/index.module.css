@@ -65,8 +65,8 @@ body {
 }
 
 .greet-desc {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: 400;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   color: #292d3e;
@@ -123,7 +123,7 @@ body {
   }
 
   .greet {
-    min-height: 65vh;
+    min-height: 75vh;
   }
 
   .cards {

@@ -37,6 +37,7 @@
 }
 
 .date {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   display: block;
   text-align: left;
   font-size: 0.8rem;
