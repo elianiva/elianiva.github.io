@@ -9,7 +9,7 @@ tags:
 
 ## Introduction
 [[snippet]]
-| Gday everyone! In this post, I will tell you guys the reason why I use Linux and how I know Linux. Well, the correct term here should be GNU/Linux but it's _way_ too long let's be honest. So, whenever I say Linux, what I mean is GNU/Linux. Let's start with how I know Linux.
+| Hello internet people of the internet! In this post, I will tell you people the reason why I use Linux and how I know Linux. Well, the correct term here should be GNU/Linux but it's _way_ too long let's be honest. So, whenever I say Linux, what I mean is GNU/Linux. Let's start with how I know Linux.
 
 ## Origin
 ### My first laptop
@@ -59,8 +59,6 @@ So, why do I use Linux then? Well, let me give you a quick list of why Linux is 
       Now this is the stuff that makes me really love Linux. Linux has a centralized place to download any app that you want. You don't need to go to some kind of obscure website and find the correct download link. You just need to `apt install` or `pacman -S` any package that you want and it's totally secure.
 
 ## Conclusion
-I became somewhat 'masochist' Linux user this past 8 months. No DE, it's bloat. Use VIM, any other Text Editor is bloat (Might make this as a post too). Use TUI based app if I can. I never thought that I would love Linux as I currently am.
-
-A first, I'm afraid that I can't install Windows on my new laptop. Who would've thought that in the end, I use Archlinux which some people say that it's difficult to install. I think it's not that hard, follow the wiki and you're set (said someone who had failed to install Archlinux 3 times lmao).
+At first, I'm afraid that I can't install Windows on my new laptop. Who would've thought that in the end, I use Archlinux which some people say that it's difficult to install. I think it's not that hard, follow the wiki and you're set (said someone who had failed to install Archlinux 3 times lmao).
 
 Alright, this post will end right here. I might post why I use VIM/Window Managers next time. See ya in the next post everyone, have a good day!
