@@ -59,8 +59,9 @@ body {
   margin-bottom: 1rem;
   font-size: 2rem;
   line-height: 2.5rem;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  color: #292d3e;
 }
 
 .greet-desc {
@@ -68,6 +69,7 @@ body {
   line-height: 1.5rem;
   font-weight: 400;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  color: #292d3e;
 }
 
 .posts {
@@ -121,11 +123,12 @@ body {
   }
 
   .greet {
-    min-height: 85vh;
+    min-height: 65vh;
   }
 
   .cards {
     overflow: visible;
+    padding-top: 1rem;
   }
 }
 

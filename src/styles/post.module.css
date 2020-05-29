@@ -4,7 +4,7 @@
   margin: 0 auto;
   color: #121212;
   text-align: left;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .divider {
@@ -38,7 +38,7 @@
 .date {
   text-transform: uppercase;
   color: #121212;
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
   line-height: 2rem;
   margin-bottom: 0;
@@ -48,7 +48,7 @@
 .time {
   text-transform: uppercase;
   color: #121212;
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
   line-height: 2rem;
   line-height: 0.8rem;
@@ -115,9 +115,10 @@
 }
 
 .content p {
+  color: #292d3e;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .content li {
@@ -158,6 +159,7 @@
 .content pre {
   border-radius: 0.25rem;
   font-family: "Iosevka", monospace;
+  font-size: 1.125rem;
   scrollbar-width: thin;
   scrollbar-color: #dbdbdb #ffffff;
 }

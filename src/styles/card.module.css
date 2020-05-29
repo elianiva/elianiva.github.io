@@ -1,7 +1,7 @@
 .container {
   width: 90%;
   max-width: 800px;
-  margin: 0.75rem auto;
+  margin: 1rem auto;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
@@ -39,19 +39,18 @@
 .date {
   display: block;
   text-align: left;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 400;
   text-transform: uppercase;
-  color: #555555;
+  color: #292d3e;
 }
 
 .desc {
   text-align: left;
-  font-size: 0.8rem;
-  line-height: 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.125rem;
   font-weight: 400;
-  color: #555555;
+  color: #292d3e;
   margin-bottom: -0.5rem;
   display: block;
 }

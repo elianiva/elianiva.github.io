@@ -27,13 +27,16 @@
     "gatsby-transformer-remark": "^2.6.50",
     "gatsby-transformer-sharp": "^2.3.13",
     "gh-pages": "^2.2.0",
-    "lazysizes": "^5.2.0",
+    "lazysizes": "^5.2.2",
     "moment": "2.24.0",
     "prismjs": "^1.19.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "typeface-pt-sans": "0.0.72",
+    "typeface-roboto-condensed": "0.0.75",
+    "typeface-satisfy": "0.0.72"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
