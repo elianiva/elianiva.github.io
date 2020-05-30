@@ -81,10 +81,10 @@
 
   .container > .image {
     border-radius: 0.25rem 0 0 0.25rem;
-    flex: 1;
+    flex: 2;
   }
 
   .container > .wrapper {
-    flex: 2;
+    flex: 3;
   }
 }
