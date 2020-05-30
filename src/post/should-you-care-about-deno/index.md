@@ -14,7 +14,7 @@ tags:
 
 ## Deno
 ### What is Deno?
-I'm pretty sure if you're asking this question, you already know what Deno is. If you don't know already, Deno is a Javascript / Typescript runtime made by the same guy who made Node JS, Ryan Dahl. It was announced on JSConf 2018 during his talk "10 Things I regret about Node JS".
+I'm pretty sure if you're asking whether you should care or not about Deno, you probably know what Deno is. If you don't know already, Deno is a Javascript / Typescript runtime made by the same guy who made Node JS, Ryan Dahl. It was announced on JSConf 2018 during his talk "10 Things I regret about Node JS".
 
 These are some of them.
 
