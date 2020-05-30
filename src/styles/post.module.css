@@ -66,6 +66,7 @@
 
 .toc a:hover {
   color: #5c90ff;
+  transition: color ease-out 0.2s;
 }
 
 .toc-title {
