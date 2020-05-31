@@ -146,7 +146,7 @@
 
 .content code {
   font-family: "Iosevka", monospace;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #b2b8dc;
   background-color: #292d3e;
   padding: 0.2rem;
@@ -160,14 +160,13 @@
 .content pre {
   border-radius: 0.25rem;
   font-family: "Iosevka", monospace;
-  font-size: 1.125rem;
   scrollbar-width: thin;
   scrollbar-color: #dbdbdb #ffffff;
 }
 
 .content pre code {
   color: #b2b8dc;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
   font-family: "Iosevka", monospace;
 }
