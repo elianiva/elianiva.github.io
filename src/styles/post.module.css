@@ -162,6 +162,7 @@
   font-family: "Iosevka", monospace;
   scrollbar-width: thin;
   scrollbar-color: #dbdbdb #ffffff;
+  margin-bottom: 1rem;
 }
 
 .content pre code {
