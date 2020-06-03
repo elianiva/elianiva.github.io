@@ -1,5 +1,5 @@
 ---
-title: "two borders window manager"
+title: "Two Borders Window Manager"
 date: "2020-04-01"
 cover: "./cover.png"
 tags:

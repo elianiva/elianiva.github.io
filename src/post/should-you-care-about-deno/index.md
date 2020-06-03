@@ -1,5 +1,5 @@
 ---
-title: "should you care about deno?"
+title: "Should You Care About Deno?"
 date: "2020-05-17"
 cover: "./cover.png"
 tags:

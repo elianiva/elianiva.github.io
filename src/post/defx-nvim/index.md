@@ -1,5 +1,5 @@
 ---
-title: "Defx, a dark powered file explorer"
+title: "Defx, A Dark Powered File Explorer"
 date: "2020-02-22"
 cover: "./cover.png"
 tags:
