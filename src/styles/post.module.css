@@ -147,8 +147,8 @@
 .content code {
   font-family: "Iosevka", monospace;
   font-size: 0.9rem;
-  color: #b2b8dc;
-  background-color: #292d3e;
+  color: #292d3e;
+  background-color: #f4f4f4;
   padding: 0.2rem;
   border-radius: 0.25rem;
 }
@@ -165,6 +165,7 @@
 }
 
 .content pre code {
+  background-color: #292d3e;
   color: #b2b8dc;
   font-size: 0.9rem;
   font-weight: 400;
@@ -196,6 +197,18 @@
 .content table th,
 .content table td {
   padding: 0.75rem 1rem;
+}
+
+.content blockquote {
+  background-color: #f4f4f4;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.content blockquote p::before {
+  content: "ー ";
+  color: #5c90ff;
 }
 
 .tagName {
