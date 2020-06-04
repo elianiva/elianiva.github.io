@@ -49,7 +49,7 @@
 .desc {
   text-align: left;
   font-size: 0.9rem;
-  line-height: 1.125rem;
+  line-height: 1.5rem;
   font-weight: 400;
   color: #292d3e;
   margin-bottom: -0.5rem;
@@ -86,5 +86,9 @@
 
   .container > .wrapper {
     flex: 3;
+  }
+
+  .desc {
+    line-height: 1.25rem;
   }
 }
