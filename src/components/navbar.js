@@ -68,7 +68,11 @@ function Navbar() {
                 pointerEvents: "all",
                 opacity: 1,
               }
-            : { visibility: "none", pointerEvents: "none", opacity: 0 }
+            : {
+                visibility: "hidden",
+                pointerEvents: "none",
+                opacity: 0,
+              }
         }
       >
         <div className={Styles.items}>
