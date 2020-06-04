@@ -22,10 +22,10 @@ I'm using Arch so I will use the almighty AUR to make my life easier. If you're 
 
 ``` bash
 # yay
-[~]$ yay -S spotifyd-full
+$ yay -S spotifyd-full
 
 # trizen
-[~]$ trizen spotifyd-full
+$ trizen spotifyd-full
 ```
 
 I personally use `spotifyd-full` from AUR. Spotify-full is spotifyd with all feature flags enabled. If you want a minimal install, you can use `spotifyd` instead. If you don't like to wait for it to compile, just take one with `-bin` suffix. For more details on feature flags, you can refer to their [github page](https://github.com/Spotifyd/spotifyd/blob/master/README.md#feature-flags).
@@ -131,10 +131,10 @@ Installing spotify-tui is pretty straight forward. I use Arch so I can just use 
 
 ``` bash
 # yay
-[~]$ yay -S spotifyd-full
+$ yay -S spotifyd-full
 
 # trizen
-[~]$ trizen spotifyd-full
+$ trizen spotifyd-full
 ```
 
 After installing it, the executable binary is called `spt`. I got confused the first time I installed it because I missed the part where it says
