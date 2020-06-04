@@ -48,10 +48,8 @@ function BlogPage({ data }) {
         <hr className={Styles.tagDivider} />
         <Disqus />
         {tags.map(tag => (
-          <Link to={`/tags/${tag}`}>
-            <span key={tag} className={Styles.tag}>
-              {tag}
-            </span>
+          <Link key={tag} to={`/tags/${tag}`}>
+            <span className={Styles.tag}>{tag}</span>
           </Link>
         ))}
       </div>

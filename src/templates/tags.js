@@ -21,9 +21,12 @@ function Tags({ pageContext, data }) {
           const { cover, title, date, tags } = edge.node.frontmatter
           const { slug } = edge.node.fields
           return (
-            <Link to={slug} rel="Post">
+            <Link
+              key={edge.node.id}
+              to={`/${slug.replace(/\//, "")}`}
+              rel="Post"
+            >
               <Card
-                key={edge.node.id}
                 cover={cover.childImageSharp.fluid}
                 title={title}
                 date={date}

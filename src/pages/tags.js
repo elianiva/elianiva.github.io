@@ -26,12 +26,8 @@ function TagsPage() {
         <div className={Styles.tags}>
           {data.tagsGroup.group.map(tag => {
             return (
-              <Link to={`/tags/${tag.fieldValue}`}>
-                <Tag
-                  name={tag.fieldValue}
-                  number={tag.totalCount}
-                  key={tag.fieldValue}
-                />
+              <Link key={tag.fieldValue} to={`/tags/${tag.fieldValue}`}>
+                <Tag name={tag.fieldValue} number={tag.totalCount} />
               </Link>
             )
           })}
