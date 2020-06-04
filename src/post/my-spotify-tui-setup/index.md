@@ -31,7 +31,7 @@ I'm using Arch so I will use the almighty AUR to make my life easier. If you're 
 I personally use `spotifyd-full` from AUR. Spotify-full is spotifyd with all feature flags enabled. If you want a minimal install, you can use `spotifyd` instead. If you don't like to wait for it to compile, just take one with `-bin` suffix. For more details on feature flags, you can refer to their [github page](https://github.com/Spotifyd/spotifyd/blob/master/README.md#feature-flags).
 
 ### Configuration
-Configuring spotifyd is quite easy actually, they gave you a [default configuration](TODO) to help you get going. Here's mine.
+Configuring spotifyd is quite easy actually, they gave you a [default configuration](https://github.com/Spotifyd/spotifyd#configuration) to help you get going. Here's mine.
 
 ``` ini
 [global]
@@ -56,19 +56,19 @@ I'll explain the configuration briefly.
 
 - **Username**
 
-    Fill this field with your _real_ username. You can get one from [here](TODO). It's **NOT** your usual username that you can change, this username is given by Spotify.
+    Fill this field with your _real_ username. You can get one from [here](https://www.spotify.com/us/account/set-device-password/) and it's roughly looks like **21zu9n5i8jtipipiwxrfyglhohmq**. It's **NOT** your usual username that you can change, this username is given by Spotify.
 
 - **Password**
 
-    Fill this field with your spotify password. If you want to put this configuration on github or something like that, **DO NOT USE THIS METHOD**. If you use this method, don't include it on your repo.
+    Fill this field with your spotify device password which you can make by visiting [this link](https://www.spotify.com/us/account/set-device-password/). If you want to put this configuration on github or something like that, **DO NOT USE THIS METHOD**. If you use this method, don't include it on your repo.
 
 - **Password Cmd**
 
-    Fill this field with a program that outputs your password through stdout. `pass` can do this. For more details, you can check out [their website](TODO). I personally don't use this so I can't give you any guide.
+    Fill this field with a program that outputs your password through stdout. `pass` can do this. For more details, you can check out [their website](https://www.passwordstore.org/). I personally don't use this so I can't give you any guide.
 
 - **Use Keyring**
 
-    Fill this field if you want spotifyd to look up any password on your machine. I don't have any experience with keyrings and such so I can't give you any guide on this. It's explained on [spotifyd readme](TODO) though, so you can check that.
+    Fill this field if you want spotifyd to look up any password on your machine. I don't have any experience with keyrings and such so I can't give you any guide on this. It's explained on [spotifyd readme](https://github.com/Spotifyd/spotifyd#configuration-file) though, so you can check that.
 
 - **Backend**
 
