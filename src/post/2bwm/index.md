@@ -13,9 +13,9 @@ tags:
 Well, because of this pandemic and whatnot, you're advised to stay at home. That's why our school closed until it ends, which means I have plenty of free time. I decided to use some of my time to try another Window Manager which is 2BWM.
 
 ## Why 2BWM?
-I chose it mostly because it has 2 borders. I know that you can make BSPWM have 2 borders but I can't make it work. It uses chwb2 or something like that from wmutils. Another reason is that I want to try a different workflow. i3 and BSPWM is a tiling window manager. I'd assume you already know what's a tiling WM is, otherwise [read this](https://en.wikipedia.org/wiki/Tiling_window_manager).
+I chose it mostly because it has 2 borders. I know that you can make BSPWM have 2 borders but I can't make it work. It uses chwb2 or something like that from wmutils. Another reason is that I want to try a different workflow. i3 and BSPWM is a tiling window manager. I'd assume you already know what a tiling WM is, otherwise [read this](https://en.wikipedia.org/wiki/Tiling_window_manager).
 
-What makes me more interested in this WM is, even though it's a floating WM, but it can be fully controlled using a keyboard only. You can even move your cursor using a keybind! But I don't really use this feature.
+What makes me more interested in this WM is, even though it's a floating WM, it can be fully controlled using a keyboard only. You can even move your cursor using a keybind! But I don't really use this feature.
 
 ## My Experience
 ### Installation
@@ -30,7 +30,7 @@ After about 3 days, I tried it one more time. This time, I decided to use other 
 ### Usage
 So far, it is a _great_ experience. I come to a point where it feels like it's a peak comfy workflow. I never thought floating WM with keyboard control is my thing. I tried Openbox and the only thing I don't like about it, you have to use the mouse. I hate using the mouse, it's way too far. Even though I have a TrackPoint in my Thinkpad, I still don't quite like it.
 
-You can move a window by using `mod+<vim keys>` and resize it using `mod+shift+<vim keys>`. You can also use the mouse if you want. The teleport feature is what I like the most. You can snap windows to left or right, and 4 corners of your screen.
+You can move a window by using `mod+{h,j,k,l}` and resize it using `mod+shift+{h,j,k,l}`. You can also use the mouse if you want. The teleport feature is what I like the most. You can snap windows to left or right, and 4 corners of your screen.
 
 So far, I have no issue with this WM. Though, I only use it for about 3 days as of the time this post is written
 
