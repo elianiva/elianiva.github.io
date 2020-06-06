@@ -100,7 +100,7 @@ If you've done configuring it, try to activate it by pressing the keybind that y
 
 It looks like an autocomplete from a text editor. The way it works is if you write **romaji**, it auto converts it to **hiragana** which you can then press `TAB` to scroll the options.
 
-For example, if you write `watashi` then it will show `わたし` and if you continue pressing `TAB` it can be the kanji form of it which is `私`. This also applies to **katakana**.
+For example, if you write `watashi` then it will show `わたし` and if you continue pressing `TAB` it will be the kanji form of it which is `私`. This also applies to **katakana**.
 
 ## Conclusion
 All in all, I'm pretty satisfied with this setup. I don't have to learn a new keyboard layout to insert Japanese characters. I can just write romaji and it will turn into hiragana, katakana, or kanji.
