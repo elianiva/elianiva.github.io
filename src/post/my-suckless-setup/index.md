@@ -127,7 +127,6 @@ echo "yes\nno" | dmenu
 
 That simple command is echo-ing `yes` and `no` and piping it to dmenu. It will give you a dmenu prompt that you can type to choose the option or simply move the selection. If you press <ESC>, it will close dmenu prompt, but if you select one of them, it will give your selection to stdout which you can then process it however you want. [Here's](https://github.com/elianiva/dotfiles/blob/master/.scripts/) mine if you want to check it out.
 
-
 ### Installation
 Just like any other suckless software, the way you should install this is by compiling it from the source. I use the [tarball](https://dl.suckless.org/tools/dmenu-4.9.tar.gz) v4.9. You know the drill, `cd` to that directory and run
 
@@ -249,8 +248,21 @@ if(FcPatternGetBool(xfont->pattern, FC_COLOR, 0, &iscol) == FcResultMatch && isc
 
 After removing that, make sure you got `libxft-bgra` installed. Otherwise, it won't work.
 
+### Desktop files
+If you noticed, there's no .desktop files after installing suckless software. You can either add it yourself or apply a patch for it. I prefer adding it myself. Here's an example of my `dwm.desktop` located on `/usr/share/xsessions/`
+
+``` desktop
+[Desktop Entry]
+Name=dwm
+Comment=dynamic window manager
+Exec=dwm
+Type=Application
+```
+
+I don't need ST desktop entry since I launch ST using keybind or dmenu which doesn't need it. If you launch it from **Rofi** or something like that, you'll need the desktop entry file.
+
 ## Resources
-If you want to get all of my suckless builds, you can get it on my [ Github repo ](https://github.com/elianiva/suckless/).
+If you want to get all of my suckless builds, you can get it on my [ Github repo ](https://github.com/elianiva/suckless/) and [here](https://github.com/elianiva/dotfiles/blob/master/.scripts/) are my scripts
 
 ## Conclusion
 I like the suckless concept because it works great and I like their way of distributing their stuff. They give you a barebones software that you can add some features through patches. This can get overwhelming since they have _a lot_ of patches, like _a lot_.
