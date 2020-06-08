@@ -10,6 +10,14 @@ module.exports = {
     siteUrl: `https://elianiva.github.io`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#5c90ff`,
+        showSpinner: false,
+      },
+    },
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -214,7 +222,6 @@ module.exports = {
         trackingId: "UA-168720555-1",
       },
     },
-    `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
