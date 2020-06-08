@@ -9,7 +9,7 @@ module.exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
     const slug = value.replace("/blog/", "")
-    const url = `${slug}`
+    const url = `/${slug.replace(/\//, "")}`
 
     // Create node field
     createNodeField({

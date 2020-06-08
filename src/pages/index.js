@@ -62,11 +62,7 @@ function IndexPage() {
               const { cover, title, date, tags } = post.node.frontmatter
               const { slug } = post.node.fields
               return (
-                <Link
-                  key={post.node.id}
-                  to={`/${slug.replace(/\//, "")}`}
-                  rel="Post"
-                >
+                <Link key={post.node.id} to={slug} rel="Post">
                   <Card
                     cover={cover.childImageSharp.fluid}
                     title={title}
