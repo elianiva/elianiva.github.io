@@ -166,6 +166,10 @@ a {
     display: none;
   }
 
+  .overlay {
+    display: none;
+  }
+
   .menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
