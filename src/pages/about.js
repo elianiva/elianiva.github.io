@@ -73,7 +73,7 @@ function AboutPage() {
           </tr>
           <tr>
             <td>OS</td>
-            <td>Linux (Archlinux)</td>
+            <td>GNU/Linux (Archlinux)</td>
           </tr>
         </table>
         <p>
