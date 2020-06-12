@@ -34,7 +34,7 @@ That's it. DWM is compiled and installed. It only took a couple of seconds on my
 ### Patching
 One of the suckless key features is patching. To add new functionality, you need to patch it your own. I honestly like this concept. They gave you a bare minimum software that you can add some features by patching it on your own.
 
-I personally use only 4 of them and a little bit tweaking on `dwm.c` file. Here are those patches.
+I personally use 5 of them and a little bit of tweaking on `dwm.c` file. Here are those patches.
 
 - [**Actual Fullscreen**](https://dwm.suckless.org/patches/actualfullscreen/)
 
@@ -51,6 +51,10 @@ I personally use only 4 of them and a little bit tweaking on `dwm.c` file. Here 
 - [**Vanity Gaps**](https://dwm.suckless.org/patches/status2d/)
 
   The most essential feature of a window manager for me. If a tiling window manager doesn't have this feature, I won't use it. It makes me feel less claustrophobic.
+
+- [**Swallow Patch**](https://dwm.suckless.org/patches/swallow/)
+
+    I recently use this patch to fix the usual behaviour when you open a program that spawns another window from terminal, the terminal window doesn't do anything but it stays there. If you close it, the program will also get killed. This patch allows you to spawn a program from terminal and that program will take the terminal window instead of spawning a new one. If you close the program, your terminal still there.
 
 
 - **Centered**
@@ -265,6 +269,6 @@ I don't need ST desktop entry since I launch ST using keybind or dmenu which doe
 If you want to get all of my suckless builds, you can get it on my [ Github repo ](https://github.com/elianiva/suckless/) and [here](https://github.com/elianiva/dotfiles/blob/master/.scripts/) are my scripts
 
 ## Conclusion
-I like the suckless concept because it works great and I like their way of distributing their stuff. They give you a barebones software that you can add some features through patches. This can get overwhelming since they have _a lot_ of patches, like _a lot_.
+I like the suckless software because it works great and I like their way of distributing their stuff. They give you a barebones software that you can add some features through patches. This can get overwhelming since they have _a lot_ of patches, like _a lot_.
 
 All right then, thanks for reading this lengthy post. I hope you learn something new from it. Have a nice day!
