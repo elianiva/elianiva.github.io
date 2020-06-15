@@ -3,9 +3,14 @@ html {
   scrollbar-width: thin;
 }
 
-body {
-  scrollbar-color: #5c90ff #efefef;
-  scrollbar-width: thin;
+html::-webkit-scrollbar-thumb {
+  background-color: #5c90ff;
+  width: 0.4rem;
+}
+
+html::-webkit-scrollbar {
+  background-color: #efefef;
+  width: 0.4rem;
 }
 
 .container {
@@ -83,6 +88,15 @@ body {
   width: 100%;
   overflow-y: scroll;
   scrollbar-width: thin;
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background-color: #5c90ff;
 }
 
 .title {
