@@ -165,6 +165,10 @@
   margin-bottom: 1rem;
 }
 
+.content pre *::selection {
+  background-color: #3D4259;
+}
+
 .content pre code {
   background-color: #292d3e;
   color: #b2b8dc;
