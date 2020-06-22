@@ -2,7 +2,7 @@
   "name": "elianiva-blog",
   "private": true,
   "description": "My personal blog",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Dicha Arkana <dicha.arkana03@gmail.com>",
   "dependencies": {
     "autoprefixer": "^9.7.4",
