@@ -44,7 +44,7 @@ So, why do I use Linux then? Well, let me give you a quick list of why Linux is 
 
   - **It's lightweight**
 
-      Linux is so lightweight. It can bring your old hardware to life. There's this joke that says "Linux can run on everything". From business card (yes, there's someone out there who built their business card with Linux inside it) until your high end beast $1000 PC.
+      Linux is so lightweight. It can bring your old hardware to life. There's this joke that says "Linux can run on everything". Starting from [business card](https://www.thirtythreeforty.net/posts/2019/12/my-business-card-runs-linux/) (yes, there's someone out there who built their business card with Linux inside it) until your high end $50000 beast or whatever.
 
   - **It's secure**
 

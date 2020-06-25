@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -81,8 +82,11 @@ function AboutPage() {
           software side of thing. I use{" "}
           <a href="https://archlinux.org/">Archlinux</a> as my operating system,
           I don't use Windows because I don't like it. Linux is way better for
-          my needs. Yes, I'm aware that Windows is better for gaming, but I
-          don't really care that much. I use a window manager called{" "}
+          my needs. You can read a{" "}
+          <Link to="/post/why-i-use-linux" rel="post">
+            post I made a while ago
+          </Link>{" "}
+          about why I use linux. I use a window manager called{" "}
           <a href="https://dwm.suckless.org/">DWM</a>. My text editor is{" "}
           <a href="https://neovim.io">Neovim</a> which is basically Vim with
           steroid.
