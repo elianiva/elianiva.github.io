@@ -40,10 +40,10 @@ password = <your password>
 # password_cmd = command_that_writes_password_to_stdout
 # use_keyring = true
 backend = pulseaudio
-# device = alsa_audio_device  # omit for macOS
-# control = alsa_audio_device  # omit for macOS
+# device = alsa_audio_device
+# control = alsa_audio_device
 # mixer = PCM
-volume_controller = alsa_linear  # use softvol for macOS
+volume_controller = alsa_linear
 device_name = arch
 bitrate = 320
 cache_path = /home/elianiva/.config/spotifyd
@@ -131,10 +131,10 @@ Installing spotify-tui is pretty straight forward. I use Arch so I can just use 
 
 ``` bash
 # yay
-$ yay -S spotifyd-full
+$ yay -S spotify-tui
 
 # trizen
-$ trizen spotifyd-full
+$ trizen spotify-tui
 ```
 
 After installing it, the executable binary is called `spt`. I got confused the first time I installed it because I missed the part where it says
