@@ -51,8 +51,8 @@ function IndexPage() {
             <span className={Styles.greetText}>Hi there! I’m Elianiva.</span>
             <span className={Styles.greetDesc}>
               I'm a self taught web developer and a Linux enthusiast who likes
-              to write whatever I've learned and some other stuff. Hopefully
-              you'll find something useful from my blog. Have a good day!
+              to write whatever I've learned and share it with others. I hope
+              you find something useful from my blog. Have a good day!
             </span>
           </div>
         </div>
