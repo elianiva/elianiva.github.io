@@ -48,7 +48,7 @@ I personally use 5 of them and a little bit of tweaking on `dwm.c` file. Here ar
 
   This patch gives you a new syntax for statusbar colour. It also capable of drawing rectangles to your statusbar but I personally don't use it. I only use it for changing my statusbar icon colour.
 
-- [**Vanity Gaps**](https://dwm.suckless.org/patches/status2d/)
+- [**Vanity Gaps**](https://dwm.suckless.org/patches/vanitygaps/)
 
   The most essential feature of a window manager for me. If a tiling window manager doesn't have this feature, I won't use it. It makes me feel less claustrophobic.
 
