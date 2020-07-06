@@ -1,19 +1,24 @@
 .container {
-  background-color: #efefef;
   margin-top: -4rem;
-  padding: 4rem 0 1rem;
+  padding: 1rem 0 1rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .navigation {
   display: block;
   margin: auto;
   background-color: #ffffff;
-  max-width: 16rem;
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  width: 100%;
+  display: flex;
   justify-items: center;
   align-items: center;
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+
+.pageNumber {
+  flex: 1;
+  text-align: center;
 }
 
 .active,
@@ -26,6 +31,7 @@
   color: #ffffff;
   background-color: #5c90ff;
   cursor: pointer;
+  justify-self: start;
 }
 
 .inactive {

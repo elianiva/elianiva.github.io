@@ -15,41 +15,43 @@ function Posts({ pageContext, data }) {
 
   return (
     <Layout>
-      <SEO url="https://elianiva.github.io/posts" title="Posts" />
-      <div className={Styles.container}>
-        {data.allMarkdownRemark.edges.map(post => {
-          const { cover, title, date, tags } = post.node.frontmatter
-          const { slug } = post.node.fields
-          return (
-            <Link key={post.node.id} to={slug} rel="Post">
-              <Card
-                cover={cover.childImageSharp.fluid}
-                title={title}
-                date={date}
-                desc={post.node.snippet}
-                tags={tags}
-              />
+      <div style={{ backgroundColor: "#efefef" }}>
+        <SEO url="https://elianiva.github.io/posts" title="Posts" />
+        <div className={Styles.container}>
+          {data.allMarkdownRemark.edges.map(post => {
+            const { cover, title, date, tags } = post.node.frontmatter
+            const { slug } = post.node.fields
+            return (
+              <Link key={post.node.id} to={slug} rel="Post">
+                <Card
+                  cover={cover.childImageSharp.fluid}
+                  title={title}
+                  date={date}
+                  desc={post.node.snippet}
+                  tags={tags}
+                />
+              </Link>
+            )
+          })}
+          <div className={Styles.navigation}>
+            <Link
+              to={prevPage}
+              rel="prev"
+              className={isFirst ? Styles.inactive : Styles.active}
+            >
+              Prev
             </Link>
-          )
-        })}
-        <div className={Styles.navigation}>
-          <Link
-            to={prevPage}
-            rel="prev"
-            className={isFirst ? Styles.inactive : Styles.active}
-          >
-            Prev
-          </Link>
-          <div className={Styles.pageNumber}>
-            {currentPage} of {numPages}
+            <div className={Styles.pageNumber}>
+              {currentPage} of {numPages}
+            </div>
+            <Link
+              to={nextPage}
+              rel="next"
+              className={isLast ? Styles.inactive : Styles.active}
+            >
+              Next
+            </Link>
           </div>
-          <Link
-            to={nextPage}
-            rel="next"
-            className={isLast ? Styles.inactive : Styles.active}
-          >
-            Next
-          </Link>
         </div>
       </div>
     </Layout>

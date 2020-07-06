@@ -58,21 +58,23 @@ function IndexPage() {
         </div>
         <div className={Styles.posts} id="posts">
           <div className={Styles.cards}>
-            {data.allMarkdownRemark.edges.map(post => {
-              const { cover, title, date, tags } = post.node.frontmatter
-              const { slug } = post.node.fields
-              return (
-                <Link key={post.node.id} to={slug} rel="Post">
-                  <Card
-                    cover={cover.childImageSharp.fluid}
-                    title={title}
-                    date={date}
-                    desc={post.node.snippet}
-                    tags={tags}
-                  />
-                </Link>
-              )
-            })}
+            <div style={{ padding: `0 1rem` }}>
+              {data.allMarkdownRemark.edges.map(post => {
+                const { cover, title, date, tags } = post.node.frontmatter
+                const { slug } = post.node.fields
+                return (
+                  <Link key={post.node.id} to={slug} rel="Post">
+                    <Card
+                      cover={cover.childImageSharp.fluid}
+                      title={title}
+                      date={date}
+                      desc={post.node.snippet}
+                      tags={tags}
+                    />
+                  </Link>
+                )
+              })}
+            </div>
             <Link to="/posts" className={Styles.more}>
               View More
             </Link>
