@@ -144,7 +144,7 @@ a {
   grid-template-rows: repeat(5, 2rem);
   justify-items: center;
   align-items: center;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .items a {
