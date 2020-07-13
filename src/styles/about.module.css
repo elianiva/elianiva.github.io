@@ -1,11 +1,14 @@
 .container {
-  max-width: 800px;
+  max-width: 80ch;
   margin: 1rem auto;
   padding: 0 1rem;
   color: #121212;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
-  font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.container p {
+  font-size: 1.125rem;
 }
 
 .container h1 {
