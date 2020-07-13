@@ -49,8 +49,7 @@ function AboutPage() {
         </p>
         <table>
           <tr>
-            <th>My X220 specs</th>
-            <th></th>
+            <th colSpan="2">My X220 specs</th>
           </tr>
           <tr>
             <td>CPU</td>
@@ -80,16 +79,21 @@ function AboutPage() {
         <p>
           Those are the hardware side of thing, now let's talk about the
           software side of thing. I use{" "}
-          <a href="https://archlinux.org/">Archlinux</a> as my operating system,
-          I don't use Windows because I don't like it. Linux is way better for
-          my needs. You can read a{" "}
+          <a href="https://archlinux.org/" className={Styles.nolonger}>
+            Archlinux
+          </a>{" "}
+          <a href="https://artixlinux.org/">Artixlinux</a> as my operating
+          system. You can read a{" "}
           <Link to="/post/why-i-use-linux" rel="post">
             post I made a while ago
           </Link>{" "}
-          about why I use linux. I use a window manager called{" "}
-          <a href="https://dwm.suckless.org/">DWM</a>. My text editor is{" "}
-          <a href="https://neovim.io">Neovim</a> which is basically Vim with
-          steroid.
+          about why I use Linux. I use a window manager called{" "}
+          <a href="https://dwm.suckless.org/" className={Styles.nolonger}>
+            DWM
+          </a>{" "}
+          <a href="https://github.com/baskerville/bspwm/">BSPWM</a>. My text
+          editor is <a href="https://neovim.io">Neovim</a> which is basically
+          Vim with steroid.
         </p>
       </div>
     </Layout>
