@@ -29,10 +29,11 @@ function AboutPage() {
         <h3>About my website</h3>
         <p>
           I built this website using an awesome SSG called{" "}
-          <a href="https://gatsbyjs.org/">Gatsby JS</a>. It is based on React JS
-          and some <a href="https://graphql.com">GraphQL</a> magic, and voila!
-          You get this awesome Static Site Generator. It has so many plugins to
-          help you build your website.
+          <a href="https://gatsbyjs.org/">Gatsby JS</a>. It is based on{" "}
+          <a href="https://reactjs.org/">React JS</a> and some{" "}
+          <a href="https://graphql.com">GraphQL</a> magic, and voila! You get
+          this awesome Static Site Generator. It has so many plugins to help you
+          build your website.
         </p>
         <p>
           I hosted this website on{" "}
