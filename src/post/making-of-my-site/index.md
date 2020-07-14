@@ -39,12 +39,12 @@ I've finished the mobile layout (YAY!), now it is time to make the desktop one. 
 
 ![Finished Desktop Layout](https://res.cloudinary.com/irrellia/image/upload/v1581635408/making-of-my-site/finished-partial_v6b9fw.png)
 
-Eventhough I liked how the result, there's one thing that seems wrong. The light theme doesn't look really 'Light'. It still has those dark parts for the code blocks. I think asking for people's opinion is a good idea because several minds is better than one, so I asked my friends on Facebook and they said it's better to make the light theme pure white. So I changed the code blocks to white.
+Eventhough I liked the result, there's one thing that seems wrong. The light theme doesn't look really 'Light'. It still has those dark parts for the code blocks. I think asking for people's opinion is a good idea because several minds is better than one, so I asked my friends on Facebook and they said it's better to make the light theme pure white. So I changed the code blocks to white.
 
 
 The next day, I checked my design again and I think there's a few parts that doesn't seem right. They are the READ MORE button and the date on the post page so I changed them. Here's the difference between them.
 
-![No Button Card](https://res.cloudinary.com/irrellia/image/upload/v1581635407/making-of-my-site/button_fmlvll.png)
+![No Button Card](https://res.cloudinary.com/irrellia/image/upload/v1581635407/making-of-my-site/no-button_s2l33e.png)
 
 ![Button Card](https://res.cloudinary.com/irrellia/image/upload/v1581635407/making-of-my-site/button_fmlvll.png)
 
