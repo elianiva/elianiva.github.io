@@ -16,7 +16,7 @@
   flex: 1;
   padding: 0.5rem;
   background-color: #efefef;
-  border-left: 0.25rem solid #5c90ff;
+  border-left: 0.25rem solid #2f6ef3;
   text-transform: uppercase;
   text-align: left;
   font-size: 1.125rem;
@@ -29,5 +29,5 @@
   padding: 0.5rem;
   font-size: 1.25rem;
   color: #ffffff;
-  background-color: #5c90ff;
+  background-color: #2f6ef3;
 }

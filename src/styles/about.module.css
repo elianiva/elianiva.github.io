@@ -29,12 +29,12 @@
   content: "# ";
   font-weight: 600;
   font-size: 1.5rem;
-  color: #5c90ff;
+  color: #2f6ef3;
 }
 
 .container a {
   font-weight: 600;
-  color: #5c90ff;
+  color: #2f6ef3;
 }
 
 .container table {
@@ -51,7 +51,7 @@
 }
 
 .container table th {
-  background-color: #5c90ff;
+  background-color: #2f6ef3;
   color: #ffffff;
   font-size: 1.25rem;
 }
@@ -63,12 +63,12 @@
 
 .container a:hover,
 .container a:focus {
-  border-bottom: 0.125rem #5c90ff solid;
+  border-bottom: 0.125rem #2f6ef3 solid;
   cursor: pointer;
 }
 
 .divider {
-  background-color: #5c90ff;
+  background-color: #2f6ef3;
   width: 10rem;
   height: 0.125rem;
   margin: 0 auto;

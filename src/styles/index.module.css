@@ -1,10 +1,10 @@
 html {
-  scrollbar-color: #5c90ff #efefef;
+  scrollbar-color: #2f6ef3 #efefef;
   scrollbar-width: thin;
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #5c90ff;
+  background-color: #2f6ef3;
   width: 0.4rem;
 }
 
@@ -96,7 +96,7 @@ html::-webkit-scrollbar {
 }
 
 .cards::-webkit-scrollbar-thumb {
-  background-color: #5c90ff;
+  background-color: #2f6ef3;
 }
 
 .title {
@@ -119,7 +119,7 @@ html::-webkit-scrollbar {
   margin: 1rem auto;
   padding: 0.5rem 1rem;
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
-  background-color: #5c90ff;
+  background-color: #2f6ef3;
   color: #ffffff;
   border-radius: 0.25rem;
   border: none;

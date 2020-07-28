@@ -26,7 +26,7 @@ function Footer() {
             This website is hosted on{" "}
             <a
               href="https://pages.github.com/"
-              style={{ color: "#5c90ff", fontWeight: 600 }}
+              style={{ color: "#2f6ef3", fontWeight: 600 }}
             >
               Github Pages
             </a>{" "}
@@ -42,7 +42,7 @@ function Footer() {
             Source code is available on{" "}
             <a
               href="https://github.com/elianiva/elianiva.github.io"
-              style={{ color: "#5c90ff", fontWeight: 600 }}
+              style={{ color: "#2f6ef3", fontWeight: 600 }}
             >
               Github
             </a>
@@ -50,7 +50,7 @@ function Footer() {
           &copy; 2020
           <a
             href="https://github.com/elianiva/"
-            style={{ color: "#5c90ff", fontWeight: 600 }}
+            style={{ color: "#2f6ef3", fontWeight: 600 }}
           >
             {" "}
             ELIANIVA

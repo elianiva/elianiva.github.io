@@ -188,9 +188,9 @@ a {
 
   .menu > a:hover,
   .menu > a:focus {
-    color: #5c90ff;
+    color: #2f6ef3;
     outline: 0;
-    border-bottom: 0.125rem #5c90ff solid;
+    border-bottom: 0.125rem #2f6ef3 solid;
   }
 
   .icons {
@@ -214,6 +214,6 @@ a {
 
   .icons svg:hover,
   .icons svg:focus {
-    fill: #5c90ff;
+    fill: #2f6ef3;
   }
 }
