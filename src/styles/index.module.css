@@ -1,16 +1,14 @@
 html {
-  scrollbar-color: #2f6ef3 #efefef;
-  scrollbar-width: thin;
+  scrollbar-color: #b0b0b0 #efefef;
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #2f6ef3;
-  width: 0.4rem;
+  background-color: #b0b0b0;
+  border-radius: 1rem;
 }
 
 html::-webkit-scrollbar {
   background-color: #efefef;
-  width: 0.4rem;
 }
 
 .container {
@@ -96,7 +94,8 @@ html::-webkit-scrollbar {
 }
 
 .cards::-webkit-scrollbar-thumb {
-  background-color: #2f6ef3;
+  background-color: #b0b0b0;
+  border-radius: 1rem;
 }
 
 .title {
