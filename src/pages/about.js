@@ -15,16 +15,18 @@ function AboutPage() {
         <h3>My personal identity</h3>
         <p>
           Hello internet people! My real name is Dicha Zelianivan Arkana. I'm a
-          self taught front end web developer and Linux enthusiast. I do some
-          random project just for a hobby for now. You can check my github right
-          over <a href="https://github.com/elianiva">here.</a>
+          self taught front end web developer (fullstack soon ツ) and Open
+          Source enthusiast. I do some random project just for a hobby now. You
+          can check my github <a href="https://github.com/elianiva">here.</a>
         </p>
         <p>
           If you visited this site before, you might notice that my username is
           Irrellia. I changed it to my middle name and removed the first and
-          last letter. Apparently, my previous username is one of League of
-          Legends character. I don't fancy having a same name as anybody else, I
-          like to have a unique name.
+          last letter ( Z
+          <span style={{ color: `#2f6ef3`, fontWeight: "bold" }}>elianiva</span>
+          n). Apparently, my previous username is one of League of Legends
+          character. I don't fancy having a same name as anybody else, I like to
+          have a unique name ツ.
         </p>
         <h3>About my website</h3>
         <p>
@@ -38,10 +40,11 @@ function AboutPage() {
         <p>
           I hosted this website on{" "}
           <a href="https://pages.github.com">Github Pages</a> because it is so
-          easy to setup, it's free and it has a cool domain name. I use the help
+          easy to setup, it's free and it has a cool domain name (to me at least
+          lol). Though I might buy my own domain in the future. I use the help
           of <a href="https://travis-ci.org/">Travis CI</a> to build and deploy
           my code automatically everytime I push to my repo so I don't have to
-          build it manually and deploy it.
+          build it manually and deploy it by myself.
         </p>
         <h3>My setup</h3>
         <p>
