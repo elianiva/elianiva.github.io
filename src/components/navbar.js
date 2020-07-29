@@ -4,7 +4,7 @@ import Styles from "../styles/navbar.module.css"
 
 // icons
 import Facebook from "../assets/facebook-logo.svg"
-import Reddit from "../assets/reddit.svg"
+import Twitter from "../assets/twitter.svg"
 import Rss from "../assets/rss.svg"
 
 function Navbar() {
@@ -41,8 +41,8 @@ function Navbar() {
           <a href="https://facebook.com/ho0m4n">
             <Facebook />
           </a>
-          <a href="https://reddit.com/irrellia">
-            <Reddit />
+          <a href="https://twitter.com/elianiva_">
+            <Twitter />
           </a>
           <a href="https://elianiva.github.io/rss.xml">
             <Rss />
@@ -95,8 +95,8 @@ function Navbar() {
             <a href="https://facebook.com/ho0m4n">
               <Facebook />
             </a>
-            <a href="https://reddit.com/irrellia">
-              <Reddit />
+            <a href="https://twitter.com/elianiva_">
+              <Twitter />
             </a>
             <a href="https://elianiva.github.io/rss.xml">
               <Rss />
