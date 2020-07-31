@@ -10,13 +10,20 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: actions/setup-node@v2-beta
+    - name: setup node
+      uses: actions/setup-node@v2-beta
       with:
         node-version: '12.x'
 
-    - name: Install deps
+    - name: install deps
       run: npm install --production
 
-    - name: Build and deploy
-      run: npm run deploy
+    - name: build site
+      run: npm run build
+
+    - name: deploy site
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
 
