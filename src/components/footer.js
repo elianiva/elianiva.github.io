@@ -28,14 +28,14 @@ function Footer() {
               href="https://pages.github.com/"
               style={{ color: "#2f6ef3", fontWeight: 600 }}
             >
-              Github Pages
-            </a>{" "}
-            with help of{" "}
+              Github Pages{" "}
+            </a>
+            with the help of{" "}
             <a
-              href="https://travis-ci.org/"
-              style={{ color: "#CD324A", fontWeight: 600 }}
+              href="https://github.com/features/actions"
+              style={{ color: "#2f6ef3", fontWeight: 600 }}
             >
-              Travis-CI.
+              Github Actions
             </a>
           </span>
           <span>

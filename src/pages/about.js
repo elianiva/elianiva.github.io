@@ -42,9 +42,13 @@ function AboutPage() {
           <a href="https://pages.github.com">Github Pages</a> because it is so
           easy to setup, it's free and it has a cool domain name (to me at least
           lol). Though I might buy my own domain in the future. I use the help
-          of <a href="https://travis-ci.org/">Travis CI</a> to build and deploy
-          my code automatically everytime I push to my repo so I don't have to
-          build it manually and deploy it by myself.
+          of{" "}
+          <a href="https://travis-ci.org/" className="nolonger">
+            Travis CI
+          </a>{" "}
+          <a href="https://github.com/features/actions">Github Actions</a> to
+          build and deploy my code automatically everytime I push to my repo so
+          I don't have to build it manually and deploy it by myself.
         </p>
         <h3>My setup</h3>
         <p>
