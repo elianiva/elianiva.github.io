@@ -1,6 +1,6 @@
 # elianiva.github.io
 
-[![Build Status](https://travis-ci.org/elianiva/elianiva.github.io.svg?branch=source)](https://travis-ci.org/elianiva/elianiva.github.io)
+![Build and deploy](https://github.com/elianiva/elianiva.github.io/workflows/Build%20and%20deploy/badge.svg)
 
 ## Installation
 
