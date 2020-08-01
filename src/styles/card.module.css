@@ -57,9 +57,12 @@
   display: block;
 }
 
+.tags {
+  padding-top: 0.5rem;
+}
+
 .tag {
   display: inline-block;
-  margin: 0 0.5rem 0.5rem 0;
   font-size: 0.8rem;
   background-color: #2f6ef3;
   color: #ffffff;
