@@ -4,7 +4,7 @@ import { Disqus } from "gatsby-plugin-disqus"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Styles from "../styles/post.module.css"
-import moment from "moment"
+import tempe from "tempe"
 import "../styles/link.css"
 
 function BlogPage({ data }) {
@@ -20,7 +20,7 @@ function BlogPage({ data }) {
       <div className={Styles.container}>
         <h1 className={Styles.title}>{title}</h1>
         <p className={Styles.date}>
-          Posted on {moment(date).format("dddd, DD MMMM YYYY")}
+          Posted on {tempe(date).format("dd, DD MMMM YYYY")}
         </p>
         {data.markdownRemark.timeToRead === 1 ? (
           <p className={Styles.time}>

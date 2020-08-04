@@ -4,7 +4,7 @@ import Styles from "../styles/card.module.css"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import Date from "../assets/date.svg"
-import moment from "moment"
+import tempe from "tempe"
 
 function Card(props) {
   const data = useStaticQuery(graphql`
@@ -31,7 +31,7 @@ function Card(props) {
         <span className={Styles.title}>{props.title}</span>
         <span className={Styles.date}>
           <Date className={Styles.prefix} />{" "}
-          {moment(props.date).format("dddd, DD MMMM YYYY")}
+          {tempe(props.date).format("dd, DD MMMM YYYY")}
         </span>
         <span
           className={Styles.desc}
