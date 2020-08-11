@@ -43,7 +43,7 @@ function AboutPage() {
           easy to setup, it's free and it has a cool domain name (to me at least
           lol). Though I might buy my own domain in the future. I use the help
           of{" "}
-          <a href="https://travis-ci.org/" className="nolonger">
+          <a href="https://travis-ci.org/" className={Styles.nolonger}>
             Travis CI
           </a>{" "}
           <a href="https://github.com/features/actions">Github Actions</a> to
@@ -68,12 +68,12 @@ function AboutPage() {
             <td>Intel HD Graphics 3000</td>
           </tr>
           <tr>
-            <td>HDD</td>
-            <td>WD Blue 2.5 inch with 320GB and 7200RPM</td>
+            <td>Storage</td>
+            <td>Adata SU650 120GB</td>
           </tr>
           <tr>
             <td>RAM</td>
-            <td>4GB DDR3 1333MHz</td>
+            <td>2x4GB DDR3 1333MHz</td>
           </tr>
           <tr>
             <td>Monitor</td>
@@ -87,11 +87,8 @@ function AboutPage() {
         <p>
           Those are the hardware side of thing, now let's talk about the
           software side of thing. I use{" "}
-          <a href="https://archlinux.org/" className={Styles.nolonger}>
-            Archlinux
-          </a>{" "}
-          <a href="https://artixlinux.org/">Artixlinux</a> as my operating
-          system. You can read a{" "}
+          <a href="https://archlinux.org/">Archlinux</a> as my operating system.
+          You can read a{" "}
           <Link to="/post/why-i-use-linux" rel="post">
             post I made a while ago
           </Link>{" "}
