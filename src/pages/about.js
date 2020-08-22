@@ -15,8 +15,8 @@ function AboutPage() {
         <h3>My personal identity</h3>
         <p>
           Hello internet people! My real name is Dicha Zelianivan Arkana. I'm a
-          self taught front end web developer (fullstack soon ツ) and Open
-          Source enthusiast. I do some random project just for a hobby now. You
+          self taught front end web developer (fullstack soon ツ) and an open
+          source enthusiast. I do some random project just for a hobby now. You
           can check my github <a href="https://github.com/elianiva">here.</a>
         </p>
         <p>
@@ -32,7 +32,7 @@ function AboutPage() {
         <p>
           I built this website using an awesome SSG called{" "}
           <a href="https://gatsbyjs.org/">Gatsby JS</a>. It is based on{" "}
-          <a href="https://reactjs.org/">React JS</a> and some{" "}
+          <a href="https://reactjs.org/">React JS</a> with some{" "}
           <a href="https://graphql.com">GraphQL</a> magic, and voila! You get
           this awesome Static Site Generator. It has so many plugins to help you
           build your website.
@@ -96,9 +96,16 @@ function AboutPage() {
           <a href="https://dwm.suckless.org/" className={Styles.nolonger}>
             DWM
           </a>{" "}
-          <a href="https://github.com/baskerville/bspwm/">BSPWM</a>. My text
-          editor is <a href="https://neovim.io">Neovim</a> which is basically
-          Vim with steroid.
+          <a
+            href="https://github.com/baskerville/bspwm/"
+            className={Styles.nolonger}
+          >
+            BSPWM
+          </a>
+          <a href="https://awesomewm.org/">AwesomeWM</a>. My text editor is{" "}
+          <a href="https://neovim.io">Neovim</a> which is basically Vim with
+          steroid. All of my dotfiles can be found{" "}
+          <a href="https://github.com/elianiva/dotfiles">here</a>
         </p>
       </div>
     </Layout>
