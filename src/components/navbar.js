@@ -4,7 +4,6 @@ import Styles from "../styles/navbar.module.css"
 
 // icons
 import Facebook from "../assets/facebook-logo.svg"
-import Twitter from "../assets/twitter.svg"
 import Rss from "../assets/rss.svg"
 
 function Navbar() {
@@ -40,9 +39,6 @@ function Navbar() {
         <div className={Styles.icons}>
           <a href="https://facebook.com/ho0m4n">
             <Facebook />
-          </a>
-          <a href="https://twitter.com/elianiva_">
-            <Twitter />
           </a>
           <a href="https://elianiva.github.io/rss.xml">
             <Rss />
@@ -94,9 +90,6 @@ function Navbar() {
           <div className={Styles.mobileIcons}>
             <a href="https://facebook.com/ho0m4n">
               <Facebook />
-            </a>
-            <a href="https://twitter.com/elianiva_">
-              <Twitter />
             </a>
             <a href="https://elianiva.github.io/rss.xml">
               <Rss />

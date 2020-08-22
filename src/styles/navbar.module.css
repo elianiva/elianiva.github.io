@@ -48,7 +48,7 @@ a {
 
 .mobile-icons {
   display: grid;
-  grid-template-columns: repeat(3, 1rem);
+  grid-template-columns: repeat(2, 1rem);
   justify-content: flex-end;
   grid-gap: 1rem;
 }
