@@ -32,6 +32,8 @@ Previously, I have this one big section that fills the entire screen with a logo
 
 I also don't have a new logo for my username yet. So it is what it is. I'll make that in the future.
 
+(06092020) UPDATE: I decided to use my github profile picture instead.
+
 
 ### Tags page
 I decided to remove the category. I think tags will be enough because I have another plan for the "category" thingy. I'll talk about that later on. If you've seen my archives page before, it kinda look like a mess, like seriously. I mean just look at this.
