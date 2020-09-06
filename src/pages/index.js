@@ -45,9 +45,11 @@ function IndexPage() {
       <div className={Styles.container}>
         <div className={Styles.greet}>
           <div className={Styles.wrapper}>
-            <div className={Styles.logo}>
-              <h1>Elianiva</h1>
-            </div>
+            <img
+              className={Styles.logo}
+              src="https://github.com/elianiva.png"
+              alt="logo"
+            />
             <span className={Styles.greetText}>Hi there! I’m Elianiva.</span>
             <span className={Styles.greetDesc}>
               I'm a self taught web developer and a Linux enthusiast who likes
