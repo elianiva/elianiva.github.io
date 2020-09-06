@@ -46,7 +46,6 @@ html::-webkit-scrollbar {
   border: 0.25rem solid #ffffff;
   border-radius: 5rem;
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.15);
-  background-color: #181824;
   margin-bottom: 1rem;
 }
 
