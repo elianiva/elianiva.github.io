@@ -8,7 +8,7 @@ tags:
 
 ## Introduction
 [[snippet]]
-| Previously, I use [Travis CI](https://travis-ci.org) to automatically deploy my site. So if I push an update to my repo it will trigger a build and deploy it to github page. Turns out, github has a built in feature for CI/CD called **Github Actions**. In this post, I'll tell how my experience using it.
+| Previously, I use [Travis CI](https://travis-ci.org) to automatically deploy my site so if I push an update to my repo it will trigger a build and deploy it to github page. Turns out, github has a built in feature for CI/CD called **Github Actions**. In this post, I'll tell you how my experience using it.
 
 ## Initial Setup
 ### Removing Travis CI
