@@ -13,7 +13,7 @@ html::-webkit-scrollbar {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.75fr;
   color: #121212;
   height: 100vh;
   max-width: 1366px;
@@ -58,20 +58,20 @@ html::-webkit-scrollbar {
 
 .greet-text {
   display: block;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 2rem;
   font-weight: 500;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   color: #292d3e;
 }
 
 .greet-desc {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 400;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
-  color: #292d3e;
+  color: #555555;
 }
 
 .posts {
