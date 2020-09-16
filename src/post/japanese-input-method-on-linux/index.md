@@ -4,6 +4,7 @@ date: "2020-06-05"
 cover: "./cover.png"
 tags:
   - linux
+  - japanese
 ---
 
 ## Introduction
