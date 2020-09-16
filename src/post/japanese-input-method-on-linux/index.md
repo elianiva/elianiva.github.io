@@ -14,7 +14,7 @@ At first, I tried to change the keyboard layout but it doesn't work. I then came
 
 ## Fcitx
 ### What Is Fcitx?
-According to [Wikipedia](https://en.wikipedia.org/wiki/Fcitx), **Fcitx** is an input method fremaework with extension support for the X Window System that supports multiple input method engines.
+According to [Wikipedia](https://en.wikipedia.org/wiki/Fcitx), **Fcitx** is an input method framework with extension support for the X Window System that supports multiple input method engines.
 
 It supports multiple input engines like `fcitx-hangul` for Korean, `fcitx-mozc` for Japanese, `fcitx-googlepinyin` for Chinese, and more.
 
@@ -57,7 +57,7 @@ We are using Fcitx as our input method framework so what we need to install is `
 
 ``` bash
 # Archlinux
-$ sudo pacman -S
+$ sudo pacman -S fcitx-mozc
 
 # Debian / Ubuntu
 $ sudo apt-get install fcitx-mozc
