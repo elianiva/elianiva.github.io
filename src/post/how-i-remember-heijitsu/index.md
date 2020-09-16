@@ -1,6 +1,6 @@
 ---
 title: "How I remember japanese weekdays"
-date: "2020-09-16"
+date: "2020-09-17"
 cover: "./cover.png"
 tags:
   - japanese
