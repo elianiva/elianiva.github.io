@@ -13,11 +13,11 @@ tags:
 ## Heijitsu
 Weekdays in japanese is called **Heijitsu** or **平日**. It has a **youbi** or **曜日** prefix so in order to remember it, we only need to remember the first kanji. Easy enough right?
 
-### Monday (月曜日)
-The first one is Monday (getsuyoubi). In order to remember it, I simply take **Mon** in **Monday** and refer it as **Moon**. The 月 kanji has several readings and one of them is **Tsuki** which means moon. Also, because I love Babymetal so much, I remember it as **Moa**(nday). Why? you might ask. Well, Metal Galaxy live album is divided into 2 parts and the one that has **Moa** in it has a **Moon** background. Maybe it's weird, but meh, I don't care. I mean, it works ツ
-
 ### Sunday (日曜日)
-Second one is Sunday (nichiyoubi). Similar to the first one, I take the **Sun** from **Sunday**. The 日 kanji means **Sun**. This one is the easiest one for me. Also, same as before, I also remember this **Su** from Babymetal. You might have guessed it. Yes, it has **Sun** background for the album cover. I mean, as long as it works, who cares ツ
+The first one is Monday (nichiyoubi). In order to remember it, I simply take **Sun** in **Sunday** and refer it as **Sun**. The 日 kanji means sun. Also, because I love Babymetal so much, I remember it as **Su**(nday). Why? you might ask. Well, Metal Galaxy live album is divided into 2 parts and the one that has **Su** in it has a **Sun** background. Maybe it's weird, but meh, I don't care. I mean, it works ツ
+
+### Monday (月曜日)
+Second one is Monday (getsuyoubi). Similar to the first one, I take **Mon** from **Monday** and refer it as **Moon**. The 月 kanji means **Moon** or **Month**. Also, same as before, I also remember this **Moa** from Babymetal. You might have guessed it. Yes, it has **Moon** background for the album cover. I mean, as long as it works, who cares ツ
 
 ### Tuesday (火曜日)
 Third one is Tuesday (kayoubi). I remember this as it is. The kanji **火** (hi) means **Fire**. For some reason I always think this sentence, "Tuesday is on fire". I don't know why, but it is what it is.
