@@ -20,7 +20,7 @@ The first one is Monday (getsuyoubi). In order to remember it, I simply take **M
 Second one is Sunday (nichiyoubi). Similar to the first one, I take the **Sun** from **Sunday**. The 日 kanji means **Sun**. This one is the easiest one for me. Also, same as before, I also remember this **Su** from Babymetal. You might have guessed it. Yes, it has **Sun** background for the album cover. I mean, as long as it works, who cares ツ
 
 ### Tuesday (火曜日)
-Third one is Tuesday (kayoubi). I remember this as it is. The kanji **火** (hi) means **Fire**. For some reason I always think this phrase, "Tuesday is on fire". I don't know why, but it is what it is.
+Third one is Tuesday (kayoubi). I remember this as it is. The kanji **火** (hi) means **Fire**. For some reason I always think this sentence, "Tuesday is on fire". I don't know why, but it is what it is.
 
 ### Wednesday (水曜日)
 Fourth one is Wednesday (suiyoubi). I take **Wed** from **Wednesday** and refer it as **Wet** because the kanji **水** means **Water**. Simple enough, nothing weird with this one.
