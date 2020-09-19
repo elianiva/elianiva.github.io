@@ -25,3 +25,7 @@ and don't forget to install gatsby-cli:
 ### Running the regular server for testing
 
 `gatsby serve`
+
+# License
+
+MIT © [Elianiva](https://github.com/elianiva/elianiva.github.io/blob/master/LICENSE)
