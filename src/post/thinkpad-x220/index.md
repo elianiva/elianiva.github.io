@@ -3,9 +3,7 @@ title: "Thinkpad X220"
 date: "2020-03-19"
 cover: "./cover.png"
 tags:
-  - thinkpad
-  - laptop
-  - hardware
+  - other
 ---
 
 ## Introduction
