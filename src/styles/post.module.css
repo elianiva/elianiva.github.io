@@ -88,9 +88,15 @@
   margin: 1rem 0;
 }
 
-.content h3::before,
-.content h4::before {
+.content h3::before {
   content: "# ";
+  color: #2f6ef3;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.content h4::before {
+  content: "• ";
   color: #2f6ef3;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -109,9 +115,13 @@
   border-bottom: 0.125rem #2f6ef3 solid;
 }
 
-.content h3,
-.content h4 {
+.content h3 {
   font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.content h4 {
+  font-size: 1.25rem;
   line-height: 2rem;
 }
 
