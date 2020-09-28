@@ -71,20 +71,6 @@ module.exports = {
               aliases: {},
               showLineNumbers: false,
               noInlineHighlight: true,
-              languageExtensions: [
-                {
-                  language: "superscript",
-                  extend: "javascript",
-                  definition: {
-                    superscript_types: /(SuperType)/,
-                  },
-                  insertBefore: {
-                    function: {
-                      superscript_keywords: /(superif|superelse)/,
-                    },
-                  },
-                },
-              ],
               escapeEntities: {},
             },
           },
