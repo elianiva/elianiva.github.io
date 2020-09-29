@@ -179,6 +179,8 @@ export const count = writable(0)
 
 I mean, just look at how simple it is. Bare in mind that this post isn't meant to explain every single thing that Svelte has to offer so please refer to the [official website](https://svelte.dev/tutorial/writable-stores) for more explanation ツ
 
+Actually, Svelte also has [Context API](https://svelte.dev/tutorial/context-api). Since I'm still learning, please read [this article](https://medium.com/better-programming/6-ways-to-do-component-communications-in-svelte-b3f2a483913c) for better understanding. It's such a good article and you should definitely check it out!
+
 #### Animation and transition directive
 Svelte provides [animation](https://svelte.dev/tutorial/animate) and [transition](https://svelte.dev/tutorial/transition) that you can use to animate your components. The usage is also simple, what you would do is just something like this.
 
